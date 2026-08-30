@@ -1,7 +1,72 @@
-# Nyár végi – őszi ültetési tervjavaslat
+# Nyár végi – őszi ültetési terv 2026
 
-**Készítve:** 2026. augusztus 20.  
-**Cél:** azonnal végrehajtható, évről évre érvényes általános ütemterv + 2026-os holdablakok + magyar maglinkek.
+**Helyszín:** Tatabánya / Kömlőd (Komárom-Esztergom)  
+**Készítve:** 2026. augusztus 20. (újraszámolva: teljes növénylista)  
+**Terület:** 12 m² emeltágyás + 12 m² üvegház = **24 m²**  
+**Cél:** téli friss levél + **1 ágyás tárolható retek** + hely a korábban kihagyott kultúráknak is  
+**Mag:** bio preferált (ha nincs bio, szokásos mag OK)
+
+---
+
+## Helyszín és infrastruktúra
+
+| Adat | Érték |
+|------|--------|
+| Éghajlat | Kontinentális; első őszi fagy tipikusan **okt. közepe–vége** |
+| Emeltágyás | 12 m² – gyökér, áttelelők, szabadföldi levél, zöldtrágya-szukcesszió |
+| Üvegház | 12 m² – téli levél + érzékenyebb káposztafélék (~10 m² ültethető + ~2 m² közlekedő) |
+| Stratégia | Minden kultúra kap **fix sávot**; ahol nem fér egyszerre, **szukcesszió** (pl. tarlórépa → mustár zöldtrágya) |
+
+---
+
+## Területszámítás (összeg = 24 m²)
+
+Feltétel: **4 × 3 m² emeltágyás** + üvegházban **~10 m² ültetőfelület** + **~2 m² járósáv**.
+
+### Emeltágyás – 12,0 m²
+
+| Ágyás | m² | Kultúra | Megjegyzés |
+|-------|-----|---------|------------|
+| **A** | **3,0** | **Téli retek** (fekete / fehér) | Cél: 1 ágyás tárolható; tőtáv 8–12 cm |
+| **B** | **3,0** | Lóbab **1,5** + tavaszi káposzta/kel **1,5** | Áttelelők → „éhes rés” (máj–jún.); kel: 5–6 tő @ ~40 cm |
+| **C** | **3,0** | Madársaláta **1,5** + spenót **1,5** | Szabadföldi téli levél + **fátyol** |
+| **D** | **3,0** | Tarlórépa **1,0** + mángold **1,0** + újhagyma **0,5** + *(szukcesszió)* mustár zöldtrágya | Tarlórépa betakarítás után (~okt.) a **1,0 m²** → fehér mustár zöldtrágya |
+| **Σ** | **12,0** | | |
+
+> Mustár zöldtrágya **nem** megy brassica-ágyás (A, B kel, üvegház káposzták) mellé most: a D ágyás tarlórépa utáni helyére kerül → család-forgó OK.
+
+### Üvegház – 12,0 m²
+
+| Sáv | m² | Kultúra | Megjegyzés |
+|-----|-----|---------|------------|
+| 1 | 2,0 | Spenót (fő téli készlet) | Gerinc |
+| 2 | 1,5 | Kínai kel (nappa) | Késői ablak – üvegház + gyökérbolygatás nélkül; **kockázatos**, de helye van |
+| 3 | 1,2 | Pak choi | Cellás előnevelés → kiültetés @ ~20 cm |
+| 4 | 1,0 | Téli saláta | Fogyó Holdnál vetve |
+| 5 | 0,8 | Mizuna | Baby leaf |
+| 6 | 0,6 | Mustársaláta (étkezési) | Mixbe |
+| 7 | 0,8 | Rukkola | 2–3 hetente pótlás ugyanebben a sávban |
+| 8 | 0,6 | Madársaláta | Üvegház-biztos tartalék |
+| 9 | 0,5 | Claytonia (téli porcsin) | Ritka mag – ha nincs, a 0,5 m² → extra spenót/madársaláta |
+| 10 | 0,5 | Borsóhajtás | Tálca / polc / pad széle (nem kell mély ágyás) |
+| Közlekedő | 2,5 | – | Járás, kanna, tálcák |
+| **Σ** | **12,0** | | |
+
+**Ültetett összesen (emelt + üvegház növény):** 12 + 9,5 = **21,5 m²** növény + **2,5 m²** járó = **24 m²**.
+
+### Ellenőrzőlista – minden korábbi „kihagyott” kapott helyet
+
+| Növény | Hol | m² |
+|--------|-----|-----|
+| Kínai kel | Üvegház 2 | 1,5 |
+| Tavaszi káposzta / kel | Emeltágyás B | 1,5 |
+| Baby / tarlórépa | Emeltágyás D | 1,0 |
+| Mángold | Emeltágyás D | 1,0 |
+| Újhagyma | Emeltágyás D | 0,5 |
+| Lóbab | Emeltágyás B | 1,5 |
+| Mustár zöldtrágya | Emeltágyás D (tarlórépa után) | 1,0 (szukcesszió) |
+| Claytonia | Üvegház 9 | 0,5 |
+| Borsóhajtás | Üvegház 10 | 0,5 |
 
 ---
 
@@ -9,209 +74,215 @@
 
 | Forrás | Szerepe |
 |--------|---------|
-| [Huws Nursery – Late summer sowings](https://www.youtube.com/watch?v=Et_f2uN--1Q) | Ázsiai zöldek, téli saláták, gyors gyökerek, tavaszi káposzta |
-| [Huws Nursery – 5 crops to sow now](https://www.youtube.com/watch?v=A9OLdnWuA5U) | Pak choi, rukkola, fehérrépa, kínai kel, koriander |
-| [The Holistic Gardener – 14 September crops](https://www.youtube.com/watch?v=zxADLxc44LE) | Szeptemberi szabadvetés + fólia/alagút növények, zöldtrágya |
-| `holdfazis.altalanos.md` (Bognár Éva / biodinamikus gyakorlat) | Leszálló hold + növő/fogyó szabályok |
+| [Huws Nursery – Late summer sowings](https://www.youtube.com/watch?v=Et_f2uN--1Q) | Ázsiai zöldek, téli saláták |
+| [Huws Nursery – 5 crops to sow now](https://www.youtube.com/watch?v=A9OLdnWuA5U) | Pak choi, rukkola, gyökerek |
+| [The Holistic Gardener – 14 September crops](https://www.youtube.com/watch?v=zxADLxc44LE) | Szeptember + védett hely + zöldtrágya |
+| `holdfazis.altalanos.md` | Leszálló + növő/fogyó |
 | Holdfázisok 2026 | [VCSE](https://vcse.hu/a-hold-fazisai-2025-csizmadia-szilard/), [calendar-yearly](https://calendar-yearly.com/moon/hu/2026) |
-| Leszálló / felszálló időszakok 2026 | [iCalendar moon gardening 2026](https://icalendar.co.uk/moon-gardening-calendar-2026/) (D.N. → A.N. = leszálló) |
-
-> **Éghajlat:** a videók enyhébb (walesi / ~8-as) zónára készültek. Magyarországon a fólia, alagút, fátyolfólia vagy hidegágy **erősen ajánlott** októbertől.
+| Leszálló / felszálló 2026 | [iCalendar moon gardening 2026](https://icalendar.co.uk/moon-gardening-calendar-2026/) |
 
 ---
 
-## Holdszabályok (a doksi szerint)
+## Holdszabályok
 
-1. **Mindig csak leszálló Hold idején vetünk** (Ikrektől Nyilasig / leszálló pálya).
+1. **Mindig csak leszálló Hold idején vetünk.**
 2. Ezen belül:
-   - **Gyökérzöldségek (szabadföld):** fogyó Hold
-   - **Föld felett termők (levél, szár):** növő Hold
-   - **Saláta kivétel:** fogyó Hold (hogy ne fusson magszárba)
+   - **Gyökér** (téli retek, tarlórépa): fogyó Hold
+   - **Levél / szár / hüvely-előnevelés** (lóbab, kel, mángold…): növő Hold
+   - **Saláta:** fogyó Hold
 
-### 2026 – leszálló időszakok (aug–nov)
+### 2026 – releváns ablakok (aug–szept)
 
-| Leszálló Hold |
-|---------------|
-| aug. 13–27 |
-| szept. 9–24 |
-| okt. 7–21 |
-| nov. 3–17 |
-| nov. 30 – dec. 14 |
+| Típus | Napok |
+|-------|-------|
+| **Levél** (leszálló + növő) | **aug. 20–27** · **szept. 11–24** |
+| **Gyökér / saláta** (leszálló + fogyó) | **szept. 9–11** |
+| Leszálló | aug. 13–27 · szept. 9–24 |
 
-### 2026 – növő / fogyó (aug–nov)
-
-| Fázis | Időszak |
-|-------|---------|
-| Növő | aug. 12–28 · szept. 11–26 · okt. 10–26 · nov. 9–24 |
-| Fogyó | aug. 28 – szept. 11 · szept. 26 – okt. 10 · okt. 26 – nov. 9 · nov. 24 – dec. 9 |
-
-### 2026 – ajánlott vetési ablakok (leszálló ∩ fázis)
-
-| Típus | Ajánlott napok 2026-ban |
-|-------|-------------------------|
-| **Levél / föld felett** (leszálló + növő) | **aug. 20–27** · **szept. 11–24** · **okt. 10–21** · **nov. 9–17** |
-| **Gyökér** (leszálló + fogyó) | **szept. 9–11** · **nov. 3–9** · (késői: nov. 30 – dec. 9) |
-| **Saláta** (leszálló + fogyó) | ugyanaz, mint a gyökérablak |
-
-> Ha a szezonablakban nincs tökéletes metszet (pl. augusztus végén nincs leszálló+fogyó), **elsőbbséget a leszálló Holdnak adj** (a doksi 1. szabálya), és a fázist másodlagosan kezeld. Pontosabb napokra: [Maria Thun Vetési naptár 2026](https://www.biodin.hu/aktualitasok/mar-kaphato-a-2026-os-vetesi-naptar).
+> Ha nincs tökéletes metszet: **leszálló elsőbbség**. Pontos elem-nap: [Maria Thun 2026](https://www.biodin.hu/aktualitasok/mar-kaphato-a-2026-os-vetesi-naptar).
 
 ---
 
-## AUGUSZTUS (20-tól) – azonnal
+## Teljes növénylista (prioritás + hely)
 
-Általános években: **aug. 15–31** a „még lehet” ablak. Most: **aug. 20–31**.
-
-### A) aug. 20–27 – elsőbbség (leszálló + növő → levélfélék)
-
-| Növény | Általános idő | Ültetés módja | Hold 2026 | Mag link | Megjegyzés |
-|--------|---------------|---------------|-----------|----------|------------|
-| Pak choi / bok choy | aug. közép–szept. eleje | **Szaporító / cellás tálca** (2 mag/cella), 3–4 hét után kiültetés | **aug. 20–27** | [Pak Choi Shanghai](https://kisvakondwebshop.hu/product/pak-choi-shanghai-vetomag-mikrozoldseg-25-gramm/) | Csiga ellen tálcában biztonságosabb; tőtáv ~20 cm |
-| Mizuna | aug.–szept. | **Cellás tálca** vagy szabadföld sorba | **aug. 20–27** | [Mizuna (Oázis / Rédei)](https://oazis.hu/mizuna-azsiai-salata-vetomag-a.html) | 3–4 hét után már szedhető; fagyig megy |
-| Mustársaláta / ázsiai mustár | aug.–szept. | **Cellás tálca** vagy szabadföld | **aug. 20–27** | [Mustár baby leaf](https://kisvakondwebshop.hu/product/mustar-mikrozoldseg-vetomag-baby-leaf-3-gramm/) | Csípős téli saláta; védve jobban termel |
-| Rukkola | aug.–okt. | **Szabadföld** vagy **konténer / balkonláda** (szórt vetés) | **aug. 20–27** | [Rukkola 3 g](https://kisvakondwebshop.hu/product/rukkola-vetomag-3-gramm/) | 4–6 hét alatt szedhető; ismételd 2–3 hetente |
-| Koriander | aug.–szept. | **Szabadföld** vagy **cserép** (helybe, karógyökér!) | **aug. 20–27** | [Koriander](https://kisvakondwebshop.hu/product/koriander-vetomag-2-gramm/) | Hőségben felmagzik; most ideális |
-| Kínai kel (nappa) | aug. eleje–közepe (utolsó esély) | **Cellás tálca**, óvatos kiültetés | **aug. 20–27** | [Hilton kínai kel](https://kisvakondwebshop.hu/product/hilton-kinai-kel-1-gramm/) · [Granaat (Oázis)](https://oazis.hu/granaat-kinai-kel-vetomag-a.html) | Boltozódás ellen: ne bolygasd a gyökeret; háló a hernyók ellen |
-| Tavaszi káposzta / kel (előnevelés) | aug. eleje–közepe | **Cellás tálca** → később szabadföld / fólia | **aug. 20–27** | [Balkán káposzta](https://kisvakondwebshop.hu/product-category/zoldsegek/salata-retek-kaposzta/) | „Éhes rés” (hungry gap) kitöltésére; galambháló |
-
-### B) aug. 28–31 – átmenet (fogyó kezdődik; leszálló vége)
-
-| Növény | Általános idő | Ültetés módja | Hold 2026 | Mag link | Megjegyzés |
-|--------|---------------|---------------|-----------|----------|------------|
-| Hónapos retek | aug.–szept. eleje | **Szabadföld** vagy **cserép** | **aug. 28–31** ha leszállót elsőbbségnek veszed; ideálisabb: **szept. 9–11** | [Rozaria retek](https://kisvakondwebshop.hu/product-category/zoldsegek/salata-retek-kaposzta/) · [Vitessa (Oázis)](https://oazis.hu/vitessa-honapos-retek-vetomag-g.html) | ~6 hét; kevesebb bolhabogár |
-| Baby / tarlórépa (fehérrépa) | aug.–szept. | **Szabadföld helybe** (nem palántázni) | mint a retek | [Másodvetés kategória](https://kisvakondwebshop.hu/product-category/zoldsegek/masodvetesre-alkalmas-novenyek/) · Oázis gyökérzöldségek | 6–8 hét baby méret; levele is ehető |
-| Téli / sörretek | aug. eleje–szept. eleje | **Szabadföld** | **szept. 9–11** (jobb) | [Fehér téli retek](https://kisvakondwebshop.hu/product/feher-teli-retek-sorretek-3g/) · [Fekete retek](https://kisvakondwebshop.hu/product/fekete-retek-teliretek-vetomag-5-gramm/) | 80–90 nap; tárolható |
+| Prio | Növény | Hol | m² | Szerep |
+|------|--------|-----|-----|--------|
+| 1 | Téli retek | Emelt A | 3,0 | Tárolható gyökér |
+| 1 | Spenót | Üvegház + Emelt C | 2,0 + 1,5 | Téli friss levél |
+| 1 | Madársaláta | Emelt C + Üvegház | 1,5 + 0,6 | Hidegtűrő saláta |
+| 1 | Rukkola, mizuna, mustársaláta | Üvegház | 0,8+0,8+0,6 | Gyors baby leaf |
+| 1 | Pak choi | Üvegház | 1,2 | Őszi levél |
+| 2 | Téli saláta | Üvegház | 1,0 | Fejes / tépő télre |
+| 2 | Kínai kel | Üvegház | 1,5 | Fejes – késői, kockázatos |
+| 2 | Tavaszi káposzta/kel | Emelt B | 1,5 | Éhes rés |
+| 2 | Lóbab | Emelt B | 1,5 | Áttelelő hüvely |
+| 2 | Tarlórépa | Emelt D | 1,0 | Gyors gyökér + ehető levél |
+| 2 | Mángold | Emelt D | 1,0 | Fiatal levelek ősszel–tél elején |
+| 3 | Újhagyma | Emelt D | 0,5 | Folyamatos szedés |
+| 3 | Claytonia | Üvegház | 0,5 | Önmegújuló téli saláta |
+| 3 | Borsóhajtás | Üvegház tálca | 0,5 | Téli hajtás |
+| 3 | Mustár zöldtrágya | Emelt D (szukcesszió) | 1,0 | Talajvédelem tarlórépa után |
 
 ---
 
-## SZEPTEMBER – fő őszi vetés hónap
+## Vetési táblázat (teljes)
 
-Általános években: **szept. 1–10 / 11–20 / 21–30**.
+### A) aug. 20–27 – levél (leszálló + növő) → **most**
 
-### A) szept. 1–10 – gyökér + saláta ablak
+| Növény | Hol | Mód | Hold | Mag | Megjegyzés |
+|--------|-----|-----|------|-----|------------|
+| Pak choi | Üvegház → sáv 3 | Cellás tálca | **aug. 20–27** | [Pak choi](https://kisvakondwebshop.hu/product/pak-choi-shanghai-vetomag-mikrozoldseg-25-gramm/) · Bloomling bio | 2 mag/cella |
+| Kínai kel | Üvegház → sáv 2 | Cellás tálca, óvatos kiültetés | **aug. 20–27** | [Hilton](https://kisvakondwebshop.hu/product/hilton-kinai-kel-1-gramm/) · [Granaat](https://oazis.hu/granaat-kinai-kel-vetomag-a.html) | **Utolsó esély**; ne bolygasd a gyökeret; hernyóháló |
+| Tavaszi káposzta / kel | Emelt B (1,5 m²) | Cellás tálca → kiültetés | **aug. 20–27** | [Káposzta kategória](https://kisvakondwebshop.hu/product-category/zoldsegek/salata-retek-kaposzta/) | Galamb- / hernyóháló; 5–6 tő |
+| Mizuna | Üvegház 5 | Tálca / sorba | **aug. 20–27** | [Mizuna](https://oazis.hu/mizuna-azsiai-salata-vetomag-a.html) · Bloomling | |
+| Mustársaláta | Üvegház 6 | Tálca / sorba | **aug. 20–27** | [Mustár baby](https://kisvakondwebshop.hu/product/mustar-mikrozoldseg-vetomag-baby-leaf-3-gramm/) | Étkezési – nem zöldtrágya |
+| Rukkola | Üvegház 7 | Szórt / sorba | **aug. 20–27** | [Rukkola](https://kisvakondwebshop.hu/product/rukkola-vetomag-3-gramm/) · Bloomling | |
+| Spenót | Üvegház 1 (első fele) | Helybe | **aug. 20–27** | [Bio Matador](https://www.magozo.hu/termek/bio-spenot-vetomag-matador-3-g-rocalba/) | |
+| Mángold | Emelt D (1,0 m²) | Tálca vagy helybe | **aug. 20–27** | [Saláta–retek–káposzta kat.](https://kisvakondwebshop.hu/product-category/zoldsegek/salata-retek-kaposzta/) | Fiatal levelek |
+| Lóbab | Emelt B (1,5 m²) | Helybe | **aug. 20–27** | Oázis / helyi magbolt | Áttelelésre; szept. 11–24 is OK |
+| Claytonia | Üvegház 9 | Helybe / tálca | **aug. 20–27** | Specialista / külföldi bio mag | Ha nincs mag: → spenót |
+| Borsóhajtás | Üvegház 10 | Tálca, sűrűn | **aug. 20–27** | Bármely zöldborsó mag | Folyamatos vágás |
 
-| Növény | Általános idő | Ültetés módja | Hold 2026 | Mag link | Megjegyzés |
-|--------|---------------|---------------|-----------|----------|------------|
-| Hónapos retek (utolsó szabadvetés) | szept. eleje | Szabadföld / cserép | **szept. 9–11** | [Fehér téli / Rozaria](https://kisvakondwebshop.hu/product-category/zoldsegek/salata-retek-kaposzta/) | Utána inkább fólia alá |
-| Téli retek (fekete / fehér) | aug.–szept. eleje | Szabadföld | **szept. 9–11** | [Fekete retek](https://kisvakondwebshop.hu/product/fekete-retek-teliretek-vetomag-5-gramm/) | Tárolásra |
-| Fehérrépa / baby turnip | szept. eleje | Szabadföld helybe | **szept. 9–11** | Oázis gyökérzöldségek | Hűvös, nedves tartás |
-| Őszi / téli saláta | szept. | Cellás tálca vagy szabadföld | **szept. 9–11** (fogyó!) | [Helmut saláta](https://kisvakondwebshop.hu/product/helmut-salata-vetomag-2-gramm/) · [Gentilina](https://kisvakondwebshop.hu/product/gentilina-salata-vetomag-2-gramm/) | Fogyó Hold a felmagzás ellen |
-| Madársaláta (báránysaláta) | szept.–okt. | **Szabadföld** sorba | **szept. 9–11** | [Madársaláta Vit (Oázis)](https://oazis.hu/vit-madarsalata-vetomag-p.html) · [Rédei madársaláta](https://oazis.hu/madarsalata-vetomag-a.html) | Hidegtűrő téli saláta |
-| Újhagyma | szept. | Cellás tálca vagy szabadföld | **szept. 9–11** (ha gyökérként) / **11–24** (ha levélnek) | Oázis hagyma kategória | Folyamatos szedés |
+### B) szept. 9–11 – gyökér + saláta (leszálló + fogyó)
 
-### B) szept. 11–24 – levélfélék (legjobb szeptemberi ablak)
+| Növény | Hol | Mód | Hold | Mag | Megjegyzés |
+|--------|-----|-----|------|-----|------------|
+| **Téli retek** | **Emelt A (3,0 m²)** | Helybe | **szept. 9–11** | [Fekete](https://kisvakondwebshop.hu/product/fekete-retek-teliretek-vetomag-5-gramm/) · [Fehér](https://kisvakondwebshop.hu/product/feher-teli-retek-sorretek-3g/) | Teljes A ágyás |
+| Tarlórépa | Emelt D (1,0 m²) | Helybe (ne palántázd) | **szept. 9–11** | Oázis gyökér / másodvetés | Baby 6–8 hét |
+| Téli saláta | Üvegház 4 | Cellás tálca | **szept. 9–11** | [Helmut](https://kisvakondwebshop.hu/product/helmut-salata-vetomag-2-gramm/) · [Gentilina](https://kisvakondwebshop.hu/product/gentilina-salata-vetomag-2-gramm/) | |
+| Madársaláta | Emelt C (1,5) + Üvegház 8 | Sorba | **szept. 9–11** | [Vit](https://oazis.hu/vit-madarsalata-vetomag-p.html) · Bloomling bio | |
+| Újhagyma | Emelt D (0,5 m²) | Tálca / helybe | **szept. 9–11** | Oázis hagyma | Gyökérként fogyó ablak |
 
-| Növény | Általános idő | Ültetés módja | Hold 2026 | Mag link | Megjegyzés |
-|--------|---------------|---------------|-----------|----------|------------|
-| Ázsiai zöldek (mizuna, mustár, pak choi) | szept. eleje–közepe | Cellás tálca → szabadföld / fólia | **szept. 11–24** | [Pak choi](https://kisvakondwebshop.hu/product/pak-choi-shanghai-vetomag-mikrozoldseg-25-gramm/) · [Mizuna](https://oazis.hu/mizuna-azsiai-salata-vetomag-a.html) · [Mustár](https://kisvakondwebshop.hu/product/mustar-mikrozoldseg-vetomag-baby-leaf-3-gramm/) | Alagút / fátyol jelentősen javít |
-| Rukkola | szept. | Szabadföld / konténer | **szept. 11–24** | [Rukkola](https://kisvakondwebshop.hu/product/rukkola-vetomag-3-gramm/) | Kevesebb felmagzás, mint nyáron |
-| Spenót (téli / Matador) | szept.–okt. | Szabadföld vagy fólia | **szept. 11–24** | [Téli óriás spenót](https://kisvakondwebshop.hu/product/teli-orias-spenot-30g/) · [Matador](https://kisvakondwebshop.hu/product/matador-spenot-vetomag-65-gramm/) | Áttelelésre is |
-| Koriander | szept. | Helybe / cserép | **szept. 11–24** | [Koriander](https://kisvakondwebshop.hu/product/koriander-vetomag-2-gramm/) | Fóliában áttelelhet |
-| Mángold | szept. (fiatal levelek) | Szabadföld / tálca | **szept. 11–24** | [Mángold Mix](https://kisvakondwebshop.hu/product-category/zoldsegek/salata-retek-kaposzta/) | Fiatal levelek őszi szedése |
-| Borsóhajtás (shoot) | szept.–okt. | **Konténer / tálca fóliában** | **szept. 11–24** | Borsóvetőmag (bármely zöldborsó) – Kisvakond / Oázis | Télen is szedhető hajtás; tavasszal hüvely is lehet |
-| Kelkáposzta / kale (fólia) | szept. | Cellás tálca → fólia | **szept. 11–24** | [Kelbimbó / kel kategória](https://kisvakondwebshop.hu/product-category/zoldsegek/salata-retek-kaposzta/) | Hidegtűrő; chipshez is |
+### C) szept. 11–24 – levél (legjobb szeptemberi ablak)
 
-### C) szept. 21–30 – talajtakarás + védett hely
+| Növény | Hol | Mód | Hold | Mag | Megjegyzés |
+|--------|-----|-----|------|-----|------------|
+| Spenót | Üvegház 1 (maradék) + Emelt C (1,5) | Helybe | **szept. 11–24** | Bio Matador / Téli óriás | Fő szabadföldi + üvegház töltés |
+| Mizuna, mustár, rukkola | Üvegház 5–7 | Pótlás | **szept. 11–24** | lásd fent | Második hullám |
+| Pak choi / kínai kel | Üvegház 2–3 | Kiültetés tálcából | **szept. 11–24** | – | Hernyóháló |
+| Lóbab (ha aug.-ban nem ment) | Emelt B | Helybe | **szept. 11–24** | – | |
+| Tavaszi kel kiültetés | Emelt B | Palánta | **szept. 11–24** | – | Ha tálcán kész |
+| Borsóhajtás pótlás | Üvegház 10 | Új tálca | **szept. 11–24** | Borsómag | |
 
-| Növény | Általános idő | Ültetés módja | Hold 2026 | Mag link | Megjegyzés |
-|--------|---------------|---------------|-----------|----------|------------|
-| Mustár zöldtrágya | szept. | Szabadföld szórt / sorba | **szept. 11–24** (levél) | [Fehér mustár](https://kisvakondwebshop.hu/product/feher-mustar-vetomag-8-gramm/) | Talajvédelem + méhlegelő |
-| Lóbab / mezei bab (áttelelő) | szept. | Szabadföld helybe | **szept. 11–24** | Oázis / helyi magbolt | Éhes résre (máj–jún.) hüvely |
-| Téli saláta konténerben | szept. vége | **Nagy cserép / gombatálca** fóliában | következő fogyó+leszálló: **nov. 3–9** | [Helmut](https://kisvakondwebshop.hu/product/helmut-salata-vetomag-2-gramm/) | Télen keveset öntözz |
-| Claytonia / téli porcsin* | szept. | Szabadföld / hidegágy | **szept. 11–24** | Ritka HU-ban – specialista webshop / külföldi mag | Önmegújuló téli saláta |
+### D) szept. 25 után / okt. – szukcesszió
 
-\*Claytonia (winter purslane) a videókban van; magyar webshopokban ritka – ha nem találod, madársaláta + spenót pótolja.
-
----
-
-## OKTÓBER – védett helyek hónapja
-
-Általános években: **okt. 1–10 / 11–20 / 21–31**. Szabadföldön már csak a legkeményebbek.
-
-### A) okt. 1–10 – gyökér / saláta (ha még meleg a talaj)
-
-| Növény | Általános idő | Ültetés módja | Hold 2026 | Mag link | Megjegyzés |
-|--------|---------------|---------------|-----------|----------|------------|
-| Madársaláta | okt. eleje | Szabadföld / fólia | **okt. 7–10** (leszálló; fogyó okt. 26-tól – kompromisszum) | [Vit madársaláta](https://oazis.hu/vit-madarsalata-vetomag-p.html) | Alagút alatt megbízhatóbb |
-| Spenót | okt. eleje | Szabadföld / fólia | **okt. 10–21** (levélablak) | [Téli óriás](https://kisvakondwebshop.hu/product/teli-orias-spenot-30g/) | |
-
-### B) okt. 10–21 – fólia / hidegágy (legjobb októberi ablak)
-
-| Növény | Általános idő | Ültetés módja | Hold 2026 | Mag link | Megjegyzés |
-|--------|---------------|---------------|-----------|----------|------------|
-| Spenót | okt. | Fólia / alagút | **okt. 10–21** | [Matador](https://kisvakondwebshop.hu/product/matador-spenot-vetomag-65-gramm/) | |
-| Rukkola | okt. | Fólia / konténer | **okt. 10–21** | [Rukkola](https://kisvakondwebshop.hu/product/rukkola-vetomag-3-gramm/) | |
-| Ázsiai baby leaf | okt. | **Szaporító tálca** → fóliaágy | **okt. 10–21** | [Pak choi](https://kisvakondwebshop.hu/product/pak-choi-shanghai-vetomag-mikrozoldseg-25-gramm/) · [Mustár](https://kisvakondwebshop.hu/product/mustar-mikrozoldseg-vetomag-baby-leaf-3-gramm/) | Tágabb térállás (kevesebb fény) |
-| Borsóhajtás | okt. | Konténer fóliában | **okt. 10–21** | Borsóvetőmag | Folyamatos szedés |
-| Téli saláta | okt. | Nagy cserép / tálca fóliában | inkább **nov. 3–9** (fogyó) | [Helmut](https://kisvakondwebshop.hu/product/helmut-salata-vetomag-2-gramm/) | |
-
-### C) okt. 21–31 – karbantartás, nem új vetés
-
-- Leszálló vége (okt. 21); felszálló + telihold felé: **talajtakarás, mulcs, hálózás, öntözés csökkentése**.
-- Új vetés helyett: ápolás, ritkítás, sárga levelek eltávolítása.
+| Növény | Hol | Mikor | Megjegyzés |
+|--------|-----|-------|------------|
+| Mustár **zöldtrágya** | Emelt D, a tarlórépa 1,0 m² helyén | Tarlórépa után (~okt., levélablakban ha lehet) | [Fehér mustár](https://kisvakondwebshop.hu/product/feher-mustar-vetomag-8-gramm/); tavasszal beásás / mulcs előtt |
 
 ---
 
-## NOVEMBER – csak védetten
+## Heti teendőlista – 2026. aug. 20 – szept. 30
 
-Általános években: **nov. 1–10 / 11–20** (fólia), utána inkább pihenés.
+### Hét 1 · aug. 20–27 *(levélablak)*
 
-| Időszak | Növény | Ültetés módja | Hold 2026 | Mag link |
-|---------|--------|---------------|-----------|----------|
-| nov. 3–9 | Saláta, gyökér (ha még meleg a közeg) | Fólia / beltéri tálca | **nov. 3–9** | [Helmut](https://kisvakondwebshop.hu/product/helmut-salata-vetomag-2-gramm/) |
-| nov. 9–17 | Spenót, rukkola, borsóhajtás, mustárlevél | Fólia / konténer | **nov. 9–17** | [Spenót](https://kisvakondwebshop.hu/product/teli-orias-spenot-30g/) · [Rukkola](https://kisvakondwebshop.hu/product/rukkola-vetomag-3-gramm/) |
-| nov. 30+ | Csak beltéri / fűtött üvegház | Tálca | nov. 30 – dec. 9 (gyökér/saláta) | – |
+- [ ] Magok: teljes lista (bio előbb) – beleértve kínai kel, kel, lóbab, mángold, borsó, mustár zöldtrágya, claytonia ha találsz
+- [ ] Jelöld ki a 4×3 m² + üvegház sávokat (A–D, 1–10)
+- [ ] Emelt A: előkészítés téli reteknek (vetés még nem)
+- [ ] **Vetés / tálca:** pak choi, kínai kel, tavaszi kel, mizuna, mustársaláta, rukkola, spenót (üvegház fele), mángold, lóbab, claytonia, borsóhajtás-tálca
+- [ ] Csigaellenőrzés tálcákon; öntözés egyenletesen
 
----
+### Hét 2 · aug. 28 – szept. 3 *(átmenet)*
 
-## Gyors bevásárlólista (prioritás most)
+- [ ] Ritkítás tálcákon (1 tő/cella káposztáknál)
+- [ ] Emelt C–D: komposzt, simítás
+- [ ] Fátyol + hernyó-/galambháló előkészítés (B és C ágyás)
+- [ ] Ne vess gyökeret (nincs leszálló)
 
-| Prioritás | Termék | Link |
-|-----------|--------|------|
-| 1 | Rukkola | https://kisvakondwebshop.hu/product/rukkola-vetomag-3-gramm/ |
-| 1 | Pak choi | https://kisvakondwebshop.hu/product/pak-choi-shanghai-vetomag-mikrozoldseg-25-gramm/ |
-| 1 | Mustársaláta | https://kisvakondwebshop.hu/product/mustar-mikrozoldseg-vetomag-baby-leaf-3-gramm/ |
-| 1 | Koriander | https://kisvakondwebshop.hu/product/koriander-vetomag-2-gramm/ |
-| 1 | Mizuna | https://oazis.hu/mizuna-azsiai-salata-vetomag-a.html |
-| 2 | Téli óriás spenót | https://kisvakondwebshop.hu/product/teli-orias-spenot-30g/ |
-| 2 | Helmut / Gentilina saláta | https://kisvakondwebshop.hu/product/helmut-salata-vetomag-2-gramm/ |
-| 2 | Madársaláta | https://oazis.hu/vit-madarsalata-vetomag-p.html |
-| 2 | Fehér / fekete téli retek | https://kisvakondwebshop.hu/product/feher-teli-retek-sorretek-3g/ · https://kisvakondwebshop.hu/product/fekete-retek-teliretek-vetomag-5-gramm/ |
-| 2 | Kínai kel | https://kisvakondwebshop.hu/product/hilton-kinai-kel-1-gramm/ |
-| 3 | Fehér mustár (zöldtrágya) | https://kisvakondwebshop.hu/product/feher-mustar-vetomag-8-gramm/ |
-| 3 | Mángold Mix | https://kisvakondwebshop.hu/product-category/zoldsegek/salata-retek-kaposzta/ |
+### Hét 3 · szept. 4–10 *(gyökér/saláta: 9–11)*
 
----
+- [ ] **szept. 9–11:** téli retek → **teljes Emelt A (3 m²)**
+- [ ] Ugyanekkor: tarlórépa Emelt D 1,0 m²; újhagyma 0,5 m²; téli saláta tálca; madársaláta Emelt C + üvegház 8
+- [ ] Mulcs a retek- és tarlórépa-sorok között
 
-## Gyakorlati tippek a videókból (röviden)
+### Hét 4 · szept. 11–17 *(levélablak)*
 
-- **Cellás tálca** ázsiai zöldekhez és pak choihoz: csiga ellen + helytakarékos, amíg a paradicsom/uborka kiürül.
-- Kiültetés után **tágabb térállás** (kb. 20–22 cm): ősszel kevesebb a fény.
-- **Alagút / fátyolfólia / hidegágy** a szabadföldi téli salátákhoz.
-- Télen fóliában: **ritka öntözés** (akár 1–2 hetente), különben penész.
-- Retek / fehérrépa: most kevesebb a bolhabogár – jó időablak.
-- Káposztafélék: **hernóháló** időben.
+- [ ] Spenót: üvegház 1 maradék + Emelt C 1,5 m²
+- [ ] Baby leaf pótlás (5–7); pak choi / kínai kel / tavaszi kel kiültetés
+- [ ] Lóbab pótlás, ha ritka
+- [ ] Emelt A: retek ritkítás 8–12 cm
+- [ ] Hálók fel a káposztafélékre
 
----
+### Hét 5 · szept. 18–24 *(levélablak vége)*
 
-## Mit pontosítsunk még? (ajánlott következő prompt)
+- [ ] Utolsó pótlások: spenót, madársaláta, borsóhajtás-tálca
+- [ ] Emelt C: fátyol készenlét
+- [ ] Üvegház: nappali szellő, esti zárás
+- [ ] Tarlórépa / retek gyomlálás, ritkítás
+- [ ] Saláta tálca erősítés
 
-Ha a tervet „tökéletesre” akarod hangolni, ezeket írd meg / kérdezd:
+### Hét 6 · szept. 25–30 *(védelem, nem új fővetés)*
 
-1. **Helyszín:** melyik megye / város? (fagyos napok száma, első őszi fagy tipikusan mikor)
-2. **Infrastruktúra:** van-e fólia, üvegház, csak szabadföld, balkon, magaságyás?
-3. **Terület mérete:** hány m² / hány ágyás szabadul fel most?
-4. **Cél:** friss saláta télre, tárolható gyökér, áttelelő zöld, vagy mindhárom?
-5. **Ízlés / kizárások:** pl. nincs koriander, nem szereted a csípős mustárt, csak bio mag, stb.
-6. **Hold:** elég a leszálló+növő/fogyó, vagy kell **Maria Thun szerinti elem-nap** (gyökér/levél/virág/termés nap) is?
-7. **Magforrás prioritás:** csak Kisvakond, vagy Oázis / Rédei / bio (pl. a3oraskert) is OK?
-8. **Időráfordítás:** heti hány óra kertészkedés?
-9. **Öntözés:** automata / kézi / esőre hagyatkozol?
-10. **Következő lépés a fájlban:** szeretnél-e **heti teendőlistát** (aug. 20–27 napokra lebontva) és **kiültetési térképet**?
-
-Példa „tökéletesítő” prompt:
-
-> „Frissítsd a `nyarvegi-oszi-ultetesi-terv-2026.md` fájlt: Pest megye, van 12 m² magaságyás + 6 m² fólia, cél a téli friss levél + 1 ágyás tárolható retek. Bio mag preferált. Adj heti teendőlistát aug. 20–szept. 30-ra, és szűrd a táblázatot csak arra, ami nálam reális.”
+- [ ] Holdablak nélkül: ápolás, mulcs, háló
+- [ ] Téli saláta kiültetés üvegház 4-be, ha kész
+- [ ] Öntözés csökkentése üvegházban
+- [ ] Jegyezd: tarlórépa után Emelt D 1 m² → **mustár zöldtrágya** (okt.)
+- [ ] Következő levélablak: **okt. 10–21**
 
 ---
 
-*A holdablakok közelítések a leszálló pálya (D.N.–A.N.) és a szinódikus fázisok metszetéből. Napi elem-napokhoz a hivatalos Vetési naptár a mérvadó.*
+## Bio bevásárlólista
+
+| Prio | Termék | Link / hol |
+|------|--------|------------|
+| 1 | Téli retek (fekete / fehér) | [Fekete](https://kisvakondwebshop.hu/product/fekete-retek-teliretek-vetomag-5-gramm/) · [Fehér](https://kisvakondwebshop.hu/product/feher-teli-retek-sorretek-3g/) |
+| 1 | Spenót bio | [Matador](https://www.magozo.hu/termek/bio-spenot-vetomag-matador-3-g-rocalba/) · [Bloomling](https://www.bloomling.hu/kerti-kiegeszitok-es-felszerelesek/bio-leveles-zoeldsegek) |
+| 1 | Rukkola, mizuna, mustársaláta | Bloomling · [Rukkola](https://kisvakondwebshop.hu/product/rukkola-vetomag-3-gramm/) · [Mizuna](https://oazis.hu/mizuna-azsiai-salata-vetomag-a.html) · [Mustár](https://kisvakondwebshop.hu/product/mustar-mikrozoldseg-vetomag-baby-leaf-3-gramm/) |
+| 1 | Pak choi | [Shanghai](https://kisvakondwebshop.hu/product/pak-choi-shanghai-vetomag-mikrozoldseg-25-gramm/) |
+| 2 | Madársaláta, téli saláta | [Vit](https://oazis.hu/vit-madarsalata-vetomag-p.html) · [Helmut](https://kisvakondwebshop.hu/product/helmut-salata-vetomag-2-gramm/) |
+| 2 | Kínai kel | [Hilton](https://kisvakondwebshop.hu/product/hilton-kinai-kel-1-gramm/) · [Granaat](https://oazis.hu/granaat-kinai-kel-vetomag-a.html) |
+| 2 | Tavaszi káposzta / kel | [Kategória](https://kisvakondwebshop.hu/product-category/zoldsegek/salata-retek-kaposzta/) |
+| 2 | Tarlórépa / baby fehérrépa | Oázis gyökér · [Másodvetés](https://kisvakondwebshop.hu/product-category/zoldsegek/masodvetesre-alkalmas-novenyek/) |
+| 2 | Mángold, újhagyma, lóbab | Oázis / helyi magbolt · Kisvakond kategóriák |
+| 3 | Fehér mustár (zöldtrágya) | [8 g](https://kisvakondwebshop.hu/product/feher-mustar-vetomag-8-gramm/) |
+| 3 | Claytonia | Specialista / külföldi bio – pótlék: extra madársaláta |
+| 3 | Zöldborsó (hajtásnak) | Bármely étkezési borsó mag |
+| 3 | Tálca, fátyol, hernyó-/galambháló | kertészet |
+
+---
+
+## Gyakorlati tippek
+
+- **24 m²-en minden belefér**, ha tartod a sávokat: ne „folyjon szét” a rukkola a kínai kel helyére.
+- Kínai kel aug. 20+: üvegház kötelező; boltozódás ellen **ne ültesd át kétszer**, ne szárítsd ki.
+- Brassica-sűrűség (retek, kel, pak choi, kínai kel, mustár): **forgó + háló**; zöldtrágya-mustár csak D ágyás tarlórépa után.
+- Emelt C levelek: **fátyol**; üvegház = téli biztos pont.
+- Üvegház télen: ritka öntözés, nappali szellő.
+- Borsóhajtás és claytonia **kis m²**-en sokat ad – ezért fértek be a 0,5-ös sávokba.
+
+---
+
+## Október–november
+
+| Időszak | Teendő |
+|---------|--------|
+| **okt. 10–21** | Üvegház pótlás (spenót, rukkola, baby leaf); tarlórépa szedés → **mustár zöldtrágya** Emelt D 1 m² |
+| **okt. vége** | Emelt C fátyol tartósan; retek ellenőrzés |
+| **nov. 3–9** | Saláta pótlás üvegházban (fogyó + leszálló) |
+| **nov.–dec.** | Téli retek tárolóra; levelek szedése; lóbab / kel átteleltetése |
+
+---
+
+### Gyors térkép (vázlat)
+
+```
+EMELT 12 m²                         ÜVEGHÁZ 12 m²
+┌─────────┬─────────┐               ┌──────────────────────────┐
+│ A 3 m²  │ B 3 m²  │               │ 1 Spenót 2.0             │
+│ TÉLI    │ Lóbab   │               │ 2 Kínai kel 1.5          │
+│ RETEK   │ 1.5 +   │               │ 3 Pak choi 1.2           │
+│         │ Kel 1.5 │               │ 4 Téli saláta 1.0        │
+├─────────┼─────────┤               │ 5–7 Mizuna/mustár/rukk.  │
+│ C 3 m²  │ D 3 m²  │               │ 8 Madársaláta 0.6        │
+│ Madár-  │ Tarló 1 │               │ 9 Claytonia 0.5          │
+│ saláta  │ Mángold1│               │10 Borsóhajtás 0.5        │
+│ 1.5 +   │ Újhagyma│               │ + járó ~2.5              │
+│ Spenót  │ 0.5     │               └──────────────────────────┘
+│ 1.5     │ →mustár │
+│         │  zöldtr.│
+└─────────┴─────────┘
+```
+
+---
+
+*Holdablakok: leszálló × fázis metszet. Napi elem-napokhoz a hivatalos Vetési naptár a mérvadó.*
