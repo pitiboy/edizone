@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1"
+creator="Locus Map Lite for iOS"
+xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1"
+xmlns:locus="http://www.locusmap.eu">
+<wpt lat="47.549428139511186" lon="18.26721827236872">
+	<ele>199.0</ele>
+	<time>2026-08-08T11:23:49.721Z</time>
+	<name>Borsófa </name>
+	<sym>friends-home</sym>
+	<extensions>
+		<gpxtpx:TrackPointExtension>
+			<gpxtpx:course>190.63197</gpxtpx:course>
+		</gpxtpx:TrackPointExtension>
+		<locus:waypointUUID>517ab987-c666-4d45-9e58-d414b9ee7e46</locus:waypointUUID>
+		<locus:horAcc>4.7486515</locus:horAcc>
+		<locus:verAcc>8.449969</locus:verAcc>
+	</extensions>
+</wpt>
+<wpt lat="47.54940472134264" lon="18.267234347776057">
+	<ele>199.0</ele>
+	<time>2026-08-08T11:24:50.138Z</time>
+	<name>Bodza </name>
+	<sym>friends-home</sym>
+	<extensions>
+		<locus:waypointUUID>77295136-b7b3-432a-aeb7-d4e84bde57af</locus:waypointUUID>
+		<locus:horAcc>4.823844</locus:horAcc>
+		<locus:verAcc>3.0</locus:verAcc>
+	</extensions>
+</wpt>
+<wpt lat="47.549491607978595" lon="18.267315027231746">
+	<ele>-3.099999992159408e+38</ele>
+	<time>2026-08-08T11:50:18.948Z</time>
+	<name>Dyospiros</name>
+	<sym>friends-home</sym>
+	<extensions>
+		<locus:waypointUUID>70515d68-e33f-4886-b192-ccd6f96f3643</locus:waypointUUID>
+		<locus:horAcc>0.0</locus:horAcc>
+	</extensions>
+</wpt>
+<wpt lat="47.549456156197834" lon="18.26725522224521">
+	<ele>-3.099999992159408e+38</ele>
+	<time>2026-08-08T11:34:51.202Z</time>
+	<name>Aranyeső</name>
+	<sym>friends-home</sym>
+	<extensions>
+		<locus:waypointUUID>83ea54f5-143c-4b65-95f7-d390bd455a9b</locus:waypointUUID>
+		<locus:horAcc>0.0</locus:horAcc>
+	</extensions>
+</wpt>
+<wpt lat="47.54946851996894" lon="18.26724744325611">
+	<ele>199.0</ele>
+	<time>2026-08-08T11:23:31.255Z</time>
+	<name>Fanyarka</name>
+	<sym>friends-home</sym>
+	<extensions>
+		<locus:waypointUUID>260e7c42-886e-4437-9058-c3525f7d74e8</locus:waypointUUID>
+		<locus:horAcc>4.7486515</locus:horAcc>
+		<locus:verAcc>3.841729</locus:verAcc>
+	</extensions>
+</wpt>
+<wpt lat="47.54952193253561" lon="18.267337926394845">
+	<ele>-3.099999992159408e+38</ele>
+	<time>2026-08-08T11:49:40.604Z</time>
+	<name>Meggy </name>
+	<sym>friends-home</sym>
+	<extensions>
+		<locus:waypointUUID>15fece3a-9f55-4413-bf86-ceacbbab92ee</locus:waypointUUID>
+		<locus:horAcc>0.0</locus:horAcc>
+	</extensions>
+</wpt>
+<wpt lat="47.54950020825292" lon="18.267250307464508">
+	<ele>-3.099999992159408e+38</ele>
+	<time>2026-08-12T10:05:21.942Z</time>
+	<name>Naspolya </name>
+	<sym>friends-home</sym>
+	<extensions>
+		<locus:waypointUUID>2075a309-bc1e-4233-aa2d-909e367c715e</locus:waypointUUID>
+		<locus:horAcc>0.0</locus:horAcc>
+	</extensions>
+</wpt>
+<wpt lat="47.549430208046395" lon="18.26723900921041">
+	<ele>199.0</ele>
+	<time>2026-08-08T11:24:03.199Z</time>
+	<name>Fanyarka </name>
+	<sym>friends-home</sym>
+	<extensions>
+		<locus:waypointUUID>b5f1083a-ccae-4303-b555-449810d79169</locus:waypointUUID>
+		<locus:horAcc>4.920885</locus:horAcc>
+		<locus:verAcc>3.0</locus:verAcc>
+	</extensions>
+</wpt>
+<wpt lat="47.54943201777501" lon="18.26725075338493">
+	<ele>-3.099999992159408e+38</ele>
+	<time>2026-08-08T11:36:39.328Z</time>
+	<name>Borsófa </name>
+	<sym>friends-home</sym>
+	<extensions>
+		<locus:waypointUUID>74a609fd-4f44-40c1-a664-2b07ed824ea0</locus:waypointUUID>
+		<locus:horAcc>0.0</locus:horAcc>
+	</extensions>
+</wpt>
+<wpt lat="47.54950011612338" lon="18.267219528786285">
+	<ele>-3.099999992159408e+38</ele>
+	<time>2026-08-08T11:30:09.406Z</time>
+	<name>Vad kajszi  </name>
+	<sym>friends-home</sym>
+	<extensions>
+		<locus:waypointUUID>da54454a-e438-46ae-ad0a-92663c7470fa</locus:waypointUUID>
+		<locus:horAcc>0.0</locus:horAcc>
+	</extensions>
+</wpt>
+<wpt lat="47.54949408148164" lon="18.267250374063394">
+	<ele>-3.099999992159408e+38</ele>
+	<time>2026-08-08T11:30:43.525Z</time>
+	<name>Alma </name>
+	<sym>friends-home</sym>
+	<extensions>
+		<locus:waypointUUID>8ca635b4-9b04-44e5-9392-97351a7a1dd1</locus:waypointUUID>
+		<locus:horAcc>0.0</locus:horAcc>
+	</extensions>
+</wpt>
+<wpt lat="47.54933110597277" lon="18.26742641851407">
+	<ele>201.0</ele>
+	<time>2026-08-08T10:17:21.137Z</time>
+	<name>Filagoria </name>
+	<sym>friends-home</sym>
+	<extensions>
+		<locus:waypointUUID>a1216be6-33a7-4dd0-bab6-966f30494248</locus:waypointUUID>
+		<locus:horAcc>7.2598557</locus:horAcc>
+		<locus:verAcc>3.0821705</locus:verAcc>
+	</extensions>
+</wpt>
+<wpt lat="47.549504280523" lon="18.267340507798764">
+	<ele>-3.099999992159408e+38</ele>
+	<time>2026-08-08T11:49:53.292Z</time>
+	<name>Meggy </name>
+	<sym>friends-home</sym>
+	<extensions>
+		<locus:waypointUUID>fc307468-d7c9-4489-8b8a-8cc5548fea6d</locus:waypointUUID>
+		<locus:horAcc>0.0</locus:horAcc>
+	</extensions>
+</wpt>
+</gpx>
