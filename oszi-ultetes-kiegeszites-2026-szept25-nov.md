@@ -31,7 +31,7 @@ A fő terv szerint eddigre **kész vagy folyamatban** kell legyen:
 |---------|-----|----------|---------------------|----------------|
 | **A) Walipini + üvegház — tél előtti védett vetés** | Walipini (passzív) **és/vagy** 12 m² üvegház | okt. 10-től nov. 17-ig (holdablakok) | Walipini: föld+hőtárolás, **nincs** szükséges fűtés. Üvegház: okt–nov **fűtés nélkül**; **dec.–feb.** temperált fűtés *feltételezve* (túlélés + lassú növekedés) | Utolsó értelmes vetések, pótlások, borsóhajtás, claytonia |
 | **B) Szabadföldi emeltágyás** | Emelt A–D (12 m²) | okt. 3–10 (fogyó), korlátozott | Fátyol Emelt **C**; első fagy **okt. közepe–vége** | Mustár zöldtrágya, mulcs, betakarítás — **nincs** új fő kultúra fagy után |
-| **C) Téli fázis (nov. vége – tavasz)** | Minden zóna | nov.–márc. | Üvegház fűtés később; walipini passzív; Emelt C fátyol | Szedés, tárolás, átteleltetés — nem vetés |
+| **C) Téli fázis (nov. vége – tavasz)** | Minden zóna | nov.–márc. | Üvegház fűtés később; walipini passzív; Emelt C fátyol | Szedés, tárolás, átteleltetés + **téli vetés** (részletek: [`tel-ala-vetes-2026-2027.md`](tel-ala-vetes-2026-2027.md)) |
 
 > **Walipini:** a fő tervben nincs m² lebontva. Itt **logikai zónaként** kezeljük: passzív, földbe süllyesztett ágyás(ok), ahol októberben vetett spenót / madársaláta / claytonia **kevesebb fagyveszélyt** kap, mint a sima emelt C. Ha nincs walipini, ugyanezek a sorok **üvegház sáv 1, 8, 9** + Emelt C fátyol alatt.
 
@@ -46,7 +46,8 @@ Leszálló (hozzávetőleges, csomópontok: [iCalendar moon gardening 2026](http
 | **okt. 3–17** | Igen |
 | **okt. 18 – nov. 2** | Nem (felszálló) — csak ápolás, betakarítás |
 | **nov. 3–17** | Igen |
-| **nov. 18 – dec. …** | Nem — téli fázis, vetés nélkül |
+| **nov. 18 – dec. 29** | Nem — szedés, mulcs, fűtés be |
+| **dec. 30 – már. …** | Részben — **téli vetés** üvegház / walipini / korlátozott kültér: [`tel-ala-vetes-2026-2027.md`](tel-ala-vetes-2026-2027.md) |
 
 Metszet a fő terv szabályaival:
 
@@ -133,13 +134,15 @@ Walipiniben **ne** brassica nagy fejek (kínai kel, kel) — forgó és hernyó 
 | Üvegház | 1 spenót, 4 saláta, 5–7 baby, 9 claytonia, 10 borsó | Szedés; **fűtés be** temperált szintre dec.-től *ha elérhető* |
 | Walipini | Passzív spenót / claytonia | Alacsonyabb intenzitású szedés mint üvegházban |
 
-### C3) Jan.–márc. (vázlat — fűtött üvegház)
+### C3) Dec. – márc. — téli vetés és áttelelés
 
 | Zóna | Vetés | Megjegyzés |
 |------|-------|------------|
-| Üvegház (fűtött) | **Nincs** új szabadföldi vetés | Fenntartás + borsóhajtás-tálca ciklus |
-| Walipini | **Nincs** új vetés | Meglévő túlélők |
-| Emelt ágyások | **Nincs** | Retek tároló; kel/lóbab áttelelés |
+| Üvegház (fűtött) | **Igen** — borsóhajtás, mikrozöld, spenót, saláta, baby leaf | Leszálló hold ablakok dec. 30-tól |
+| Walipini | **Igen** — spenót, claytonia, madár (jan.–már.) | Passzív; enyhébb ablak |
+| Emelt ágyások (kültér) | **Korlátozott** — főleg **áttelelők** + febr.–már. C pótlás fátyol alatt | Retek tároló; kel/lóbab áttelelés |
+
+**Teljes táblázat, holdnapok, Hét 14–23:** [`tel-ala-vetes-2026-2027.md`](tel-ala-vetes-2026-2027.md).
 
 ---
 
@@ -156,7 +159,8 @@ Walipiniben **ne** brassica nagy fejek (kínai kel, kel) — forgó és hernyó 
 | **okt. 18 – nov. 2** | Mind | Betakarítás, mulcs, fátyol — **vetés nélkül** | — |
 | **nov. 3–9** | Üvegház **A** | Téli saláta pótlás tálca (4) | fogyó |
 | **nov. 9–17** | Üvegház **A** | Borsóhajtás, baby leaf utolsó hullám | növő |
-| **nov. 18+** | Mind | **Téli fázis** — vetés nélkül | — |
+| **nov. 18 – dec. 29** | Mind | Szedés, mulcs, fűtés — **vetés nélkül** | — |
+| **dec. 30+** | Üvegház / walipini / kültér | **Téli vetés** — lásd `tel-ala-vetes-2026-2027.md` | leszálló |
 
 ---
 
@@ -206,12 +210,13 @@ Walipiniben **ne** brassica nagy fejek (kínai kel, kel) — forgó és hernyó 
 - [ ] Üvegház: tömítés, huzat ellen
 - [ ] Emelt B: lóbab szár rövidítés / rögzítés télre
 
-### Hét 13 · nov. 18–30 *(téli fázis kezdete)*
+### Hét 13 · nov. 18–30 *(téli fázis kezdete — őszi vetés zárva)*
 
-- [ ] **Vetés vége** — csak szedés, mulcs, tárolás
+- [ ] **Őszi vetés vége** — szedés, mulcs, tárolás
 - [ ] Téli retek: állapot jegyzet (dec. betakarítás tervezés)
 - [ ] Üvegház fűtés előkészítés (dec.-re)
 - [ ] Walipini: takaró anyag ellenőrzés
+- [ ] Következő: **téli vetés** dec. 30-tól — [`tel-ala-vetes-2026-2027.md`](tel-ala-vetes-2026-2027.md) Hét 14+
 
 ---
 
