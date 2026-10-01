@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 680" font-family="Arial, Helvetica, sans-serif">
+  <rect width="920" height="680" fill="#fafafa"/>
+  <text x="460" y="32" text-anchor="middle" font-size="20" font-weight="bold">WIRING DIAGRAM  12 V Controller, Motor, Hall Sensor, Manual Button</text>
+  <text x="460" y="54" text-anchor="middle" font-size="12" fill="#555">Low-side MOSFET switching | Common ground at PSU | Fuse motor line 500 mA</text>
+
+  <!-- PSU (20) -->
+  <rect x="60" y="120" width="120" height="80" fill="#fff" stroke="#333" stroke-width="2"/>
+  <text x="120" y="155" text-anchor="middle" font-size="13" font-weight="bold">(20)</text>
+  <text x="120" y="175" text-anchor="middle" font-size="11">12 V PSU 2A</text>
+  <text x="120" y="192" text-anchor="middle" font-size="10">AC in í +12 / GND</text>
+
+  <!-- Controller (21) -->
+  <rect x="320" y="100" width="200" height="120" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="420" y="130" text-anchor="middle" font-size="13" font-weight="bold">(21) Controller</text>
+  <text x="420" y="150" text-anchor="middle" font-size="10">Arduino Nano + DS3231</text>
+  <text x="340" y="175" font-size="10">D2 ê Hall (22)</text>
+  <text x="340" y="190" font-size="10">D3 í MOSFET gate</text>
+  <text x="340" y="205" font-size="10">D4 ê Button (23)</text>
+
+  <!-- MOSFET (24) -->
+  <rect x="580" y="200" width="70" height="90" fill="#fff" stroke="#333"/>
+  <text x="615" y="235" text-anchor="middle" font-size="11">(24)</text>
+  <text x="615" y="252" text-anchor="middle" font-size="9">IRLZ44N</text>
+  <text x="615" y="268" text-anchor="middle" font-size="9">D S G</text>
+
+  <!-- Motor (14) -->
+  <circle cx="780" cy="240" r="35" fill="#eceff1" stroke="#455a64" stroke-width="2"/>
+  <text x="780" y="245" text-anchor="middle" font-size="11">(14) M</text>
+  <text x="780" y="290" text-anchor="middle" font-size="10">12V gearmotor</text>
+
+  <!-- Diode (25) -->
+  <path d="M720 180 L750 180 L750 210 L720 210 Z" fill="#fff" stroke="#333"/>
+  <line x1="735" y1="180" x2="735" y2="210" stroke="#333"/>
+  <polygon points="735,195 725,188 725,202" fill="#333"/>
+  <text x="755" y="200" font-size="10">(25) 1N5819</text>
+
+  <!-- Hall (22) -->
+  <rect x="320" y="280" width="90" height="50" fill="#fff9c4" stroke="#f9a825"/>
+  <text x="365" y="310" text-anchor="middle" font-size="11">(22) Hall</text>
+
+  <!-- Button (23) -->
+  <circle cx="365" cy="380" r="22" fill="#ffcdd2" stroke="#c62828" stroke-width="2"/>
+  <text x="365" y="385" text-anchor="middle" font-size="10">(23)</text>
+
+  <!-- Fuse -->
+  <rect x="680" y="160" width="40" height="16" fill="#fff" stroke="#333"/>
+  <text x="700" y="152" text-anchor="middle" font-size="9">500mA</text>
+
+  <!-- Wires -->
+  <!-- +12 rail red -->
+  <line x1="180" y1="140" x2="680" y2="140" stroke="#c62828" stroke-width="3"/>
+  <line x1="680" y1="140" x2="680" y2="168" stroke="#c62828" stroke-width="3"/>
+  <line x1="720" y1="140" x2="780" y2="140" stroke="#c62828" stroke-width="3"/>
+  <line x1="780" y1="140" x2="780" y2="205" stroke="#c62828" stroke-width="3"/>
+  <text x="400" y="130" text-anchor="middle" font-size="11" fill="#c62828">+12 V (red)</text>
+
+  <!-- GND rail black -->
+  <line x1="180" y1="190" x2="420" y2="190" stroke="#212121" stroke-width="3"/>
+  <line x1="420" y1="190" x2="420" y2="220" stroke="#212121" stroke-width="3"/>
+  <line x1="420" y1="220" x2="615" y2="280" stroke="#212121" stroke-width="3"/>
+  <line x1="615" y1="280" x2="780" y2="280" stroke="#212121" stroke-width="3"/>
+  <text x="250" y="205" font-size="11" fill="#212121">GND (black)</text>
+
+  <!-- 5V from Nano to Hall pull-up -->
+  <line x1="420" y1="100" x2="420" y2="80" stroke="#ff9800" stroke-width="2"/>
+  <line x1="420" y1="80" x2="365" y2="80" stroke="#ff9800" stroke-width="2"/>
+  <line x1="365" y1="80" x2="365" y2="280" stroke="#ff9800" stroke-width="2"/>
+  <text x="430" y="75" font-size="10" fill="#ff9800">5V via 10k pull-up</text>
+
+  <!-- Gate -->
+  <line x1="520" y1="190" x2="580" y2="245" stroke="#4caf50" stroke-width="2"/>
+  <text x="540" y="210" font-size="10" fill="#4caf50">D3 í 220© í G</text>
+
+  <!-- Motor to MOSFET drain -->
+  <line x1="780" y1="275" x2="780" y2="320" stroke="#212121" stroke-width="2"/>
+  <line x1="780" y1="320" x2="650" y2="320" stroke="#212121" stroke-width="2"/>
+  <line x1="650" y1="320" x2="650" y2="245" stroke="#212121" stroke-width="2"/>
+
+  <!-- Hall signal -->
+  <line x1="410" y1="305" x2="340" y2="305" stroke="#9c27b0" stroke-width="2"/>
+  <line x1="340" y1="305" x2="340" y2="175" stroke="#9c27b0" stroke-width="2"/>
+  <text x="280" y="300" font-size="10" fill="#9c27b0">signal + 100nF to GND</text>
+
+  <!-- Button -->
+  <line x1="365" y1="358" x2="365" y2="220" stroke="#795548" stroke-width="2"/>
+  <text x="300" y="340" font-size="10">D4 INPUT_PULLUP</text>
+
+  <!-- Cable harness note -->
+  <rect x="60" y="450" width="800" height="200" fill="#fff" stroke="#ccc"/>
+  <text x="80" y="480" font-size="14" font-weight="bold">Field wiring notes</text>
+  <text x="80" y="505" font-size="12">" Use 18 AWG for motor; 22 AWG for signals. Separate motor bundle from Hall/button in twisted sense pair if run &gt;2 m.</text>
+  <text x="80" y="527" font-size="12">" Hall (22) mount: 2.5 mm gap to magnet (26) on wheel  align mark when pocket #1 at drop.</text>
+  <text x="80" y="549" font-size="12">" Flyback diode (25) cathode to +12 V at motor terminal; anode to MOSFET drain side.</text>
+  <text x="80" y="571" font-size="12">" Enclosure (27) vent downward; silicone gland on motor cable exit from housing (5).</text>
+  <text x="80" y="593" font-size="12">" PSU (20) not inside hopper  mount under stand with drip loop.</text>
+  <text x="80" y="615" font-size="12">" E-stop optional: inline switch on +12 V before fuse.</text>
+
+  <!-- Pin table -->
+  <text x="80" y="640" font-size="11">Connector J1 (6-pin to meter head): 1=+12V 2=GND 3=Motor+ 4=Motor- (return via MOSFET) 5=Hall sig 6=Hall GND</text>
+</svg>
