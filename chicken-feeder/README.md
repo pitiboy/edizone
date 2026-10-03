@@ -6,6 +6,7 @@ Practical DIY automatic feeder design for **10–20 chickens** (25 L hopper, 6-poc
 
 | File | Description |
 |------|-------------|
+| [INITIAL-PROMPT.md](./INITIAL-PROMPT.md) | Original design request (preserved) |
 | [DESIGN.md](./DESIGN.md) | Full engineering spec, calculations, firmware behavior, BOM |
 | [drawings/isometric-cutaway.svg](./drawings/isometric-cutaway.svg) | Isometric cutaway with flow and rotation |
 | [drawings/side-section.svg](./drawings/side-section.svg) | Side cross-section with dimensions |

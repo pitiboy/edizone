@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" font-family="Arial, Helvetica, sans-serif">
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720">
+  <style type="text/css"><![CDATA[svg text{font-family:Arial,Helvetica,sans-serif}]]></style>
   <defs>
     <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#1565c0"/></marker>
   </defs>
   <rect width="900" height="720" fill="#fafafa"/>
-  <text x="450" y="32" text-anchor="middle" font-size="20" font-weight="bold">TOP VIEW  Metering Module &amp; Hopper Plan</text>
+  <text x="450" y="32" text-anchor="middle" font-size="20" font-weight="bold">TOP VIEW - Metering Module &amp; Hopper Plan</text>
 
   <!-- Hopper OD -->
   <circle cx="450" cy="320" r="170" fill="#e3f2fd" stroke="#1565c0" stroke-width="3"/>
   <circle cx="450" cy="320" r="155" fill="none" stroke="#1565c0" stroke-dasharray="5,4"/>
-  <text x="450" y="120" text-anchor="middle" font-size="13">(1) Hopper Ø340 OD / Ø310 ID</text>
+  <text x="450" y="120" text-anchor="middle" font-size="13">(1) Hopper -340 OD / -310 ID</text>
 
   <!-- M5 bolt circle -->
   <circle cx="450" cy="320" r="140" fill="none" stroke="#666" stroke-width="1"/>
@@ -18,15 +18,15 @@
     <circle cx="571" cy="410" r="5"/><circle cx="450" cy="460" r="5"/><circle cx="329" cy="410" r="5"/>
     <circle cx="279" cy="320" r="5"/><circle cx="329" cy="230" r="5"/>
   </g>
-  <text x="620" cy="320" x="620" y="320" font-size="10">6× M5 PCD 280</text>
+  <text x="620" y="320" font-size="10">6- M5 PCD 280</text>
 
   <!-- Cone throat at center -->
   <circle cx="450" cy="320" r="34" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
-  <text x="450" y="325" text-anchor="middle" font-size="10">Ø68 throat</text>
+  <text x="450" y="325" text-anchor="middle" font-size="10">-68 throat</text>
 
   <!-- Meter housing footprint -->
   <rect x="330" y="380" width="240" height="180" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="8"/>
-  <text x="450" y="400" text-anchor="middle" font-size="12">(4)+(5) housing 240×180</text>
+  <text x="450" y="400" text-anchor="middle" font-size="12">(4)+(5) housing 240-180</text>
 
   <!-- Wheel top view -->
   <circle cx="450" cy="470" r="60" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
@@ -35,7 +35,7 @@
     <line x1="398" y1="440" x2="502" y2="500"/>
     <line x1="398" y1="500" x2="502" y2="440"/>
   </g>
-  <text x="530" y="470" font-size="11">(7) Ø120 wheel</text>
+  <text x="530" y="470" font-size="11">(7) -120 wheel</text>
 
   <!-- Motor -->
   <rect x="570" y="445" width="55" height="50" fill="#cfd8dc" stroke="#455a64" rx="4"/>
@@ -51,16 +51,16 @@
   <circle cx="540" cy="395" r="4" fill="#333"/>
   <circle cx="360" cy="545" r="4" fill="#333"/>
   <circle cx="540" cy="545" r="4" fill="#333"/>
-  <text x="560" y="560" font-size="10">4× M4 cap PCD 95</text>
+  <text x="560" y="560" font-size="10">4- M4 cap PCD 95</text>
 
   <!-- Chute centerline -->
   <line x1="450" y1="530" x2="450" y2="620" stroke="#f9a825" stroke-width="4"/>
   <circle cx="450" cy="620" r="32" fill="none" stroke="#f9a825" stroke-width="2"/>
-  <text x="490" y="625" font-size="11">(10) Ø65 chute</text>
+  <text x="490" y="625" font-size="11">(10) -65 chute</text>
 
   <!-- Trough below -->
   <rect x="200" y="640" width="500" height="60" fill="#eceff1" stroke="#546e7a" stroke-width="2" rx="6"/>
-  <text x="450" y="675" text-anchor="middle" font-size="12">(12) trough 600×200 (plan)</text>
+  <text x="450" y="675" text-anchor="middle" font-size="12">(12) trough 600-200 (plan)</text>
 
   <!-- Feed flow in hopper -->
   <path d="M450 200 L450 286" stroke="#1565c0" stroke-width="3" marker-end="url(#arr)"/>

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 780" font-family="Arial, Helvetica, sans-serif">
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 780">
+  <style type="text/css"><![CDATA[svg text{font-family:Arial,Helvetica,sans-serif}]]></style>
   <defs>
     <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#1565c0"/></marker>
     <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#2e7d32"/></marker>
@@ -8,7 +8,7 @@
     </pattern>
   </defs>
   <rect width="920" height="780" fill="#fafafa"/>
-  <text x="460" y="36" text-anchor="middle" font-size="20" font-weight="bold">SIDE CROSS-SECTION  Automatic Chicken Feeder (CF-FEED-001)</text>
+  <text x="460" y="36" text-anchor="middle" font-size="20" font-weight="bold">SIDE CROSS-SECTION - Automatic Chicken Feeder (CF-FEED-001)</text>
   <text x="460" y="58" text-anchor="middle" font-size="13" fill="#444">Scale approx. 1:4  |  Section plane A-A (through motor axis &amp; drop center)</text>
 
   <!-- Centerline -->
@@ -21,11 +21,11 @@
 
   <!-- Lid -->
   <rect x="270" y="75" width="380" height="18" fill="#bbdefb" stroke="#1565c0"/>
-  <text x="460" y="88" text-anchor="middle" font-size="11">(1a) Lid + vent Ø60</text>
+  <text x="460" y="88" text-anchor="middle" font-size="11">(1a) Lid + vent -60</text>
 
   <!-- Cone insert (2) -->
   <polygon points="310,350 610,350 395,572 525,572" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
-  <text x="640" y="460" font-size="12" fill="#e65100">(2) 60° cone insert</text>
+  <text x="640" y="460" font-size="12" fill="#e65100">(2) 60- cone insert</text>
 
   <!-- Throat ring (11) -->
   <rect x="430" y="555" width="60" height="22" fill="#ffe0b2" stroke="#e65100"/>
@@ -48,7 +48,7 @@
   <circle cx="460" cy="667" r="18" fill="#eee" stroke="#666"/>
   <!-- pocket hint -->
   <path d="M460 607 L490 640 L430 640 Z" fill="url(#hatch)" stroke="#666"/>
-  <text x="530" y="670" font-size="12">(7) wheel Ø120</text>
+  <text x="530" y="670" font-size="12">(7) wheel -120</text>
 
   <!-- Motor (14) -->
   <rect x="585" y="648" width="70" height="38" fill="#cfd8dc" stroke="#455a64" stroke-width="2" rx="4"/>
@@ -65,7 +65,7 @@
   <!-- Trough (12) -->
   <rect x="300" y="720" width="320" height="45" fill="#eceff1" stroke="#546e7a" stroke-width="2"/>
   <rect x="300" y="705" width="320" height="18" fill="#b0bec5" stroke="#546e7a"/>
-  <text x="460" y="748" text-anchor="middle" font-size="11">(12) covered trough 600×200</text>
+  <text x="460" y="748" text-anchor="middle" font-size="11">(12) covered trough 600-200</text>
 
   <!-- Feed flow arrows -->
   <path d="M460 120 L460 340" stroke="#1565c0" stroke-width="3" marker-end="url(#arrowBlue)" fill="none"/>
@@ -88,18 +88,18 @@
   <text x="185" y="640" font-size="11">R60</text>
 
   <line x1="340" y1="702" x2="490" y2="702" stroke="#000" marker-start="url(#arrowBlue)" marker-end="url(#arrowBlue)"/>
-  <text x="400" y="695" font-size="11">Ø65 drop</text>
+  <text x="400" y="695" font-size="11">-65 drop</text>
 
   <line x1="680" y1="90" x2="680" y2="350" stroke="#000" marker-start="url(#arrowBlue)" marker-end="url(#arrowBlue)"/>
-  <text x="690" y="220" font-size="11">Ø340 OD hopper</text>
+  <text x="690" y="220" font-size="11">-340 OD hopper</text>
 
   <!-- M5 flange note -->
   <circle cx="460" cy="350" r="95" fill="none" stroke="#666" stroke-dasharray="4,3"/>
-  <text x="460" y="330" text-anchor="middle" font-size="10">6× M5 @ PCD 280 (hoppercone)</text>
+  <text x="460" y="330" text-anchor="middle" font-size="10">6- M5 @ PCD 280 (hopper-cone)</text>
 
   <!-- M4 split line -->
   <line x1="340" y1="632" x2="580" y2="632" stroke="#c62828" stroke-width="2" stroke-dasharray="8,4"/>
-  <text x="585" y="628" font-size="10" fill="#c62828">split: 4× M4 @ PCD 95 + gasket (6)</text>
+  <text x="585" y="628" font-size="10" fill="#c62828">split: 4- M4 @ PCD 95 + gasket (6)</text>
 
   <!-- Stand (13) -->
   <rect x="320" y="765" width="20" height="0" fill="none"/>
