@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 800">
-  <style type="text/css"><![CDATA[svg text{font-family:Arial,Helvetica,sans-serif}]]></style>
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 860">
+  <style type="text/css"><![CDATA[svg text{font-family:Arial,Helvetica,sans-serif;paint-order:stroke fill;stroke:#fafafa;stroke-width:3px;stroke-linejoin:round}]]></style>
   <defs>
     <marker id="af" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#1565c0"/></marker>
     <marker id="gr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#388e3c"/></marker>
   </defs>
-  <rect width="960" height="800" fill="#f5f5f5"/>
-  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold">ISOMETRIC CUTAWAY - Automatic Chicken Feeder</text>
-  <text x="480" y="58" text-anchor="middle" font-size="13" fill="#555">Hopper quarter removed for visibility | Blue = feed path | Green = wheel rotation</text>
+  <rect width="1280" height="860" fill="#f5f5f5"/>
+  <text x="24" y="30" font-size="18" font-weight="bold">ISOMETRIC CUTAWAY - Automatic Chicken Feeder (IZOMETRIKUS METSZET — automata tyúketető)</text>
+  <text x="24" y="52" font-size="12" fill="#555">Hopper quarter removed for visibility | Blue = feed path | Green = wheel rotation</text>
+  <text x="24" y="70" font-size="12" fill="#555">(A garat egynegyede a láthatóság miatt el van távolítva | kék = takarmányút | zöld = kerékforgás)</text>
 
   <!-- Isometric helper: iso x' = x - y*0.5, y' = (x+y)*0.25 + z -->
   <!-- Hopper block cutaway -->
@@ -15,12 +16,12 @@
   <polygon points="320,180 420,230 620,230 520,180" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
   <!-- cut face -->
   <polygon points="320,180 320,420 420,470 420,230" fill="#fff" stroke="#1565c0" stroke-width="2" stroke-dasharray="6,4"/>
-  <text x="250" y="300" font-size="12">(1) hopper</text>
+  <text x="200" y="300" font-size="12">(1) hopper (garat)</text>
 
   <!-- Cone -->
   <polygon points="380,420 560,420 500,520 440,520" fill="#ffe0b2" stroke="#ef6c00" stroke-width="2"/>
   <polygon points="560,420 610,445 550,545 500,520" fill="#ffcc80" stroke="#ef6c00" stroke-width="2"/>
-  <text x="620" y="480" font-size="11">(2) 60- cone</text>
+  <text x="630" y="480" font-size="11">(2) 60- cone (60°-os kúp)</text>
 
   <!-- Meter housing -->
   <polygon points="430,520 530,520 530,580 430,580" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/>
@@ -29,29 +30,29 @@
 
   <!-- Wheel visible in cutaway -->
   <ellipse cx="490" cy="555" rx="55" ry="18" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
-  <text x="550" y="560" font-size="11">(7) wheel</text>
+  <text x="590" y="575" font-size="11">(7) wheel (adagolókerék)</text>
 
   <!-- Motor -->
   <rect x="575" y="535" width="45" height="30" fill="#cfd8dc" stroke="#455a64" transform="skewY(-15)"/>
-  <text x="625" y="545" font-size="11">(14)</text>
+  <text x="630" y="530" font-size="11">(14) motor</text>
 
   <!-- Wiper -->
   <line x1="470" y1="530" x2="455" y2="505" stroke="#7b1fa2" stroke-width="4"/>
-  <text x="400" y="510" font-size="10">(8)</text>
+  <text x="360" y="500" font-size="10">(8) wiper (törlő)</text>
 
   <!-- Chute -->
   <polygon points="470,590 510,590 495,660 485,660" fill="#fff9c4" stroke="#f9a825" stroke-width="2"/>
-  <text x="515" y="630" font-size="11">(10)</text>
+  <text x="515" y="630" font-size="11">(10) chute (ejtőcsatorna)</text>
 
   <!-- Trough -->
   <polygon points="300,660 700,660 740,690 260,690" fill="#eceff1" stroke="#546e7a" stroke-width="2"/>
   <polygon points="300,640 700,640 700,660 300,660" fill="#b0bec5" stroke="#546e7a"/>
-  <text x="480" y="685" text-anchor="middle" font-size="12">(12) covered trough</text>
+  <text x="480" y="682" text-anchor="middle" font-size="12">(12) covered trough (fedett etetővályú)</text>
 
   <!-- Stand legs -->
   <line x1="320" y1="690" x2="300" y2="760" stroke="#6d4c41" stroke-width="8"/>
   <line x1="680" y1="690" x2="700" y2="760" stroke="#6d4c41" stroke-width="8"/>
-  <text x="710" y="740" font-size="11">(13)</text>
+  <text x="720" y="750" font-size="11">(13) stand (állvány)</text>
 
   <!-- Feed particles -->
   <g fill="#8d6e63">
@@ -62,25 +63,29 @@
   <!-- Flow path -->
   <path d="M450 220 L470 400 L490 530 L490 580" fill="none" stroke="#1565c0" stroke-width="4" marker-end="url(#af)"/>
   <path d="M490 620 L490 650" fill="none" stroke="#1565c0" stroke-width="4" marker-end="url(#af)"/>
-  <text x="510" y="350" font-size="13" fill="#1565c0" font-weight="bold">FEED FLOW</text>
+  <text x="500" y="340" font-size="13" fill="#1565c0" font-weight="bold">FEED FLOW (TAKARMÁNYÁRAM)</text>
 
   <!-- Rotation -->
   <path d="M540 555 A25 25 0 1 1 520 540" fill="none" stroke="#388e3c" stroke-width="3" marker-end="url(#gr)"/>
-  <text x="545" y="530" font-size="12" fill="#388e3c">WHEEL CW</text>
+  <text x="555" y="515" font-size="11" fill="#388e3c">WHEEL CW (kerék, óramutató szerint)</text>
 
   <!-- Electronics box -->
   <rect x="720" y="400" width="90" height="60" fill="#fff" stroke="#333"/>
-  <text x="725" y="395" font-size="10">(21)(27)</text>
+  <text x="725" y="392" font-size="10">(21) controller (vezérlő)  (27) enclosure (doboz)</text>
 
   <!-- Legend -->
-  <rect x="60" y="620" width="220" height="150" fill="#fff" stroke="#999"/>
-  <text x="75" y="645" font-size="13" font-weight="bold">Legend</text>
-  <line x1="75" y1="665" x2="105" y2="665" stroke="#1565c0" stroke-width="4"/><text x="115" y="670" font-size="11">Feed path</text>
-  <line x1="75" y1="690" x2="105" y2="690" stroke="#388e3c" stroke-width="3"/><text x="115" y="695" font-size="11">Wheel rotation</text>
-  <text x="75" y="720" font-size="11">Cutaway removes front-left</text>
-  <text x="75" y="738" font-size="11">quarter of hopper &amp; housing</text>
-  <text x="75" y="756" font-size="11">See side-section for dims</text>
+  <rect x="900" y="140" width="350" height="230" fill="#fff" stroke="#999"/>
+  <text x="916" y="166" font-size="13" font-weight="bold">Legend (jelmagyarázat)</text>
+  <line x1="916" y1="188" x2="946" y2="188" stroke="#1565c0" stroke-width="4"/><text x="956" y="192" font-size="12">Feed path (takarmányút)</text>
+  <line x1="916" y1="214" x2="946" y2="214" stroke="#388e3c" stroke-width="3"/><text x="956" y="218" font-size="12">Wheel rotation (kerékforgás)</text>
+  <text x="916" y="246" font-size="12">Cutaway removes front-left</text>
+  <text x="916" y="264" font-size="12">quarter of hopper &amp; housing</text>
+  <text x="916" y="284" font-size="12">(A kivágás a garat és a ház bal első</text>
+  <text x="916" y="302" font-size="12">negyedét távolítja el.)</text>
+  <text x="916" y="328" font-size="12">See side-section for dims</text>
+  <text x="916" y="346" font-size="12">(A méretek az oldalmetszeten vannak.)</text>
 
   <!-- Key dims callout -->
-  <text x="60" y="120" font-size="12">-340 hopper | 25L | -65 outlet | wheel -120</text>
+  <text x="24" y="100" font-size="12">-340 hopper | 25L | -65 outlet | wheel -120</text>
+  <text x="24" y="118" font-size="12">(Ø340-es garat | 25 L | Ø65-ös kifolyó | adagolókerék Ø120)</text>
 </svg>

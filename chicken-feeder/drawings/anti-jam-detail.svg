@@ -1,64 +1,68 @@
-<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 620">
-  <style type="text/css"><![CDATA[svg text{font-family:Arial,Helvetica,sans-serif}]]></style>
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 820">
+  <style type="text/css"><![CDATA[svg text{font-family:Arial,Helvetica,sans-serif;paint-order:stroke fill;stroke:#fafafa;stroke-width:3px;stroke-linejoin:round}]]></style>
   <defs>
     <marker id="flow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#1565c0"/></marker>
     <marker id="rot" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#2e7d32"/></marker>
   </defs>
-  <rect width="860" height="620" fill="#fafafa"/>
-  <text x="430" y="32" text-anchor="middle" font-size="20" font-weight="bold">DETAIL - Anti-Jam Wiper / Agitator (8)(9)(11)</text>
-  <text x="430" y="54" text-anchor="middle" font-size="13" fill="#444">Enlarged throat zone - scale 2:1</text>
+  <rect width="1100" height="820" fill="#fafafa"/>
+  <text x="16" y="28" font-size="16" font-weight="bold">DETAIL - Anti-Jam Wiper / Agitator (8)(9)(11) (RÉSZLETRAJZ — beragadásgátló törlő / lazító)</text>
+  <text x="16" y="50" font-size="13" fill="#444">Enlarged throat zone - scale 2:1 (nagyított torokzóna, lépték 2:1)</text>
 
   <!-- Cone wall -->
   <line x1="180" y1="80" x2="320" y2="280" stroke="#e65100" stroke-width="8"/>
   <line x1="680" y1="80" x2="540" y2="280" stroke="#e65100" stroke-width="8"/>
-  <text x="430" y="100" text-anchor="middle" font-size="12">(2) cone ID 310 - 68</text>
+  <text x="430" y="100" text-anchor="middle" font-size="12">(2) cone ID 310 - 68 (kúp belső átmérője 310→68)</text>
 
   <!-- Throat ring (11) -->
   <rect x="350" y="260" width="160" height="30" fill="#ffe0b2" stroke="#e65100" stroke-width="2"/>
-  <text x="430" y="255" text-anchor="middle" font-size="11">(11) bevel 68-65</text>
+  <text x="430" y="250" text-anchor="middle" font-size="11">(11) bevel 68-65 (kúpos átmenet 68→65)</text>
 
   <!-- Upper housing wall -->
   <rect x="300" y="290" width="260" height="120" fill="none" stroke="#2e7d32" stroke-width="3"/>
 
   <!-- Wheel crown -->
   <ellipse cx="430" cy="400" rx="95" ry="28" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
-  <text x="560" y="405" font-size="11">(7) wheel crown</text>
+  <text x="560" y="430" font-size="11">(7) wheel crown (kerékkorona)</text>
 
   <!-- Wiper (8) -->
   <path d="M410 300 Q400 340 415 385" stroke="#6a1b9a" stroke-width="6" fill="none" stroke-linecap="round"/>
   <circle cx="405" cy="295" r="5" fill="#333"/>
-  <text x="250" y="340" font-size="12" fill="#6a1b9a">(8) silicone wiper 80-25-3</text>
-  <text x="250" y="358" font-size="11">pin -3, slot -4mm adjust</text>
+  <text x="40" y="318" font-size="12" fill="#6a1b9a">(8) silicone wiper 80-25-3</text>
+  <text x="40" y="336" font-size="12" fill="#6a1b9a">(szilikontörlő 80×25×3)</text>
+  <text x="40" y="356" font-size="11">pin -3, slot -4mm adjust</text>
+  <text x="40" y="372" font-size="11">(csap Ø3, hornyos állítás ±4 mm)</text>
 
   <!-- Cam bump (9) -->
   <circle cx="480" cy="395" r="8" fill="#7b1fa2"/>
-  <text x="495" y="390" font-size="11">(9) cam -8</text>
+  <text x="620" y="400" font-size="11">(9) cam -8 (bütyök Ø8)</text>
 
   <!-- Clearance dims -->
   <line x1="420" y1="370" x2="420" y2="385" stroke="#c62828" stroke-width="2"/>
-  <text x="355" y="378" font-size="11" fill="#c62828">tip gap 2-3mm</text>
+  <text x="620" y="340" font-size="11" fill="#c62828">tip gap 2-3mm (csúcsrés 2–3 mm)</text>
 
   <line x1="430" y1="310" x2="430" y2="260" stroke="#1565c0" stroke-width="2" marker-end="url(#flow)"/>
-  <text x="440" y="285" font-size="11" fill="#1565c0">feed flow</text>
+  <text x="500" y="285" font-size="11" fill="#1565c0">feed flow (takarmányáram)</text>
 
   <!-- Pellet wedging prevention callouts -->
   <circle cx="365" cy="320" r="6" fill="#8d6e63"/>
   <circle cx="385" cy="335" r="6" fill="#8d6e63"/>
-  <text x="140" y="420" font-size="12">Wiper sweeps throat; cam pulses</text>
-  <text x="140" y="440" font-size="12">wiper every 60- - breaks bridges</text>
-  <text x="140" y="460" font-size="12">without crushing pellet.</text>
+  <text x="40" y="460" font-size="12">Wiper sweeps throat; cam pulses wiper every 60- and breaks bridges without crushing the pellet.</text>
+  <text x="40" y="480" font-size="12">(A törlő végigsöpri a torkot; a bütyök 60°-onként megmozgatja a törlőt, és a pellet összenyomása nélkül bontja a boltozódást.)</text>
 
   <!-- Rotation -->
   <path d="M520 400 A30 30 0 0 1 470 385" fill="none" stroke="#2e7d32" stroke-width="2" marker-end="url(#rot)"/>
 
   <!-- Mounting -->
   <rect x="330" y="290" width="40" height="15" fill="#78909c"/>
-  <text x="330" y="285" font-size="10">M3 screw (19)</text>
+  <text x="300" y="282" font-size="10">M3 screw (19) (M3 csavar)</text>
 
   <!-- Section inset -->
-  <rect x="80" y="480" width="700" height="120" fill="#fff" stroke="#ccc"/>
-  <text x="100" y="505" font-size="13" font-weight="bold">Adjustment procedure</text>
-  <text x="100" y="530" font-size="12">1. Empty hopper. 2. Loosen wiper slot screws. 3. Set tip 2.5mm above wheel crown at closest point.</text>
-  <text x="100" y="552" font-size="12">4. Rotate wheel by hand - wiper should flex d1mm; no scrape noise. 5. Verify cam (9) hits wiper root lightly.</text>
-  <text x="100" y="574" font-size="12">6. Run 3 rev dry, then 3 rev loaded - no pellet shear &gt;2% broken fraction.</text>
+  <rect x="40" y="510" width="1020" height="280" fill="#fff" stroke="#ccc"/>
+  <text x="60" y="538" font-size="14" font-weight="bold">Adjustment procedure (beállítási eljárás)</text>
+  <text x="60" y="566" font-size="12">1. Empty hopper. 2. Loosen wiper slot screws. 3. Set tip 2.5mm above wheel crown at closest point.</text>
+  <text x="78" y="586" font-size="12">(1. Ürítsük ki a garatot. 2. Lazítsuk meg a törlő hornyos csavarjait. 3. A csúcsot a kerékkorona legközelebbi pontja fölött 2,5 mm-re állítsuk.)</text>
+  <text x="60" y="616" font-size="12">4. Rotate wheel by hand - wiper should flex d1mm; no scrape noise. 5. Verify cam (9) hits wiper root lightly.</text>
+  <text x="78" y="636" font-size="12">(4. A kereket kézzel forgassuk: a törlő kb. 1 mm-t hajoljon, kaparó hang nélkül. 5. Ellenőrizzük, hogy a bütyök (9) enyhén érinti a törlő tövét.)</text>
+  <text x="60" y="666" font-size="12">6. Run 3 rev dry, then 3 rev loaded - no pellet shear &gt;2% broken fraction.</text>
+  <text x="78" y="686" font-size="12">(6. Járassuk 3 fordulatot üresen, majd 3 fordulatot terhelve; a törött pellet aránya ne haladja meg a 2%-ot.)</text>
 </svg>
