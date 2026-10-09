@@ -221,3 +221,27 @@ A tulajdonos őszibarackot szeretne. Ezen a készleten nincs. Más faiskolát a 
 ## 7. Tudatosan kihagyva
 
 Új cseresznye, új meggy, és minden szilvafajta a Besztercei Nm. 122-n és a már meglévő Toptaste/Kulinarián kívül. A készleten lévő, de kihagyott szilvák: Cacanska Lepotica, Stanley, Top First, Elena, Haganta, Joganta, Topfive, Tophit, mindkét alanyon, ahol szerepelnek. Az 5. szakasz a Besztercei Nm. 122-t a sharka-fogékonyság miatt így sem ülteti.
+
+## 8. Más faiskolai árak
+
+Ez szakasz ár-összehasonlítás: a fa továbbra is a Balogh-listáról jön, a Balogh darabár itt nincs feltüntetve. Az árak a terméklapról származnak, a lapot 2026. október 9-én nyitottam meg újra; bruttó, szállítás nélkül. Ahol Fox 11 alanyú Nojabrskaja-lapot nem találtam, az ár cella „nincs közölt ár”.
+
+| tétel és a lista alanya | forrás | a lap alanya | kiszerelés | méret ha a lap írja | ár | készlet | link |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Rosmerta, MM106 | Megyeri Szabolcs Kertészete | MM106 | konténeres | — | 13 990 Ft | elfogyott | https://www.megyeriszabolcskerteszete.hu/rosmerta_alma |
+| Rosmerta, MM106 | bioritmus.hu | a lapon nincs alany; alanyeltérés: MM106 nem szerepel | konténeres | — | 9 990 Ft | nincs raktáron | https://bioritmus.hu/rosmerta-rezisztens-konteneres-almafa |
+| Húsvéti rozmaring, MM106 | Csodakertész Barna Faiskola | MM106 | szabadgyökerű | — | 6 890 Ft | raktáron | https://www.csodakertesz.hu/husveti-rozmaring-alma-szabadgyokeres-24128 |
+| Húsvéti rozmaring, MM106 | Hanga Kertészet | a lapon nincs alany; alanyeltérés: MM106 nem szerepel | szabadgyökerű | szabadgyökerű (eladási méret) | 4 790 Ft | nem vásárolható | https://www.hangakerteszet.hu/Husveti-rozmaring-alma |
+| Nojabrskaja, Fox 11 | — | — | — | — | nincs közölt ár | — | — |
+| Nojabrskaja, Fox 11 | Megyeri Szabolcs Kertészete | BA29; alanyeltérés: Fox 11 helyett BA29 | konténeres | — | 16 790 Ft | raktáron | https://www.megyeriszabolcskerteszete.hu/nojabraskaja_xenia_korte |
+| Supernova, GF677 | Megyeri Szabolcs Kertészete | GF677 | konténeres | — | 21 990 Ft | elfogyott | https://www.megyeriszabolcskerteszete.hu/supernova_ontermekeny_mandula |
+| Supernova, GF677 | Hanga Kertészet | a lapon nincs alany; alanyeltérés: GF677 nem szerepel | szabadgyökerű | szabadgyökerű (eladási méret) | 9 490 Ft | raktáron | https://www.hangakerteszet.hu/Supernova-mandula-szabadgyokeres |
+| Nyári fontos, MM106 | Megyeri Szabolcs Kertészete | MM106 | konténeres | — | 16 790 Ft | raktáron | https://www.megyeriszabolcskerteszete.hu/nyari_fontos_regi_almafajta |
+| Nyári fontos, MM106 | Hanga Kertészet | a lapon nincs alany; alanyeltérés: MM106 nem szerepel | szabadgyökerű | szabadgyökerű (eladási méret) | 4 690 Ft | nincs raktáron | https://www.hangakerteszet.hu/Nyari-fontos-alma |
+| Damara, MM106 | Megyeri Szabolcs Kertészete | MM106 | konténeres | — | 13 990 Ft | raktáron | https://www.megyeriszabolcskerteszete.hu/gyumolcstermok_550/gyumolcsfa/damara-almafa-konteneres |
+| Hardy vajkörte, vadkörte | Megyeri Szabolcs Kertészete | vadkörte | konténeres | — | 15 290 Ft | raktáron | https://www.megyeriszabolcskerteszete.hu/gyumolcstermok_550/gyumolcsfa/kortefa_csemete_vasarlasa/hardy_vajkorte_konteneres_-_ba29_alanyon_59454 |
+| Hardy vajkörte, vadkörte | Csodakertész Barna Faiskola | vadkörte | szabadgyökerű | — | 6 090 Ft | nincs raktáron | https://www.csodakertesz.hu/hardy-vajkorte-szabadgyokeres |
+| Conference, vadkörte | Megyeri Szabolcs Kertészete | vadkörte | koros konténeres | — | 20 990 Ft | raktáron | https://www.megyeriszabolcskerteszete.hu/pyrus_communis_conference_korte_rendelese |
+| Conference, vadkörte | Hanga Kertészet | a lapon nincs alany megadva | szabadgyökerű | szabadgyökerű (eladási méret) | 4 890 Ft | nincs raktáron | https://www.hangakerteszet.hu/Conference-korte-szabadgyokeru |
+| Ceglédi óriás, vadkajszi | Megyeri Szabolcs Kertészete | vadkajszi | konténeres | — | 19 490 Ft | raktáron | https://www.megyeriszabolcskerteszete.hu/gyumolcstermok_550/gyumolcsfa/konteneres_szabadgyokeru_cegledi_orias_termesu_kajszibarackfa |
+| Ceglédi óriás, vadkajszi | Csodakertész Barna Faiskola | myrobolán (mirabolán); alanyeltérés: vadkajszi helyett myrobolán | szabadgyökerű | — | 7 190 Ft | raktáron | https://www.csodakertesz.hu/cegledi-orias-kajszi-szabadgyokeres-24130 |
