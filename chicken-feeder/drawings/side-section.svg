@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 820">
+  <style type="text/css"><![CDATA[svg text{font-family:Arial,Helvetica,sans-serif;paint-order:stroke fill;stroke:#fafafa;stroke-width:3px;stroke-linejoin:round}]]></style>
+  <defs>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#1565c0"/></marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#2e7d32"/></marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#bbb" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="820" fill="#fafafa"/>
+  <text x="16" y="28" font-size="16" font-weight="bold">SIDE CROSS-SECTION - Automatic Chicken Feeder (CF-FEED-001) (OLDALIRÁNYÚ KERESZTMETSZET — automata tyúketető)</text>
+  <text x="16" y="50" font-size="11" fill="#444">Scale approx. 1:4  |  Section plane A-A (through motor axis &amp; drop center) (Lépték kb. 1:4 | A–A metszősík a motortengelyen és az ejtőnyílás középpontján át)</text>
+
+  <!-- Centerline -->
+  <line x1="460" y1="80" x2="460" y2="720" stroke="#999" stroke-dasharray="6,4"/>
+
+  <!-- Hopper wall left/right -->
+  <rect x="280" y="90" width="30" height="260" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <rect x="610" y="90" width="30" height="260" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="295" y="330" font-size="11" fill="#1565c0" transform="rotate(-90 295 330)">(1) Hopper 3mm (garat, 3 mm)</text>
+
+  <!-- Lid -->
+  <rect x="270" y="75" width="380" height="18" fill="#bbdefb" stroke="#1565c0"/>
+  <text x="460" y="88" text-anchor="middle" font-size="10">(1a) Lid + vent -60 (fedél + szellőző Ø60)</text>
+
+  <!-- Cone insert (2) -->
+  <polygon points="310,350 610,350 395,572 525,572" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+  <text x="660" y="460" font-size="12" fill="#e65100">(2) 60- cone insert (60°-os kúpbetét)</text>
+
+  <!-- Throat ring (11) -->
+  <rect x="430" y="555" width="60" height="22" fill="#ffe0b2" stroke="#e65100"/>
+  <text x="500" y="570" font-size="11">(11) throat (torok)</text>
+
+  <!-- Upper housing (4) -->
+  <rect x="350" y="577" width="220" height="55" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="16" y="575" font-size="11">(4) upper meter housing</text>
+  <text x="16" y="592" font-size="11">(felső adagolóház)</text>
+
+  <!-- Wiper (8) -->
+  <line x1="455" y1="590" x2="445" y2="545" stroke="#6a1b9a" stroke-width="4"/>
+  <text x="200" y="530" font-size="11" fill="#6a1b9a">(8) flex wiper (rugalmas törlő)</text>
+
+  <!-- Lower housing (5) -->
+  <rect x="340" y="632" width="240" height="70" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="16" y="648" font-size="10">(5) lower housing (alsó ház)</text>
+
+  <!-- Metering wheel (7) section -->
+  <circle cx="460" cy="667" r="60" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
+  <circle cx="460" cy="667" r="18" fill="#eee" stroke="#666"/>
+  <!-- pocket hint -->
+  <path d="M460 607 L490 640 L430 640 Z" fill="url(#hatch)" stroke="#666"/>
+  <text x="670" y="700" font-size="12">(7) wheel -120 (adagolókerék Ø120)</text>
+
+  <!-- Motor (14) -->
+  <rect x="585" y="648" width="70" height="38" fill="#cfd8dc" stroke="#455a64" stroke-width="2" rx="4"/>
+  <text x="665" y="640" font-size="11">(14) 12V motor (12 V-os motor)</text>
+
+  <!-- Hall (22) -->
+  <rect x="330" y="655" width="18" height="12" fill="#ffecb3" stroke="#f57f17"/>
+  <text x="16" y="628" font-size="10">(22) Hall (Hall-érzékelő)</text>
+
+  <!-- Chute (10) -->
+  <polygon points="430,702 490,702 470,780 450,780" fill="#fffde7" stroke="#f9a825" stroke-width="2"/>
+  <text x="500" y="760" font-size="11">(10) chute (ejtőcsatorna)</text>
+
+  <!-- Trough (12) -->
+  <rect x="300" y="720" width="320" height="45" fill="#eceff1" stroke="#546e7a" stroke-width="2"/>
+  <rect x="300" y="705" width="320" height="18" fill="#b0bec5" stroke="#546e7a"/>
+  <text x="460" y="748" text-anchor="middle" font-size="10">(12) covered trough 600-200 (fedett etetővályú 600×200)</text>
+
+  <!-- Feed flow arrows -->
+  <path d="M460 120 L460 340" stroke="#1565c0" stroke-width="3" marker-end="url(#arrowBlue)" fill="none"/>
+  <path d="M460 520 L460 600" stroke="#1565c0" stroke-width="3" marker-end="url(#arrowBlue)" fill="none"/>
+  <path d="M460 727 L460 710" stroke="#1565c0" stroke-width="3" marker-end="url(#arrowBlue)" fill="none"/>
+  <text x="475" y="200" font-size="12" fill="#1565c0">FEED FLOW (TAKARMÁNYÁRAM)</text>
+
+  <!-- Wheel rotation -->
+  <path d="M520 667 A40 40 0 1 1 510 630" stroke="#2e7d32" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+  <text x="700" y="600" font-size="11" fill="#2e7d32">CW rotation (forgás óramutató szerint)</text>
+
+  <!-- Dimensions -->
+  <line x1="250" y1="90" x2="250" y2="350" stroke="#000" marker-start="url(#arrowBlue)" marker-end="url(#arrowBlue)"/>
+  <text x="235" y="220" font-size="12" transform="rotate(-90 235 220)">280</text>
+
+  <line x1="250" y1="350" x2="250" y2="572" stroke="#000" marker-start="url(#arrowBlue)" marker-end="url(#arrowBlue)"/>
+  <text x="228" y="500" font-size="11" transform="rotate(-90 228 500)">220 cone H (kúp magassága)</text>
+
+  <line x1="200" y1="667" x2="200" y2="607" stroke="#000" marker-start="url(#arrowBlue)" marker-end="url(#arrowBlue)"/>
+  <text x="185" y="640" font-size="11">R60</text>
+
+  <line x1="340" y1="702" x2="490" y2="702" stroke="#000" marker-start="url(#arrowBlue)" marker-end="url(#arrowBlue)"/>
+  <text x="360" y="692" font-size="10">-65 drop (Ø65 ejtőnyílás)</text>
+
+  <line x1="680" y1="90" x2="680" y2="350" stroke="#000" marker-start="url(#arrowBlue)" marker-end="url(#arrowBlue)"/>
+  <text x="700" y="220" font-size="11">-340 OD hopper (garat külső átmérője Ø340)</text>
+
+  <!-- M5 flange note -->
+  <circle cx="460" cy="350" r="95" fill="none" stroke="#666" stroke-dasharray="4,3"/>
+  <text x="460" y="322" text-anchor="middle" font-size="10">6- M5 @ PCD 280 (hopper-cone) (garat–kúp, osztókör 280)</text>
+
+  <!-- M4 split line -->
+  <line x1="340" y1="632" x2="580" y2="632" stroke="#c62828" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="700" y="578" font-size="10" fill="#c62828">split: 4- M4 @ PCD 95 + gasket (6) (osztósík + tömítés)</text>
+
+  <!-- Stand (13) -->
+  <rect x="320" y="765" width="20" height="0" fill="none"/>
+  <line x1="330" y1="765" x2="330" y2="680" stroke="#795548" stroke-width="6"/>
+  <line x1="590" y1="765" x2="590" y2="680" stroke="#795548" stroke-width="6"/>
+  <text x="620" y="790" font-size="11">(13) stand HH850 (állvány, etetőmagasság 850)</text>
+</svg>
