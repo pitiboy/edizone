@@ -91,13 +91,15 @@ Feltétel: **4 × 3 m² emeltágyás** + üvegházban **~10 m² ültetőfelület
    - **Levél / szár / hüvely-előnevelés** (lóbab, kel, mángold…): növő Hold
    - **Saláta:** fogyó Hold
 
-### 2026 – releváns ablakok (aug–szept)
+### 2026 – releváns ablakok (aug–nov)
 
 | Típus | Napok |
 |-------|-------|
-| **Levél** (leszálló + növő) | **aug. 20–27** · **szept. 11–24** |
-| **Gyökér / saláta** (leszálló + fogyó) | **szept. 9–11** |
-| Leszálló | aug. 13–27 · szept. 9–24 |
+| **Levél** (leszálló + növő) | **aug. 20–27** · **szept. 11–24** · **okt. 10–17** · **nov. 9–17** |
+| **Gyökér / saláta** (leszálló + fogyó) | **szept. 9–11** · **okt. 3–10** · **nov. 3–9** |
+| Leszálló | aug. 13–27 · szept. 9–24 · **okt. 3–17** · **nov. 3–17** |
+
+> **Szept. 25 után / október–november:** [`oszi-ultetes-kiegeszites-2026-szept25-nov.md`](oszi-ultetes-kiegeszites-2026-szept25-nov.md). **Tél alá vetés + téli hónapok vetése (dec.–márc.):** [`tel-ala-vetes-2026-2027.md`](tel-ala-vetes-2026-2027.md) (kültér / walipini / üvegház elkülönítve).
 
 > Ha nincs tökéletes metszet: **leszálló elsőbbség**. Pontos elem-nap: [Maria Thun 2026](https://www.biodin.hu/aktualitasok/mar-kaphato-a-2026-os-vetesi-naptar).
 
@@ -217,7 +219,7 @@ Feltétel: **4 × 3 m² emeltágyás** + üvegházban **~10 m² ültetőfelület
 - [ ] Téli saláta kiültetés üvegház 4-be, ha kész
 - [ ] Öntözés csökkentése üvegházban
 - [ ] Jegyezd: tarlórépa után Emelt D 1 m² → **mustár zöldtrágya** (okt.)
-- [ ] Következő levélablak: **okt. 10–21**
+- [ ] Következő levélablak: **okt. 10–17** (részletek: `oszi-ultetes-kiegeszites-2026-szept25-nov.md`)
 
 ---
 
@@ -254,12 +256,17 @@ Feltétel: **4 × 3 m² emeltágyás** + üvegházban **~10 m² ültetőfelület
 
 ## Október–november
 
+Rövid áttekintés; teljes vetési táblázat, holdnapok, walipini vs. üvegház vs. szabadföld és **Hét 7–13** teendők: **[őszi kiegészítés szept. 25-től](oszi-ultetes-kiegeszites-2026-szept25-nov.md)**.
+
 | Időszak | Teendő |
 |---------|--------|
-| **okt. 10–21** | Üvegház pótlás (spenót, rukkola, baby leaf); tarlórépa szedés → **mustár zöldtrágya** Emelt D 1 m² |
+| **okt. 10–17** | Utolsó fő vetési ablak: üvegház + walipini pótlás (spenót, baby leaf, borsóhajtás); tarlórépa után **mustár zöldtrágya** Emelt D 1 m² |
+| **okt. 18 – nov. 2** | Vetés nélkül: betakarítás, mulcs, fátyol |
 | **okt. vége** | Emelt C fátyol tartósan; retek ellenőrzés |
 | **nov. 3–9** | Saláta pótlás üvegházban (fogyó + leszálló) |
-| **nov.–dec.** | Téli retek tárolóra; levelek szedése; lóbab / kel átteleltetése |
+| **nov. 9–17** | Utolsó borsóhajtás / baby leaf; utána szedés–áttelelés |
+| **nov.–dec.** | Téli retek tárolóra; levelek szedése; lóbab / kel átteleltetése; üvegház fűtés dec.-től (ha van) |
+| **dec. 30 – már.** | **Téli vetés** (üvegház, walipini, korlátozott kültér): [`tel-ala-vetes-2026-2027.md`](tel-ala-vetes-2026-2027.md) |
 
 ---
 
