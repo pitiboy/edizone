@@ -6,3 +6,43 @@ Vetési időpontok a Holdfázis szerint.
 Mindig csak leszálló hold idején vetünk !!! (Ikrektől a Nyilasig)
 Ezen belül a szabadföldi gyökérzöldségeket fogyó Holdnál.
 A földfelett termőket növő Holdnál.... (de a salátát fogyó Holdnál, hogy ne fusson magszárba)
+
+---
+
+## Gyors szabály (edizone terv)
+
+| Lépés | Szabály |
+|-------|---------|
+| 1 | **Csak leszálló** Hold — vetés, palánta kiültetés helybe, hagymadugás |
+| 2 | **Fogyó** Hold — gyökér (retek, tarlórépa, újhagyma), **saláta** (magszár elkerülés) |
+| 3 | **Növő** Hold — levél, szár, hüvely **vetése**; zöldtrágya mustár (levélként kezelve) |
+| 4 | **Felszálló** Hold — **nincs vetés**; mulcs, betakarítás, takarás, szedés |
+| 5 | Nincs tökéletes metszet → **leszálló elsőbbség** |
+
+---
+
+## 2026 — leszálló és fázis (október–december)
+
+*Csomópontok: [iCalendar moon gardening 2026](https://icalendar.co.uk/moon-gardening-calendar-2026/); újhold/telihold: [calendar-yearly HU](https://calendar-yearly.com/moon/hu/2026).*
+
+| Leszálló időszak (vetésre) | Felszálló (vetés tilos) |
+|----------------------------|-------------------------|
+| **okt. 3–17** | **okt. 18 – nov. 2** |
+| **nov. 3–17** | **nov. 18 – dec. 29** |
+| **dec. 30 – 2027. jan. 14** | *(2027. jan. 15-től — lásd tavaszi / beltéri kiegészítés)* |
+
+| Fázis metszet | Október | November | December (dec. 15-ig) |
+|---------------|---------|----------|------------------------|
+| **Levél** (leszálló + növő) | **okt. 10–17** | **nov. 9–17** | — *(dec. 1–15: nincs értelmes szabadföldi levél-vetés)* |
+| **Gyökér / saláta** (leszálló + fogyó) | **okt. 3–10** | **nov. 3–9** | — |
+
+**2026 fő holdcsomópontok (finomhangolás):**
+
+| Esemény | Dátum (HU, hozzávetőleges) |
+|---------|----------------------------|
+| Újhold | okt. **10.** · nov. **9.** · dec. **9.** |
+| Telihold | okt. **26.** · nov. **24.** · dec. **24.** |
+
+> Pontos **elem-nap** (gyökér / levél / virág / gyümölcs): Maria Thun / biodin vetési naptár.
+
+**Kapcsolódó tervfájlok:** [`nyarvegi-oszi-ultetesi-terv-2026.md`](nyarvegi-oszi-ultetesi-terv-2026.md) (aug.–szept.) · [`oszi-ultetes-kiegeszites-2026-szept25-nov.md`](oszi-ultetes-kiegeszites-2026-szept25-nov.md) (okt. 12 – nov.) · [`tel-ala-vetes-2026-2027.md`](tel-ala-vetes-2026-2027.md) (tél alá vetés, áttelelés, dec. 1–15)

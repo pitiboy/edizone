@@ -1,260 +1,263 @@
-# Tél alá vetés és téli vetés — 2026/2027
+# Tél alá vetés, áttelelés és őszi zárás — 2026/2027
 
 **Kiegészíti:** [`nyarvegi-oszi-ultetesi-terv-2026.md`](nyarvegi-oszi-ultetesi-terv-2026.md) · [`oszi-ultetes-kiegeszites-2026-szept25-nov.md`](oszi-ultetes-kiegeszites-2026-szept25-nov.md)  
 **Helyszín:** Tatabánya / Kömlőd  
-**Készítve:** 2026. szeptember 30.  
-**Hold:** `holdfazis.altalanos.md` — vetés csak **leszálló** Holdnál; gyökér/saláta **fogyó**, levél **növő**
+**Felülvizsgálva:** 2026. október 12.  
+**Hold:** [`holdfazis.altalanos.md`](holdfazis.altalanos.md)
 
 ---
 
-## Mit jelent itt a „tél alá vetés”?
+## Mi ez a dokumentum — és mi nem?
 
-Két dolgot külön kezelünk (mindkettő benne van ebben a tervben):
+| Igen | Nem |
+|------|-----|
+| Szabadföldi **tél alá vetés** és **áttelelő** állomány gondozása | Új, augusztustól független kertészeti naptár |
+| **2026. okt. 12. – dec. 15.** vetési / ültetési döntések | Jan.–márc. **új vetés** a terv középpontjában |
+| Ellentmondások javítása a meglévő fájlok között | Minden művelet „tél alá vetés” néven |
 
-| Típus | Mikor vetetted | Hol van tél alatt | Mit csinálsz télen |
-|-------|----------------|-------------------|---------------------|
-| **1) Őszi tél alá vetés (áttelelő)** | aug.–nov. (fő + őszi kiegészítés) | **Szabadföld / kültér** (emelt) + **walipini / üvegház** | Mulcs, fátyol, szedés; **új mag nem kell** |
-| **2) Téli hónapokban új vetés** | **dec. 2026 – márc. 2027** (leszálló hold) | Főleg **üvegház (fűtött)** + **walipini**; szabadföldön **nagyon korlátozott** | Borsóhajtás, mikrozöld, kora tavaszi pótlás |
-
-> A korábbi kiegészítés **C3** szakasza („nincs vetés”) csak az **átteleltetés–szedés** fázisra vonatkozott. Az alábbi táblázatok a **téli hónapokban ténylegesen elvégezhető vetéseket** tartalmazzák.
-
----
-
-## Infrastruktúra téli vetéshez
-
-| Zóna | m² (terv) | Fűtés tél alatt | Téli vetés szerepe |
-|------|-----------|-----------------|---------------------|
-| **Emeltágyás A–D** (kültér) | 12 | Nincs | **1)** már vetett áttelelők; **2)** febr.–márc. enyhe pótlás fátyol alatt |
-| **Walipini** (passzív) | ~3–4 *(logikai)* | Nincs (földhő) | Spenót, claytonia, madársaláta; enyhébb téli ablak |
-| **Üvegház** | 12 (~10 növény + járó) | **Dec.–márc.: temperált fűtés** *(feltételezve)* | Fő téli vetési hely: borsóhajtás, mikrozöld, saláta/spenót tavaszi hullám |
-
-Walipini nélkül: walipini sorok → **üvegház sáv 1, 8, 9** + ahol lehet **Emelt C fátyol**.
+**Október–november részletes ablakok:** [`oszi-ultetes-kiegeszites-2026-szept25-nov.md`](oszi-ultetes-kiegeszites-2026-szept25-nov.md) (okt. 12–31, nov. 1–10 / 11–20 / 21–30).
 
 ---
 
-## Holdablakok — december 2026 – március 2027
+## Művelettípusok (7 kategória)
 
-Leszálló (hozzávetőleges; csomópontok: [iCalendar moon gardening 2026](https://icalendar.co.uk/moon-gardening-calendar-2026/)):
-
-| Időszak | Leszálló (vetésre) |
-|---------|---------------------|
-| **nov. 18 – dec. 29** | Nem — szedés, mulcs, fűtés be |
-| **dec. 30 – jan. 14** | Igen |
-| **jan. 15 – jan. 27** | Nem |
-| **jan. 28 – feb. 11** | Igen |
-| **feb. 12 – feb. 24** | Nem |
-| **feb. 25 – már. 11** | Igen |
-| **már. 12 – …** | Felszálló — átmenet a tavaszi fő tervbe |
-
-Újhold / telihold (vetés finomhangolás):
-
-| Hónap | Újhold (fogyó metszet vége) | Telihold |
-|-------|----------------------------|----------|
-| **dec.** | dec. 9 | dec. 24 |
-| **jan.** | ~jan. 8 | ~jan. 24 |
-| **feb.** | ~feb. 6 | ~feb. 22 |
-| **már.** | ~már. 8 | ~már. 24 |
-
-| Típus | Dec–jan | Feb–már |
-|-------|---------|---------|
-| **Levél** (leszálló + **növő**) | **jan. 8–14** *(dec. 30-tól növő rész)* · **jan. 28 – feb. 11** | **feb. 6–11** · **már. 8–11** |
-| **Gyökér / saláta** (leszálló + **fogyó**) | **dec. 30 – jan. 8** | **jan. 28 – feb. 6** · **feb. 25 – már. 8** |
-| **Mikrozöld / borsóhajtás** | Leszálló + növő ablakokban | Ugyanígy |
-
-> Pontos elem-nap: Maria Thun 2026/27 vetési naptár. **Leszálló elsőbbség.**
+| # | Név | Rövid definíció |
+|---|-----|-----------------|
+| **1** | Szabadföldi tél alá vetés | Mag **kültéri** ágyásba; télre a földben marad / csírázik tavasszal (retek, spenót fátyol alatt, zöldtrágya) |
+| **2** | Őszi vetés áttelelő állományra | Nyár végi vetés **célja** a tél túlélés és **korai 2027-es** termés (lóbab, tavaszi kel) |
+| **3** | Őszi hagymadugás | Dugvány ültetés (nem mag) — *nincs hely a 24 m² tervben* |
+| **4** | Fokhagyma őszi ültetése | *Nincs hely a 24 m² tervben* — ha külön ágyás: okt. vége, leszálló + fogyó |
+| **5** | Ősszel kiültetett / áttelelő palánták | Szept.–okt. kiültetett saláta, káposztafélék — télen **ápolás**, nem új mag |
+| **6** | Védett termesztés — őszi vetés | Walipini / üvegház **okt.–nov.** (fűtés nélkül is) |
+| **7** | Téli beltéri vetés, mikrozöld | Borsóhajtás, mikrozöld — **nem** tél alá vetés → [Kiegészítés: beltéri ciklus](#kiegészítés-beltéri-vetés-és-mikrozöld-2027-jan–már)
 
 ---
 
-## 1) Őszi tél alá vetés — mi van már a földben (kültér + védett)
+## Fő táblázat — vetés és ültetés (2026. okt. 12. – dec. 15.)
 
-*Ezeket **nem** veted újra télen; mulcs, takarás, szedés.*
+*Csak **1–6** típus. A táblázat **nem** augusztus–szeptember (fő terv), **nem** jan.–márc. új vetés.*
 
-### Szabadföld / kültér (emeltágyás)
-
-| Növény | Ágyás | m² | Vetés ideje (már megtörtént) | Tél alatt |
-|--------|-------|-----|------------------------------|-----------|
-| **Téli retek** | **A** | 3,0 | szept. 9–11 | Mulcs; dec.–jan. a földben; **tárolóra** fagymentes időben |
-| **Lóbab** | **B** | 1,5 | aug.–szept. | Karó, háló; túlélés → korai tavaszi termés |
-| **Tavaszi káposzta / kel** | **B** | 1,5 | aug.–szept. | Háló; **máj–jún. éhes rés** |
-| **Spenót** | **C** | 1,5 | szept. + okt. pótlás | **Fátyol**; szedés enyhe napokon |
-| **Madársaláta** | **C** | 1,5 | szept. + okt. pótlás | Fátyol; téli saláta kültérről |
-| **Mustár zöldtrágya** | **D** | 1,0 | okt. 10–17 | Zöld takaró / mulcs; tavasszal beásás |
-| **Mángold** | **D** | 1,0 | aug.–szept. | Nov.–dec. utolsó levelek, majd ki |
-| **Újhagyma** | **D** | 0,5 | szept. | Szedegetés télen, ha nem fagyott keményen |
-
-### Walipini + üvegház (őszi vetés, tél alatt növekedés / túlélés)
-
-| Növény | Hol | m² / sáv | Vetés ideje | Tél alatt |
-|--------|-----|----------|-------------|-----------|
-| Spenót | Üvegház 1 + walipini | 2,0 + 1,0 | aug.–okt. | Fő levél; üvegházban fűtéssel aktívabb |
-| Téli saláta | Üvegház 4 | 1,0 | szept. tálca → kiült. | Szedés dec.–márc. |
-| Pak choi, kínai kel | Üvegház 2–3 | 2,7 | aug.–szept. | Utolsó szedés okt.–nov.; **télen új vetés nem** |
-| Mizuna, mustár, rukkola | Üvegház 5–7 | 2,2 | aug.–okt. | Pótlás nov. 9–17 után csak szedés |
-| Madársaláta | Üvegház 8 | 0,6 | szept.–okt. | Tartalék |
-| Claytonia | Üvegház 9 + walipini | 0,5 + 0,5 | aug.–okt. | **Passzív túlélés** walipiniben |
-| Borsóhajtás | Üvegház 10 | 0,5 | okt.–nov. | **Téli ciklus** folytatása (lásd §2) |
+| Időszak | Növény | Típus | Hol | Hold (2026) | Talaj / feltétel | Kockázat | 2027 előny | Ha késő / kockázatos |
+|---------|--------|-------|-----|-------------|------------------|----------|------------|----------------------|
+| **Okt. 12–17** | Mustár zöldtrágya | 1 | Emelt **D** 1 m² | leszálló + **növő** | Tarlórépa **betakarítva**; munkálkodó, nem sáros | Kevés biomassza ha hideg | Talajtakaró | Tavasszal beásás mulccsal is |
+| **Okt. 12–17** | Spenót, madársaláta | 1 + 6 | Emelt **C** + üvegház 1, 8 + walipini | leszálló + **növő** | C: **fátyol** készen | Fagy fátyol nélkül | Korai tavaszi levél | Nov. 9–17 csak **6** pótlás védettben |
+| **Okt. 12–17** | Mizuna, rukkola, mustársaláta | 6 | Üvegház 5–7 | leszálló + **növő** | Nedves talaj, zárás esténként | Lassú nov.-tól | Baby leaf | Nov. 9–17 utolsó mag |
+| **Okt. 12–17** | Claytonia | 6 | Üvegház 9 / walipini | leszálló + **növő** | Sekély vetés | Maghiány | Önmegújuló tavasz | Extra spenót |
+| **Okt. 12–17** | Borsóhajtás | **7** *(védett)* | Üvegház 10 | leszálló + **növő** | Tálca | — | Téli friss | Nov. 9–17 tálca |
+| **Okt. 18 – okt. 31** | — | — | — | **felszálló** | — | Vetés **tilos** | — | Mulcs, fátyol, szedés |
+| **Nov. 1–2** | — | — | — | felszálló | — | Vetés **tilos** | — | — |
+| **Nov. 3–9** | Téli saláta (tálca) | 6 | Üvegház 4 | leszálló + **fogyó** | Tálca | Lassú kelés | Tavaszi fej | Kihagyható ha szept. állomány OK |
+| **Nov. 3–9** | Újhagyma pótlás | 6 | Walipini *(opc.)* | leszálló + **fogyó** | Enyhébb hely | Gyenge tél | Korai szedés | Emelt D szept. sor |
+| **Nov. 9–17** | Borsóhajtás | **7** | Üvegház 10 | leszálló + **növő** | Tálca | Dec. fűtés kell | Friss | Meglévő tálca |
+| **Nov. 9–17** | Baby leaf pótlás | 6 | Üvegház 5–7 | leszálló + **növő** | — | Fényhiány | Korai vágás | Csak szedés |
+| **Nov. 18 – dec. 15** | — | — | — | **felszálló** (nov. 18 – dec. 29) | — | **Nincs** őszi típusú új vetés | — | Áttelelés, mulcs, fűtés |
+| **Dec. 1–15** | Szabadföldi vetés | — | Emelt A–D | — | Befagyott / nedves | **Nincs értelmes új vetés** | — | **Febr.–már.** korai pótlás fátyol alatt: opció, alacsony prio |
+| **Dec. 1–15** | Walipini vetés | — | Walipini | — | Hideg | **Nem ajánlott** dec. 1–15 | — | **Dec. 30+** leszálló: opcionális beltéri jelleg — lásd beltéri fejezet |
+| **Dec. 1–15** | Üvegház (fűtés nélkül) | 5 | Meglévő sávok | — | — | Fagy | Szedés | **Dec. 1–7:** fűtés beállítás *ha van* |
+| **Dec. 1–15** | Fokhagyma / hagymadugás | 3–4 | *Nincs tervben* | dec. 1–15 már **késő** fokhagymára | — | — | — | **Okt. 10–31.** külön ágyáson |
 
 ---
 
-## 2) Téli hónapokban új vetés — teljes táblázat
+## 1) Szabadföldi tél alá vetés — már a földben + októberi utolsó mag
 
-### A) Szabadföld / kültér (emeltágyás)
+### Áttelelő / tél alatti állomány (nem veted újra)
 
-| Növény | Ágyás | m² | Mód | Hold | Megjegyzés |
-|--------|-------|-----|-----|------|------------|
-| — | — | — | — | **dec.–jan.** | **Nincs új vetés** (fagy, rövid nap) |
-| Spenót (kora tavaszi pótlás) | **C** | 0,5 | Helybe, **fátyol alatt** | **feb. 25 – már. 11** (növő) | Csak enyhülés + munkálkodó talaj (~5 °C) |
-| Madársaláta (pótlás) | **C** | 0,3 | Sorba, fátyol | **feb. 25 – már. 11** (növő) | Kültéri utolsó esély |
-| *(Opció)* Korai sárgarépa | **D** *(mustár után)* | 0,5 | Helybe | **már. 8–11** (fogyó) | Csak ha D ágyás zöldtrágya le van kaszálva / beásva előkészítve |
+| Növény | Ágyás | m² | Vetés ideje | Típus | Tél alatt | 2027 előny |
+|--------|-------|-----|-------------|-------|-----------|------------|
+| **Téli retek** | **A** | 3,0 | szept. 9–11 | 1 | Mulcs; dec.–jan. földben → tároló | Korai retek, nem vár tavaszi vetésre |
+| **Lóbab** | **B** | 1,5 | aug.–szept. | 2 | Karó, háló | Korai hüvely |
+| **Tavaszi káposzta / kel** | **B** | 1,5 | aug.–szept. | 2 | Háló | Máj–jún. „éhes rés” |
+| **Spenót** | **C** | 1,5 | szept. + **okt. 12–17** pótlás | 1 | **Fátyol** | Korai levél |
+| **Madársaláta** | **C** | 1,5 | szept. + **okt. 12–17** pótlás | 1 | Fátyol | Korai saláta |
+| **Mustár zöldtrágya** | **D** | 1,0 | **okt. 10–17** | 1 | Mulcs / zöld takaró | Talaj 2027 |
+| **Mángold** | **D** | 1,0 | aug.–szept. | 2 *(levél)* | Nov.–dec. utolsó levelek | — |
+| **Újhagyma** | **D** | 0,5 | szept. | 1 *(gyökér jelleg)* | Szedés télen | Folyamatos |
 
-**Dec.–jan. kültéren:** mulcs, fátyol ellenőrzés, retek tároló, lóbab/kel védelem — **vetés nélkül**.
-
-### B) Walipini (passzív)
-
-| Növény | m² | Mód | Hold | Megjegyzés |
-|--------|-----|-----|------|------------|
-| Spenót | 0,5 | Helybe | **jan. 28 – feb. 11** · **feb. 25 – már. 11** | Tavaszi első hullám walipiniben |
-| Claytonia | 0,3 | Helybe | **jan. 28 – feb. 11** | Önmegújuló; ritka mag |
-| Madársaláta | 0,3 | Sorba | **feb. 25 – már. 11** | |
-| Medves saláta *(opció)* | 0,3 | Helybe | **jan. 28 – feb. 11** | Ha van mag; claytonia pótlék |
-| Újhagyma (pótlás) | 0,2 | Sorba | **jan. 28 – feb. 6** (fogyó) | Gyökérnap |
-
-Walipiniben **dec. 30 – jan. 14** csak akkor vess, ha nappali hő **>0 °C** tartósan; különben **jan. 28-tól** biztonságosabb.
-
-### C) Üvegház (temperált fűtés dec.–márc.)
-
-| Növény | Sáv | m² | Mód | Hold | Megjegyzés |
-|--------|-----|-----|-----|------|------------|
-| **Borsóhajtás** | 10 | 0,5 | Tálca, 3–4 hetente | **dec. 30 – jan. 14** · **jan. 28 – feb. 11** · **feb. 25 – már. 11** (növő részek) | Fő téli termés |
-| **Mikrozöld** (borsó, retek, mustár) | 10 / polc | 0,3 | Sűrű tálca | Ugyanazok az ablakok | 7–14 nap forduló |
-| Spenót | 1 | 0,5 | Helybe / tálca | **jan. 8–14** · **jan. 28 – feb. 11** · **már. 8–11** | Tavaszi üvegház-készlet |
-| Téli saláta | 4 | 0,3 | Tálca → kiültetés | **dec. 30 – jan. 8** · **jan. 28 – feb. 6** (fogyó) | Ne fusson magszárba |
-| Mizuna, rukkola, mustársaláta | 5–7 | 0,5 összesen | Szórt | **jan. 28 – feb. 11** · **már. 8–11** | Baby leaf tavasz eleje |
-| Madársaláta | 8 | 0,2 | Sorba | **feb. 25 – már. 11** | |
-| Claytonia | 9 | 0,2 | Helybe | **jan. 28 – feb. 11** | |
-| **Tavaszi kel pótlás** *(ha Emelt B gyenge)* | tálca → Emelt B / sáv 2 | — | Cellás tálca | **feb. 25 – már. 11** (növő) | Csak pótlás; fő kel már B-ben áttelel |
-| **Korai retek** (friss, nem tároló) | 1 *(spenót mellett)* | 0,2 | Tálca / keskeny sor | **feb. 25 – már. 8** (fogyó) | Üvegházban gyors; **nem** Emelt A téli retek helyett |
-
-**Üvegházban télen nem indítunk:** új kínai kel / pak choi nagy fej (fényhiány); paradicsom/paprika **márc. végétől** külön tavaszi tervben.
+**Október 18. után kültéren:** nincs új tél alá vetés. **Téli retek / lóbab / kel** — csak védelem.
 
 ---
 
-## Prioritásos növénylista — téli vetés (dec.–már.)
+## 2) Őszi vetés áttelelő állományra — gondozás (nov.–márc.)
 
-| Prio | Növény | Hol | Szerep |
-|------|--------|-----|--------|
-| 1 | Borsóhajtás + mikrozöld | Üvegház 10 | Folyamatos téli friss |
-| 1 | Spenót (téli + tavaszi hullám) | Üvegház 1, walipini, Emelt C (febr.) | Levél |
-| 1 | Áttelelő retek, lóbab, kel | Emelt A, B | **Már vetve** — tárolás / áttelelés |
-| 2 | Téli saláta | Üvegház 4 | Fogyó hold; fűtött üvegház |
-| 2 | Claytonia, madársaláta | Walipini + üvegház 8–9 | Hidegtűrő |
-| 2 | Mizuna, rukkola, mustár | Üvegház 5–7 | Baby leaf |
-| 3 | Kel pótlás tálca | Tálca | Csak ha B állomány gyenge |
-| 3 | Korai üvegházi retek | Üvegház 1 | Friss gyökér tavasz elején |
+| Növény | Hol | Nov.–dec. | Jan.–márc. 2027 |
+|--------|-----|-----------|-----------------|
+| Lóbab | Emelt B | Száraz talaj, karó | Indulás figyelése; **nincs új vetés** |
+| Tavaszi kel | Emelt B | Háló, galamb | Tavasszal első levelek / fej |
+| Mángold | Emelt D | Utolsó szedés | Ki a tavaszi helyre |
 
 ---
 
-## Heti teendőlista — tél (Hét 14–22)
+## 3–4) Hagymadugás, fokhagyma
 
-*(Folytatás: őszi kiegészítés Hét 13 után.)*
+A **24 m² emelt + üvegház** terv **nem** foglal helyet vöröshagymának / fokhagymának. Ha külön ágyás van:
+
+| Kultúra | Ésszerű ablak (Komárom megye) | Hold | Megjegyzés |
+|---------|-------------------------------|------|------------|
+| Fokhagyma | **Okt. 10 – okt. 31.** | leszálló + **fogyó** | **Dec. 1–15 már késő** |
+| Hagymadugás | **Okt. vége – nov. eleje** | leszálló + **fogyó** | Nov. közepe után kockázatos |
+
+---
+
+## 5) Ősszel kiültetett / áttelelő palánták
+
+| Növény | Hol | Vetés / kiültetés | Okt.–nov. | Télen |
+|--------|-----|-------------------|-----------|-------|
+| Téli saláta | Üvegház 4 | Szept. tálca → kiült. szept. 25–30 | Szedés | Dec.+ fűtéssel |
+| Pak choi, kínai kel | Üvegház 2–3 | Aug.–szept. | **Utolsó szedés okt.–nov.** | **Nincs** új nagy fej |
+| Tavaszi kel | Emelt B | Aug.–szept. palánta | Háló | Áttelelés |
+
+---
+
+## 6) Védett termesztés — már vetett + nov. záró pótlás
+
+| Növény | Hol | Utolsó értelmes vetés | Tél alatt |
+|--------|-----|------------------------|-----------|
+| Spenót | Üvegház 1 + walipini | **Okt. 12–17** (+ nov. 9–17 **nem** ajánlott spenótnál — csak borsó/baby) | Szedés; dec.+ fűtés |
+| Mizuna, mustár, rukkola | Üvegház 5–7 | **Okt. 12–17** / baby **nov. 9–17** | Szedés |
+| Madársaláta | Üvegház 8 | **Okt. 12–17** | Tartalék |
+| Claytonia | Üvegház 9 + walipini | **Okt. 12–17** | Passzív walipini |
+| Téli saláta | Üvegház 4 | Tálca **nov. 3–9** | Fűtött üvegház |
+
+---
+
+## Infrastruktúra
+
+| Zóna | m² | Fűtés tél alatt | Szerep |
+|------|-----|-----------------|--------|
+| Emelt A–D | 12 | Nincs | **1–2** tél alatti állomány; **okt. 12–17** utolsó mag |
+| Walipini | ~3–4 *(logikai)* | Nincs | **6** okt. vetés; passzív túlélés |
+| Üvegház | 12 | **Dec.–márc.: temperált** *(ha van)* | **5–6** áttelelők; **7** külön fejezet |
+
+Walipini nélkül: walipini → **üvegház 1, 8, 9** + **Emelt C** fátyol.
+
+---
+
+## December 1–15 — feltételes lehetőségek (összefoglaló)
+
+| Kérdés | Válasz |
+|--------|--------|
+| Szabadföldi **tél alá vetés** dec. 1–15? | **Nem** — nincs szakmailag reális ablak |
+| Új **6** védett őszi vetés? | **Nem** — nov. 18. óta felszálló |
+| **5** áttelelő palánta / **1** retek a földben? | **Igen** — mulcs, fátyol, szedés, retek tároló terv |
+| **7** beltéri vetés dec. 1–15? | **Csak** ha fűtés már stabil — részletek alább |
+| Fokhagyma dec.-ben? | **Késő** — októberi ablak maradt el |
+
+---
+
+## Január–március 2027 — áttelelés és megfigyelés (központi terv)
+
+*Új vetés **nincs** itt felsorolva.*
+
+| Zóna | Teendő |
+|------|--------|
+| Emelt **A** | Retek fagy alatt — **ne bolygasd**; enyhe időn tároló |
+| Emelt **B** | Lóbab, kel — túlélés, tavaszi indulás |
+| Emelt **C** | Fátyol alatt szedés; **opc.** enyhé febr. spenót pótlás (alacsony prio) |
+| Emelt **D** | Mustár mulcs alatt |
+| Üvegház / walipini | Meglévő állomány szedése; fűtés karbantartás |
+| **2027 tavaszi fő vetés** | Külön tavaszi terv / fő dokumentum — **nem** ez a fájl |
+
+---
+
+## Heti teendők — október vége, november, december eleje
+
+*(Folytatás: [`oszi-ultetes-kiegeszites-2026-szept25-nov.md`](oszi-ultetes-kiegeszites-2026-szept25-nov.md) Hét 7–13.)*
+
+### Hét 8 · okt. 12–17 *(leszálló + növő — UTOLSÓ vetés)*
+
+- [ ] **Ma–okt. 17:** mustár D (ha tarló kész), üvegház + walipini + Emelt C pótlások (lásd fő táblázat)
+- [ ] Fátyol Emelt C **okt. 18 előtt** kész legyen
+
+### Hét 9–13 · okt. 18 – nov. 30
+
+- Lásd őszi kiegészítés — **vetés nélküli** és nov. ablakok
 
 ### Hét 14 · dec. 1–7
 
-- [ ] Üvegház: **fűtés be** (temperált cél ~5–12 °C éjszaka, enyhén magasabb nappal)
-- [ ] Emelt A: mulcs ellenőrzés (retek)
-- [ ] Emelt C: fátyol hó- és szél ellen
-- [ ] Borsóhajtás: utolsó nov-i tálca szedése
+- [ ] Üvegház: **fűtés be** *(~5–12 °C éjszaka)* ha van
+- [ ] Emelt A mulcs; Emelt C fátyol hó ellen
+- [ ] **Nincs** szabadföldi vetés
 
-### Hét 15 · dec. 8–14
+### Hét 15 · dec. 8–15
 
-- [ ] **dec. 9** körül: fogyó hold — üvegház **saláta tálca** (4), ha kell tavaszi állomány
-- [ ] Walipini: takaró, csapadék elvezetés
-- [ ] Emelt B: lóbab szár ellenőrzés
-
-### Hét 16 · dec. 15–29 *(felszálló — vetés nélkül)*
-
-- [ ] Üvegház: szedés (spenót, saláta, baby leaf)
-- [ ] Téli retek: állapotjegyzet (tárolás jan.–feb.)
-- [ ] Magok rend: borsó (hajtás), spenót, saláta, mikrozöld
-
-### Hét 17 · dec. 30 – jan. 5 *(leszálló + fogyó → saláta)*
-
-- [ ] **dec. 30 – jan. 8:** téli saláta vetés tálca (üvegház 4)
-- [ ] **Borsóhajtás** új tálca (10) — ha fűtés stabil
-- [ ] Mikrozöld indítás (mustár / retek mag)
-
-### Hét 18 · jan. 6–14 *(leszálló + növő)*
-
-- [ ] **jan. 8–14:** spenót üvegház 1 (0,5 m² sor)
-- [ ] Borsóhajtás pótlás
-- [ ] Emelt C: csak szedés, **nincs** kültéri vetés
-
-### Hét 19 · jan. 15–27 *(felszálló)*
-
-- [ ] Saláta tálca kiültetés üvegház 4-be, ha kel
-- [ ] Üvegház szellőzés enyhe napokon
-- [ ] Retek A: fagy alatt mulcs — ne bolygasd
-
-### Hét 20 · jan. 28 – feb. 4 *(leszálló + fogyó / növő határ)*
-
-- [ ] **jan. 28 – feb. 6:** saláta pótlás tálca (fogyó)
-- [ ] **jan. 28 – feb. 11:** walipini spenót + claytonia; üvegház baby leaf
-- [ ] Borsóhajtás új tálca
-
-### Hét 21 · feb. 5–18 *(leszálló + növő)*
-
-- [ ] **feb. 6–11:** spenót, mizuna, rukkola üvegházban
-- [ ] Walipini: madársaláta sor
-- [ ] Emelt D: zöldtrágya mustár helyzet (kaszálás / beásás tavaszi előtt)
-
-### Hét 22 · feb. 19 – már. 4 *(felszálló, majd leszálló feb. 25)*
-
-- [ ] **feb. 25 – már. 8:** saláta, újhagyma walipini; **Emelt C fátyol alatt** spenót 0,5 m² *(ha talaj engedi)*
-- [ ] **Kel pótlás** tálca, ha kell
-- [ ] Üvegházi korai retek tálca (fogyó metszet)
-
-### Hét 23 · már. 5–18 *(leszálló — utolsó téli vetési hullám)*
-
-- [ ] **már. 8–11:** spenót + baby leaf utolsó téli vetés üvegházban
-- [ ] Borsóhajtás ciklus
-- [ ] Emelt B: kel / lóbab tavaszi indulás figyelése
+- [ ] **dec. 9** körül fogyó hold — **nem** szabadföldi vetés; beltéri saláta csak [beltéri fejezet](#kiegészítés-beltéri-vetés-és-mikrozöld-2027-jan–már)
+- [ ] Walipini csapadék; lóbab ellenőrzés
+- [ ] **Dec. 16–29:** szedés, mulcs — vetés nélkül (felszálló)
 
 ---
 
-## Gyors térkép — tél alatti vetés
+## Gyors térkép — tél alá vs. beltéri
 
 ```
 KÜLTÉR (Emelt 12 m²)                 WALIPINI (~3–4 m²)
 ┌──────────────────────────┐          ┌─────────────────────────┐
-│ A retek — már tél alatt  │          │ Áttelelő: spenót,       │
-│ B lóbab + kel — áttelel  │          │  claytonia (őszi vetés) │
-│ C spenót+madár — fátyol  │          │ ÚJ vetés: jan–már.      │
-│ D mustár z.tr. — mulcs   │          │  spenót, claytonia,     │
-│ ÚJ: febr–már. C pótlás   │          │  madár, medves (opc.)  │
-└──────────────────────────┘          └─────────────────────────┘
+│ A retek — tél alatt      │          │ 6: okt. 10–17 vetés     │
+│ B lóbab + kel — áttelel  │          │ Passzív tél             │
+│ C levél + FÁTYOL         │          │ Dec. 1–15: nincs vetés  │
+│ D mustár z.tr. okt. 17-ig│          └─────────────────────────┘
+│ Okt. 18+: NINCS új vetés │
+└──────────────────────────┘
 
-ÜVEGHÁZ (fűtött, dec.–márc.)
+ÜVEGHÁZ
 ┌──────────────────────────────────────────────────────────────┐
-│ Áttelelő: spenót 1, saláta 4, baby 5–7, claytonia 9          │
-│ ÚJ vetés: borsóhajtás 10 (folyamatos), mikrozöld,            │
-│  spenót/saláta/baby tavaszi hullám, kel pótlás tálca,        │
-│  korai retek 0,2 m²                                          │
+│ 5–6: okt.–nov. záró pótlás · 5: palánták ápolása             │
+│ 7: borsóhajtás / mikrozöld → KÜLÖN FEJEZET (nem tél alá)     │
 └──────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Bio bevásárlólista — téli pótláshoz
+## Kiegészítés: beltéri vetés és mikrozöld (2027. jan.–már.)
 
-| Prio | Termék | Hol / link |
+*Csak ha a meglévő rendszerben **tényleg** használod a fűtött üvegházat télen. **Nem** része a szabadföldi tél alá vetésnek.*
+
+### Holdablakok — december 2026 – március 2027
+
+| Időszak | Leszálló (vetésre) |
+|---------|---------------------|
+| **nov. 18 – dec. 29** | Nem |
+| **dec. 30 – jan. 14** | Igen |
+| **jan. 15 – jan. 27** | Nem |
+| **jan. 28 – feb. 11** | Igen |
+| **feb. 12 – feb. 24** | Nem |
+| **feb. 25 – már. 11** | Igen |
+| **már. 12+** | Felszálló — tavaszi fő terv |
+
+| Típus | Dec–jan | Feb–már |
+|-------|---------|---------|
+| **Levél** (leszálló + növő) | jan. 8–14 · jan. 28 – feb. 11 | feb. 6–11 · már. 8–11 |
+| **Gyökér / saláta** (leszálló + fogyó) | dec. 30 – jan. 8 | jan. 28 – feb. 6 · feb. 25 – már. 8 |
+
+### Beltéri vetés — opcionális táblázat
+
+| Növény | Hol | Mód | Megjegyzés |
+|--------|-----|-----|------------|
+| Borsóhajtás | Üvegház 10 | Tálca 3–4 hetente | Folyamatos friss |
+| Mikrozöld | Polc / 10 | Sűrű tálca | 7–14 nap |
+| Spenót | Üvegház 1 | Sor | Tavaszi készlet |
+| Téli saláta | Üvegház 4 | Tálca | Fűtés kell |
+| Mizuna, rukkola | Üvegház 5–7 | Szórt | Baby leaf |
+| Claytonia, madársaláta | Walipini / 8–9 | Helybe | Passzív / enyhe fűtés |
+| Kel pótlás tálca | Tálca | Cellás | **Csak** ha Emelt B gyenge |
+| Korai retek (friss) | Üvegház 1 | Tálca | **Nem** helyettesíti Emelt A téli retket |
+
+**Walipini dec. 30 – jan. 14:** csak ha nappali hő **>0 °C** tartósan; különben jan. 28-tól.
+
+**Kültéri febr.–már. pótlás (alacsony prio):** Emelt C spenót 0,5 m² fátyol alatt, **feb. 25 – már. 11** (növő), munkálkodó talaj ~5 °C.
+
+---
+
+## Bio bevásárló — októberi záró pótlás
+
+| Prio | Termék | Megjegyzés |
 |------|--------|------------|
-| 1 | Zöldborsó mag (hajtás + mikrozöld) | Bármely étkezési borsó |
-| 1 | Spenót bio | [Matador](https://www.magozo.hu/termek/bio-spenot-vetomag-matador-3-g-rocalba/) · Bloomling |
-| 1 | Mustár / retek mikrozöld | [Mustár baby](https://kisvakondwebshop.hu/product/mustar-mikrozoldseg-vetomag-baby-leaf-3-gramm/) · retek maradék |
-| 2 | Téli saláta | [Helmut](https://kisvakondwebshop.hu/product/helmut-salata-vetomag-2-gramm/) · [Gentilina](https://kisvakondwebshop.hu/product/gentilina-salata-vetomag-2-gramm/) |
-| 2 | Mizuna, rukkola | [Mizuna](https://oazis.hu/mizuna-azsiai-salata-vetomag-a.html) · [Rukkola](https://kisvakondwebshop.hu/product/rukkola-vetomag-3-gramm/) |
-| 2 | Madársaláta, claytonia | [Vit](https://oazis.hu/vit-madarsalata-vetomag-p.html) · claytonia specialista |
-| 3 | Kel pótlás | [Káposzta kategória](https://kisvakondwebshop.hu/product-category/zoldsegek/salata-retek-kaposzta/) |
+| 1 | Fehér mustár (zöldtrágya) | Emelt D **okt. 17-ig** |
+| 1 | Spenót, madársaláta | Okt. 12–17 + opc. nov. saláta |
+| 2 | Mizuna, rukkola, mustársaláta | Nov. 9–17 utolsó baby |
+| 2 | Zöldborsó (hajtás) | Beltéri ciklus |
+| 3 | Téli saláta | Nov. 3–9 tálca |
+
+*(Teljes lista: fő terv bevásárló.)*
 
 ---
 
@@ -262,10 +265,11 @@ KÜLTÉR (Emelt 12 m²)                 WALIPINI (~3–4 m²)
 
 | Dokumentum | Tartalom |
 |------------|----------|
-| `nyarvegi-oszi-ultetesi-terv-2026.md` | Aug.–szept. vetés, terület A–D, üvegház 1–10 |
-| `oszi-ultetes-kiegeszites-2026-szept25-nov.md` | Szept. 25 – nov., tél előtti utolsó őszi ablak |
-| **Ez a fájl** | **Tél alatt / téli hónapok vetése** + áttelelő állomány |
+| `nyarvegi-oszi-ultetesi-terv-2026.md` | Aug.–szept. vetés |
+| `oszi-ultetes-kiegeszites-2026-szept25-nov.md` | **Okt. 12 – nov. 30** részletes ablakok |
+| `holdfazis.altalanos.md` | Holdszabály + okt.–dec. csomópontok |
+| **Ez a fájl** | **Tél alá vetés**, fő táblázat **okt. 12. – dec. 15.**, áttelelés, beltéri **kiegészítés** |
 
 ---
 
-*Holdablakok: leszálló × fázis; dec. 2026 fázisnapok: [calendar-yearly HU](https://calendar-yearly.com/moon/hu/2026). Jan.–már. 2027 újhold ~29,5 napos ciklussal illesztve; pontos napokhoz Maria Thun / biodin naptár.*
+*Hold: leszálló elsőbbség; okt. 10 / 26, nov. 9 / 24, dec. 9 / 24 — [calendar-yearly HU](https://calendar-yearly.com/moon/hu/2026).*
