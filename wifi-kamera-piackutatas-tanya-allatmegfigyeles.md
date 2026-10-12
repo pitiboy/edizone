@@ -1,6 +1,6 @@
 # Olcsó Wi‑Fi IP kamerák piackutatás – tanyai állatmegfigyelés (Magyarország)
 
-**Készült:** 2026. október 12.  
+**Készült:** 2026. október 12. (kiegészítve: Temu 2× PTZ 1080p „nanny app” ajánlat)  
 **Cél:** 2–3 kamera vásárlása állatok távoli megfigyelésére; mozgás → microSD, alkalmi élőkép, minimális adatforgalom.  
 **Célár:** ~**5000 Ft/kamera** (teljes magyarországi beszerzési költség).  
 **Módszer:** Gyártói/adatlapok, hivatalos FAQ/manual, fórumok (Reddit, TP-Link community, App Store), magyar webshopok, AliExpress/Temu listák – a marketingállításokat ahol lehet, független forrásokkal ellenőriztem.
@@ -19,6 +19,7 @@
 | **Legjobb kompromisszum 2–3 db-ra** | **Ha marad a ~5000 Ft:** azonos **Cam720 (JOOAN A6M)** OEM család, **Infrared** éjszakai módra állítva. **Ha enged ~12–16 ezer Ft/db:** **Imou Bullet 2C 5MP** vagy **TP-Link Tapo C310** – nincs fehér reflektor, IP66/67, SD, egy app több kamerához. |
 | **Yi IoT** | Fehér fény **Auto/Off** választható, de **reklámok** és a korábbi tapasztalat miatt hátrébb sorolva. |
 | **940 nm alternatíva** | Ha a Wi‑Fi kamera budget nem elég diszkrét éjszakára: **Suntek HC-940M** jellegű **940 nm trail cam** (más használati modell: nincs folyamatos Wi‑Fi élőkép ugyanúgy). |
+| **Temu 2× PTZ (601102092951869)** | **2 kamerás csomag**, olcsó/db; címkeben **„color”** + **nanny/beltéri** – **tanya kültérre gyenge**, éjszakán **fehér fény kockázat**. Részletek: [Temu elemzés](#temu-2×-ptz-1080p-nanny-app-goods-601102092951869). |
 
 ---
 
@@ -518,6 +519,86 @@ Minden kategória **0–10**, súlyozott összesített **0–10**. A számok **s
 
 ---
 
+### 16. Temu „2pcs PTZ 1080p FHD color” + nanny app (goods **601102092951869**)
+
+**Forrás (2026-10-12):** [Temu HU termékoldal](https://www.temu.com/hu-en/2pcs--camera-system-with-ptz-pan-tilt-zoom-1080p-fhd-color--two-way-talk---detection-wifi-camera-compatible-with-sd-cloud-storage-for-home-nanny-app-g-601102092951869.html)  
+**Megjegyzés:** A Temu oldal JS-töltött; az alábbi táblázat a **URL + og:title + azonos Temu-kategória** (2× beltéri PTZ nanny) alapján készült. **App név, IP minősítés és pontos HUF ár a kosárban ellenőrizendő** vásárlás előtt.
+
+| Szempont | Információ |
+|---|---|
+| **Modell** | Temu listing: „2pcs camera system with PTZ, 1080p FHD **color**, two-way talk, motion/**sound** detection, SD/cloud”; goods ID **601102092951869** |
+| **Ár Magyarországra** | **~4000–7500 Ft/db** becslés (2 darabos csomag teljes ára / 2), **+ szállítás**; Temu HU ár **dinamikus**, login/kuponfüggő – **nincs rögzített Ft** a letöltött HTML-ben (**bizonytalan**) |
+| **Felbontás** | **1080p FHD** (hirdetés) |
+| **Éjszakai mód** | A címben kiemelt **„color”** → tipikusan **színes / dual-light** éjszaka (fehér LED vagy spot), nem tiszta IR-only hardver |
+| **Fehér LED kikapcsolható?** | **Bizonytalan** (app-függő). Hasonló 2× beltéri PTZ listák gyakran **Color Night Vision** + IR ([Temu kategória: color + spotlight](https://www.temu.com/home-cameras-5020263108673-s.html)). Ha CloudEdge/Wansview jellegű app: általában **IR mód** választható, de **auto tracking** mellett gyakran **fehér fény** mozgásra |
+| **IR típusa / hullámhossza** | Valószínű **850 nm** (4× IR LED tipikus nanny PTZ-n); **940 nm: nem** |
+| **Éjszakai valós tapasztalat** | **Nincs** modell-specifikus független teszt ehhez a goods ID-hoz. Általános tapasztalat: beltéri „color night” **zavarhatja az állatokat**; IR-only módban **6–10 m** realista, nem a marketing „30 ft” |
+| **Kültéri minősítés** | **Nincs IP65/66** a címben; **home / nanny** → **beltéri** vagy **fedett** tér. **Nyitott tanya udvar / eső: nem ajánlott** |
+| **Üzemi hőmérséklet** | **Nincs adat** (Temu); beltéri OEM jellemzően **0…+40 °C** körül – **magyar tél kültéren kockázatos** |
+| **microSD** | **SD/TF** hirdetve; hasonló OEM: max **128 GB** FAT32, **kártya nélkül** szállítás gyakori |
+| **Mozgásérzékelés** | Mozgás + **hang** detektálás; PTZ **auto tracking** (állatmozgásra sok riasztás + esetleg fehér fény) |
+| **Állatfelismerés** | Nincs megbízható AI; „pet/nanny” marketing |
+| **Wi‑Fi** | **2,4 GHz** (tipikus); egyes hasonló listing **2,4 + 5 GHz** – **első párosítás 2,4 GHz telefonon** |
+| **App** | Cím: **„nanny (app)”** – pontos név **csomagban / QR**. Lehetséges platformok: **CloudEdge**, **Wansview Cloud**, **YCC365**, **Ai365** (lot-függő). **Nem** azonos garantáltan a **Cam720**-rel |
+| **Reklámok** | App-függő; CloudEdge/Wansview: közepes cloud upsell; olcsó OEM: változó |
+| **Több kamera egy appban** | **2 db egy csomag** → ideális **2 kamera / 1 app**; 3. kamerához **másik csomag** vagy **ugyanazon app** más listing (lot kockázat!) |
+| **Cloud szükséges?** | **Nem** SD-hez (hirdetés); cloud **opcionális**, trial upsell gyakori |
+| **RTSP / ONVIF** | **Nem** hirdetett – **valószínűleg nincs** |
+| **Internetigény** | Nincs mérés; PTZ + push + tracking: **közepes** riasztási forgalom |
+| **Tápellátás** | **USB / micro-USB 5 V** (beltéri PTZ OEM tipikus); **24/7** beltérben OK |
+| **Fő előny** | **2 kamera egy rendelésben**, olcsó/db; **PTZ** ól/istálló **fedett** belső sarokra; kétirányú hang; SD + mozgás |
+| **Fő hátrány** | **„Color” éjszaka**; **nincs kültéri IP**; **app/lot kockázat**; **auto tracking** állatoknál zavaró fény/riasztás; **3. kamera** nem ugyanabból a SKU-ból |
+| **Források** | [Temu termék (601102092951869)](https://www.temu.com/hu-en/2pcs--camera-system-with-ptz-pan-tilt-zoom-1080p-fhd-color--two-way-talk---detection-wifi-camera-compatible-with-sd-cloud-storage-for-home-nanny-app-g-601102092951869.html); [Temu home cameras kategória](https://www.temu.com/home-cameras-5020263108673-s.html); összehasonlító OEM leírás CloudEdge PTZ: [Trendsrocket / CloudEdge app](https://trendsrocket.org/3mp-indoor-security-camera-360-ptz-2-4g-wifi-only-cameras-for-home-security-baby-monitor-plug-in-pet-camera-with-phone-app-for-dog-cat-2-way-talk-night-vision-auto-tracking-sd-cloud/) |
+
+**Pontszámok (tanyai állatmegfigyelés, kültér):** Éjszaka **4,5** | Megbízhatóság **5,0** | Ár/érték **7,5** (2-pack) | SD/mozgás **7,0** | App **6,0** | Kültér **3,0** | Kép **5,5** | Wi‑Fi **6,0** → **Összesen: 5,6/10**
+
+**Pontszámok (csak fedett istálló/ól belső, 2 kamera):** Éjszaka **5,5** | Kültér **5,0** (fedett) → **~6,2/10**
+
+#### Temu 2× PTZ 1080p „nanny app” (goods 601102092951869)
+
+**Mi ez valójában?**  
+A termék egy **nagyon tipikus olcsó beltéri PTZ Wi‑Fi kamera duó**, „baba/állat/nanny monitor” piacra szabva. A **2 darabos csomag** ár/érték szempontból vonzó, ha pont **2** kamerára van szükség és **fedett** helyen (ól belseje, takarmánytároló, utility szoba) telepíted. A **tanya kültéri** használatra (eső, por, −5 °C éjszaka) **nem** ugyanaz a kategória, mint a dokumentumban toppon szereplő **Imou Bullet / Tapo C310 / JOOAN IP66** kamerák.
+
+**Éjszakai állatmegfigyelés – a kritikus pont**  
+A címben szereplő **„1080p FHD color”** és a Temu-kategóriában gyakori **color night / spotlight** kombináció **vörös zászló** a te use case-edhez:
+
+- Ha **Color Night Vision** az alap, éjszaka **fehér LED** világít (állatok zavarása).
+- Ha van **IR mód**, azt **kézzel** kell választani (CloudEdge-szerű appoknál: IR night + tracking off – [hasonló OEM leírás](https://trendsrocket.org/3mp-indoor-security-camera-360-ptz-2-4g-wifi-only-cameras-for-home-security-baby-monitor-plug-in-pet-camera-with-phone-app-for-dog-cat-2-way-talk-night-vision-auto-tracking-sd-cloud/)).
+- **Auto tracking** + **motion/sound alert** állatoknál: **sok push**, sok rövid felvétel, és egyes firmware-ek **mozgásra kapcsolnak fehér fényt**.
+
+**Összehasonlítás a dokumentum ajánlásaival**
+
+| Szempont | Temu 2× PTZ (601102092951869) | JOOAN A6M / Cam720 kültéri | Imou Bullet 2C 5MP |
+|---|---|---|---|
+| Db / app | **2 db**, 1 app (ha azonos lot) | 3× ugyanaz ajánlott | 3×, Imou Life |
+| Kültér eső | **Gyenge** (beltéri) | **IP66** | **IP67** |
+| Fehér LED csapda | **Magas kockázat** („color”) | Közepes (beállítás kell) | **Alacsony** (nincs spot) |
+| Ár/db | **Alacsony** (csomagban) | ~5000–7500 Ft | ~12 000 Ft |
+| RTSP/ONVIF | **Nincs** | Lot-függő | **ONVIF** |
+
+**Vélemény – mikor vegyed, mikor ne**
+
+- **Ne** ezt vedd **elsődleges tanyai kültéri** megfigyelésre (itató, karám szabadban), ha a cél a **diszkrét éjszakai IR** és a **24/7 esőállóság**.
+- **Megfontolható**, ha:
+  - **2** kamera elég, **fedett** ól/istálló **belső** sarkában van felfüggesztve;
+  - kész vagy **első éjszaka** végigtesztelni: sötétben **nincs fehér fény** a jeleneten;
+  - **auto tracking off**, **IR night on**, **sound alarm off** (ha zavarja az állatot);
+  - **128 GB endurance SD**, **motion record** (nem 24/7 cloud stream).
+- **3 kamerához:** ez a SKU **2 db** – vagy **+1 azonos app-os** kültéri Cam720, vagy **másik csomag** (lot/app eltérés kockázata!).
+
+**Beüzemelés checklist (ha megveszed)**
+
+1. Csomagból: **app név** QR → ellenőrizd, **CloudEdge / Wansview / YCC365 / Cam720** melyik.  
+2. Éjszaka: **Infrared / B&W night** – **Color / Smart / Full color** **OFF**.  
+3. **Auto tracking OFF** (állatoknál).  
+4. **Spotlight / sound-light alarm OFF**.  
+5. microSD: **format** appban, **motion detection** recording, loop ON.  
+6. **7 nap** próba: megbízhatóság, Wi‑Fi újracsatlakozás, SD hibák – Temu-nál **visszaküldés** időablak számít.
+
+**Forrás-megjegyzés:** A konkrét goods **601102092951869** modellnevét és appját a gyártói adatlap nélkül **nem** lehet 100%-osan azonosítani; a fenti **CloudEdge/Wansview** hivatkozás **kategória-összehasonlítás**, nem bizonyíték, hogy ez a csomag pontosan az.
+
+---
+
 ### Bónusz: Yi IoT / Kami (korábbi tapasztalatod) – összehasonlítás
 
 | Szempont | Információ |
@@ -554,6 +635,7 @@ Minden kategória **0–10**, súlyozott összesített **0–10**. A számok **s
 | 5 | **Reolink E1 Outdoor** | **7,5** | Ár miatt ritkán budget |
 | 6 | **JOOAN A6M / Cam720** | **6,6** | **Budget king** |
 | 7 | **V380 Pro OEM** | **6,5** | Beállítás-kritikus |
+| 8 | **Temu 2× PTZ nanny (601102092951869)** | **5,6** | 2-pack ár; beltéri/color éjszaka |
 | … | ICSEE PRO eMAG | **5,2** | Kerülendő default |
 
 ---
@@ -568,6 +650,8 @@ Minden kategória **0–10**, súlyozott összesített **0–10**. A számok **s
 **JOOAN A6M** (vagy azonos **Cam720 app**-os kültéri 1080p IP66) **AliExpress EU raktár** / akciós EU shop – **egy rendelés, 3 azonos darab**.  
 **Beállítás kötelező:** „Choose night vision mode” → **Infrared**; **Smart/Full Color tiltása**.  
 **V380 Pro OEM** második helyen, ha **Light OFF + B&W** fixen beállítod.
+
+**Temu 2× PTZ (601102092951869)** csak **másodlagos**: jó **2 db / olcsó** fedett belső térre; **kültéri tanya + diszkrét éjszaka** → **JOOAN/Cam720 kültéri** jobb.
 
 ### 3. Legjobb képminőség / ár
 **Imou Bullet 2C 5MP** (5MP + H.265) vs **Tapo C310** (3MP stabil). Olcsó 2K OEM (Cam720 dual lens) **nem** ajánlott megbízhatóság miatt.
@@ -630,6 +714,7 @@ Második: **iGET CS6 ONVIF** SmartLife mellett.
 | **ICSEE PRO eMAG „4 világító LED mozgásra”** | Fehér fény **állatmozgásra** out-of-box ([eMAG](https://www.emag.hu/wifi-terfigyelo-kamera-icsee-pro-2mp-fhd-32gb-forgatas-vilagito-led-ek-ketiranyu-kommunikacio-kartya-felho-tarolas-mozgaserzekelo-automatikus-kovetes-card64solarurb-2765/pd/DBFK8BYBM/)). |
 | **Imou Cell Go Full Color** | Spot + smart color éjszaka ([Imou](https://www.imou.com/product/detail/cell-go-full-color)). **Cell Go (nem Full Color)** IR-only – de **akkumulátoros**, nem ideális 24/7 ([Tænk: nincs visible light on motion](https://taenk.dk/test/overvaagningskameraer-udendoers/imou-cell-go)). |
 | **Dual-light OEM „Smart / Starlight default”** | Mozgásra fehér fény ([V380 dual light](https://v380.app/how-to-use-the-lamplight-sensitivity-function/)). |
+| **Temu 2× „color” nanny PTZ (601102092951869)** | Beltéri, **color night** marketing; **nyitott kültér** és **állat-zavaró fény** kockázat – lásd [§16](#16-temu-2pcs-ptz-1080p-fhd-color--nanny-app-goods-601102092951869). |
 | **Yi IoT** | App reklámok (saját tapasztalat); fehér fény Auto csapda lehetséges. |
 
 ---
@@ -664,7 +749,8 @@ Második: **iGET CS6 ONVIF** SmartLife mellett.
 - EZVIZ: [C3N PDF FAQ](https://pimstorageaueprod.blob.core.windows.net/placemakers/media-assets/1210596_C3N.pdf), [EU spec](https://www.ezviz.com/eu/product/C3N/29209)  
 - Yi: [Yi IoT light manual](https://www.camapp365.com/yi-iot/yi-iot-light-bulb-camera), [Kami IR forum](https://forum.yitechnology.com/t/how-to-disable-ir-lens-switching-annoing-sound-at-the-morning-30-times/2283)  
 - 940 nm: [Willfine red vs no-glow](https://www.willfine.com/trail-camera-expertise/red-glow-vs-no-glow/), [Suntek HC-940M](https://www.eaelektronika.com/en/suntek-trail-cameras/suntek-hc940m-trail-camera-20mp-mms-email-ip65)  
-- HU árak: [Oázis Tapo C310](https://oaziscomputer.hu/termek/29771/tp-link-tapo-c310), [kamerabolt Imou](https://foscam.hu/termek/imou-ip-wifi-csokamera-bullet-2c-5mp-28mm-kulteri-ip67-h265-ir30m-sd-mikrofon-12vdc/), [bevachip EZVIZ H3C](https://bevachip.hu/ezviz-h3c-2-mp-kulteri-kamerawifi-1080p-ip67-mozgaserzekeles-hangfelvetel-ejjellato-h265-microsd-256gb-p878100/), [eMAG ICSEE](https://www.emag.hu/wifi-terfigyelo-kamera-icsee-pro-2mp-fhd-32gb-forgatas-vilagito-led-ek-ketiranyu-kommunikacio-kartya-felho-tarolas-mozgaserzekelo-automatikus-kovetes-card64solarurb-2765/pd/DBFK8BYBM/)  
+- HU árak: [Oázis Tapo C310](https://oaziscomputer.hu/termek/29771/tp-link-tapo-c310), [kamerabolt Imou](https://foscam.hu/termek/imou-ip-wifi-csokamera-bullet-2c-5mp-28mm-kulteri-ip67-h265-ir30m-sd-mikrofon-12vdc/), [bevachip EZVIZ H3C](https://bevachip.hu/ezviz-h3c-2-mp-kulteri-kamerawifi-1080p-ip67-mozgaserzekeles-hangfelvetel-ejjellato-h265-microsd-256gb-p878100/), [eMAG ICSEE](https://www.emag.hu/wifi-terfigyelo-kamera-icsee-pro-2mp-fhd-32gb-forgatas-vilagito-led-ek-ketiranyu-kommunikacio-kartya-felho-tarolas-mozgaserzekelo-automatikus-kovetes-card64solarurb-2765/pd/DBFK8BYBM/)
+- Temu 2× PTZ: [goods 601102092951869](https://www.temu.com/hu-en/2pcs--camera-system-with-ptz-pan-tilt-zoom-1080p-fhd-color--two-way-talk---detection-wifi-camera-compatible-with-sd-cloud-storage-for-home-nanny-app-g-601102092951869.html), [Temu home cameras kategória](https://www.temu.com/home-cameras-5020263108673-s.html), [CloudEdge PTZ OEM összehasonlító leírás](https://trendsrocket.org/3mp-indoor-security-camera-360-ptz-2-4g-wifi-only-cameras-for-home-security-baby-monitor-plug-in-pet-camera-with-phone-app-for-dog-cat-2-way-talk-night-vision-auto-tracking-sd-cloud/)  
 - iGET: [CS6 ONVIF](https://www.iget.eu/en/outdoor/iget-home-cs6)  
 - Reolink: [E1 Outdoor review/spec](https://reolink.com/blog/reolink-e1-outdoor-review/)
 
