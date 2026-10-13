@@ -43,9 +43,11 @@
 3. **Parazita / oltás** állapot.
 4. **Ólom / fészek** kapacitás (I. 1,5 éves tojók).
 5. II. állomány **pontos nem-bontás** vágás után.
-6. **Bio tanúsítás** — milyen kiegészítő engedett.
+6. **Bio tanúsítás** — milyen kiegészítő engedett; borsó kisker jellemzően nem HU-ÖKO.
 7. Tojástermelés **3–4 hetes trend** költözés után.
 8. Vegyes I. állomány → **fajta szerinti** termelés eltérés.
+
+**Lezárva / frissítve 2026-10-13:** grit **adva**; szója **nem**; takarmánymész és kevert só **kell**; Éden Major tartósan kiesik (szójapogácsa + ne keverni a 3:1:1-gyel). Részlet: [kutatas-tojasnoveles-kiegeszitok-vilagitas.md](./kutatas-tojasnoveles-kiegeszitok-vilagitas.md).
 
 ## Számítások reprodukálása
 
