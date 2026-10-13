@@ -6,7 +6,7 @@
 
 ### A) Kiegyensúlyozott gabona + kötelező kiegészítő réteg
 
-- **Lényeg:** Triticale/kukorica/búza **alap**, de **fehérjeforrás** (bio borsó/fava, szója — szabályfüggő), **napraforgó csökkentve** (pl. 5–10% tojónál), **Ca külön** (mész + durva tojáshéj), **P**, **premix** (A, D3, nyomelem).
+- **Lényeg:** Triticale/kukorica/búza **alap**, de **fehérjeforrás** (bio borsó/fava; **szója 2026-10-13-tól kizárva**), **napraforgó csökkentve** (pl. 5–10% tojónál), **Ca külön** (takarmánymész + durva tojáshéj), **só keverve**, **P**, **premix** (A, D3, nyomelem — hordozó szója-mentes legyen).
 - **Előny:** Mérhető, ~15 perc/nap tartható, gyors termelés-javulás potenciál.
 - **Hátrány:** Több vásárolt input; bio premix költség.
 - **Gazdaság:** Tojás/db költség javulhat termelés növekedésével.
@@ -80,7 +80,7 @@
 |------------|------------|
 | Olcsó gabona | Magas tojás (AA, Ca) |
 | Permakultúra diverzitás | 15 perc/nap |
-| Bio (szója tiltás?) | Lizin fedezet |
+| Bio (**szója tiltva**, 2026-10-13) | Lizin → tört borsó, nem 100% NRC |
 | Nagy terület | Parazita (rotáció nélkül) |
 
 ## 5. Gazdasági keret (kvalitatív)
@@ -100,11 +100,13 @@
 
 | Forrás | Szerep |
 |--------|--------|
-| Tojáshéj **durva** | Ca, körforgalom |
-| Mész / dolomit | Stabil Ca |
-| D3 + A | Télen kritikus |
-| Lizin / metionin | Gabona+napraforgó mellett — bio engedély **ellenőrizendő** |
-| Grit (kavics) | Egész gabona emésztése — nem darálás, de külön szükség lehet |
+| Tojáshéj **durva** | Ca, körforgalom — por kevésbé jó |
+| **Takarmánymész** (külön tálka) | Stabil, skálázható Ca; 2026-10-13: **kell** tojóknak |
+| Dolomit | Ne egyedüli Ca (Mg) |
+| Só **keverve** ~3–4 g/kg | Na/Cl; NRC ~0,15% Na; **nem** nyalósó, nem vízbe |
+| D3 + A | Télen kritikus (mészben nincs D3) |
+| Lizin | Szója **kizárva** (2026-10-13) → **tört borsó 10–15%**; L-lizin HCl öko-ban tilos |
+| Grit (kavics) | **Már megy**; zúzógyomor — nem Ca |
 
 ## 8. Szezonális üzemmodell (javasolt gondolkodás)
 

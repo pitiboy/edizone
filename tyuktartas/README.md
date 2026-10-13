@@ -4,7 +4,9 @@ Holistikus rendszerszintű vizsgálat: két elkülönített őshonos magyar tyú
 
 **Kutatás indítása:** 2026. szeptember vége  
 **Utolsó frissítés (dokumentum):** 2026. október 13.  
-**Státusz:** I. és II. fázis **lezárva**; kiegészítő kutatás (Éden Major, borsó, darálás, világítás) **elkészült**; **III. fázis (meglévő erőforrások: levél, trágya, komposzt) várakozik** felhasználói döntésre.
+**Státusz:** I. és II. fázis **lezárva**; kiegészítő kutatás (Éden Major, borsó, darálás, világítás, mész, só) **elkészült**; **III. fázis (meglévő erőforrások: levél, trágya, komposzt) várakozik**.
+
+**Rögzített korlátok (2026-10-13):** tartós takarmány **szója nélkül**; **grit már megy**; tojóknak **takarmánymész külön tálkában**; **só keverve** ~3–4 g/kg; Éden Major **ne** a 3:1:1-be keverve (és szójás komplett táp).
 
 ## Dokumentumok
 
@@ -14,7 +16,7 @@ Holistikus rendszerszintű vizsgálat: két elkülönített őshonos magyar tyú
 | [fazis-II-alternativak.md](./fazis-II-alternativak.md) | Lehetséges rendszerirányok, összehasonlítás, gazdaság, ökológia, permakultúra |
 | [takarmany-szamitasok.md](./takarmany-szamitasok.md) | 3:1:1 keverék profil, NRC-összevetés, csoportok napi igénye |
 | [forrasok-es-bizonytalansagok.md](./forrasok-es-bizonytalansagok.md) | Hivatkozások, tudományos vs. tapasztalati megkülönböztetés, hiányzó adatok |
-| [kutatas-tojasnoveles-kiegeszitok-vilagitas.md](./kutatas-tojasnoveles-kiegeszitok-vilagitas.md) | Tojásnövelés: Éden Major, takarmányborsó, darálás, lámpázás (2026-10-13) |
+| [kutatas-tojasnoveles-kiegeszitok-vilagitas.md](./kutatas-tojasnoveles-kiegeszitok-vilagitas.md) | Tojásnövelés: Éden Major, borsó, darálás, lámpázás, mész, só, szója-tiltás |
 | [fazis-III-placeholder.md](./fazis-III-placeholder.md) | III. fázis kerete (levél/trágya/komposzt) — **nem készült el** a döntésig |
 
 ## Metodológiai alapelv
@@ -24,14 +26,16 @@ Holistikus rendszerszintű vizsgálat: két elkülönített őshonos magyar tyú
 
 ## Gyors összefoglaló (I. fázis)
 
-A jelenlegi **triticale : kukorica : napraforgó = 3 : 1 : 1** keverék **energiadús, fehérje- és kalcium-szegény** tojóprofilhoz képest; a **20% egész napraforgó** tojónál kockázatosan magas. A **600 m²/állomány** bőven elég kifutóra, de **nem helyettesíti** a layer-specifikus tápanyag- és Ca-ellátást. A tojáshéj-visszaadás **hasznos**, de **por formában** és **alacsony termelés mellett** más skálán működik, mint csúcs-termelésnél.
+A jelenlegi **triticale : kukorica : napraforgó = 3 : 1 : 1** keverék **energiadús, fehérje-, Ca- és Na-szegény** tojóprofilhoz képest; a **20% egész napraforgó** tojónál kockázatosan magas. A **600 m²/állomány** bőven elég kifutóra, de **nem helyettesíti** a layer tápanyagot. A tojáshéj-visszaadás **hasznos**, de porban és ~2 tojás/nap mellett nem skáláz; grit **már van**, takarmánymész **még kell**. Lizin szója nélkül: **tört borsó**.
 
 ## Döntési pont (visszajelzéshez)
 
-1. Preferált rendszerirány (pl. kiegyensúlyozott gabona + kiegészítő; forage-dús; hibrid).  
-2. Bio / premix / fehérjeforrás korlátok.  
-3. Napi adag (g/tyúk), onetető.  
-4. II. állomány végleges nem-bontás vágás után.  
-5. III. fázis prioritás: gabona csökkenés, tojás, talaj, költség.
+**Részben megválaszolva (2026-10-13):** fehérje = borsó, **nem szója**; A-irány (kiegyensúlyozott gabona + kiegészítő) + mész + só; Éden nem keverve.
+
+1. Premix (RoBIOmix) kell-e, ha a hordozó szója-mentes?  
+2. Napi adag (g/tyúk), onetető.  
+3. II. állomány végleges nem-bontás vágás után.  
+4. III. fázis prioritás: gabona csökkenés, tojás, talaj, költség.  
+5. Világítás: vedlés állapota, Wi-Fi / dimmelés.
 
 Válasz után a **fazis-III-*.md** dokumentumok készülnek; ez a README frissül.

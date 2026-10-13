@@ -52,8 +52,11 @@ Részletes számok: [takarmany-szamitasok.md](./takarmany-szamitasok.md).
 
 - **3:1:1** triticale : kukorica : napraforgó; **búza** nem megy bele.
 - Előre keverve, porciózva; **onetető** lehetséges (használat ismeretlen).
-- **Nincs** külön mész; **tojáshéj** összegyűjtve, darálva/porítva visszaadva.
-- **Nincs** említett vitamin–ásvány premix.
+- **Nincs** külön takarmánymész; **tojáshéj** összegyűjtve, darálva/porítva visszaadva.
+- **Nincs** említett vitamin–ásvány premix; **nincs** kevert só a tápban.
+- **Grit** (oldhatatlan): a felhasználó 2026-10-13 szerint **szokott adni** — ez nem Ca.
+
+**Felhasználói korlát (2026-10-13):** tartós ration **szója nélkül**. Részletek: [kutatas-tojasnoveles-kiegeszitok-vilagitas.md](./kutatas-tojasnoveles-kiegeszitok-vilagitas.md).
 
 **Tápanyagprofil és NRC-összevetés:** [takarmany-szamitasok.md](./takarmany-szamitasok.md).
 

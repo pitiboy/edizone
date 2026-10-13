@@ -36,6 +36,7 @@ Számítás: 60% triticale + 20% kukorica + 20% napraforgó, középértékekkel
 | **Szabad foszfor** | **~0,12%** |
 | **Zsír** | **~10,7%** |
 | **Nyersrost** | **~5,1%** |
+| **Nátrium (Na)** | **~0,02%** (gabona-típusú; nem mért) |
 
 **Bizonytalanság:** ME és NY esetén tipikusan **±10–20%** tételenként.
 
@@ -51,10 +52,11 @@ Layer igény (fehér tojós, ~100 g/nap felvételhez táblázott **% a takarmán
 | Lizin | ~0,39% | ~0,69% | **~57%** |
 | Met+cisztin | ~0,42% | ~0,58% | **~73%** |
 | Ca | ~0,08% | ~3,30% | **~2%** |
+| Na | ~0,02% | ~0,15% | **~13%** |
 
 Forrás: [Merck Veterinary Manual — Nutritional Requirements of Poultry](https://www.merckvetmanual.com/poultry/nutrition-and-management-poultry/nutritional-requirements-of-poultry) (NRC 1994 alapú táblázat).
 
-**Értelmezés:** A keverék **nem layer-recept**. A Ca hiány a gabonában **nem pótolható** csak alacsony tojásszámmal visszaadott tojáshéjjal, ha a termelés nő.
+**Értelmezés:** A keverék **nem layer-recept**. A Ca hiány a gabonában **nem pótolható** csak alacsony tojásszámmal visszaadott tojáshéjjal, ha a termelés nő. A Na a gabonából szinte nincs; **~3–4 g só / kg keverék** zárja (nem nyalósó). A lizin szója nélkül **tört borsóból** jön (INRA 14,8 g/kg); 15% borsó ~82%-ra viszi a 0,69%-os célt, nem 100%-ra.
 
 ## Napraforgó 20% — külön kockázat
 
@@ -66,6 +68,9 @@ Forrás: [Merck Veterinary Manual — Nutritional Requirements of Poultry](https
 - Tojáshéj ~**2,0–2,2 g Ca / tojás**.
 - ~**2 tojás/nap** (I. állomány jelenlegi): **~4–5 g Ca/nap** visszaadva — ez **közelítheti** a tojáshéj Ca-t, de **nem** fed automatikusan a csont-karbantartás + magas termelés igényét.
 - Porított héj: irodalom szerint a **durva (3–5 mm)** frakció előnyös a finom porral szemben ([Scientific Reports 2021](https://www.nature.com/articles/s41598-021-92589-y)).
+- **Takarmánymész** (CaCO₃, ~36–38% Ca): skálázható Ca; **külön tálka**, ne 7% a mixbe. Grit **nem** helyettesíti. 20 tojó × 3,3 g Ca/nap ≈ 66 g Ca/nap cél vs. ~4–5 g a 2 tojás héjából.
+- **Grit:** a gazda már adja (2026-10-13) — zúzógyomor.
+- **Szója:** kizárva; lizin → borsó, nem szójapogácsa / Éden Major.
 
 ## Napi takarmányigény — állományrészek (becslés)
 

@@ -1,11 +1,22 @@
 # Tojástermelés-növelés — takarmány-kiegészítők és világítás
 
-**Dátum:** 2026. október 13.  
+**Dátum:** 2026. október 13. (kiegészítve ugyanaznap: szója-tiltás, grit, mész, só).  
 **Státusz:** kutatási döntéstámogató anyag (nem a komposzt/levél/trágya-alapú III. fázis).  
 **Lekérdezések:** web + címkeadatok 2026-10-13; tápanyagszámok a [takarmany-szamitasok.md](./takarmany-szamitasok.md) 3:1:1 profiljára épülnek.  
 **Garancia:** nincs. Minden tojásszám **tartomány + feltétel**.
 
 Ez a dokumentum **nem** illeszti be a III. fázis erőforrás-listáját (levél, trágya, komposzt). Fókusz: vásárolható kiegészítők + lámpázás, a meglévő I–II. fázis hipotéziseinek frissítésével.
+
+**Felhasználói rögzítések (2026-10-13):**
+
+| Döntés | Állapot |
+|--------|---------|
+| Szója (pogácsa, dara, egész mag, Éden szójája) | **Nem** — tartós ration szója nélkül |
+| Grit (oldhatatlan) | **Már szokott menni** — nem új feladat |
+| Takarmánymész | Kell a tojóknak, külön tálka; grit **nem** helyettesíti |
+| Só | Kell **keverve** ~3–4 g/kg; nem nyalósó |
+| Éden Major + 3:1:1 egy vályúban | **Nem** érdemes keverni |
+| 15% tört borsó vs. Éden | **Nem ekvivalens**; Éden komplett táp **és szójás** |
 
 ---
 
@@ -13,12 +24,14 @@ Ez a dokumentum **nem** illeszti be a III. fázis erőforrás-listáját (levél
 
 - Az I. állomány ~2 tojás/nap / 20 tojó ≈ **~10% hen-day**. Ez **nem** „őshonos átlag”: a fajtára jellemző sáv csúcsidőben inkább **~4–5,5 tojás/tyúk/hét** (~11–16 tojás/nap a 20-as csapatra), télen fény nélkül **0–1,5/tyúk/hét**. A jelenlegi szint takarmány-szerkezeti gyengeség + költözési stressz **együtt** is lehet — a kettőt külön kell kezelni.
 - A 3:1:1 keverék továbbra is **energiadús, fehérje- és Ca-szegény**: ~11,4% CP (**~76%** a Merck/NRC 1994 15%-os 100 g-os oszlophoz), lizin **~57–58%**, Ca **~2%**. A 20% egész napraforgó tojónál **túl magas**.
-- **Éden Major tojó 20 kg** (7940 Ft ≈ **397 Ft/kg**, HU-ÖKO-01, 17,27% CP, 3,52% Ca): komplett táp, nem koncentrátum. **Ne keverd a 3:1:1-be** — a Ca-t és a premixet felhígítod, a zsírt nem viszed le. **1–2 zsák, 10–14 nap, 100% etetés** I. tojóknak diagnózisnak **igen**; tartós 100% drága (~21 ezer Ft/hó / 20 tojó). II. jércének tojás előtt **nem** (túl sok Ca).
-- **Takarmányborsó 5 / 10 / 15%** (tritikálé helyett): CP 11,4 → **11,9 / 12,4 / 12,8%** (fedezet 76% → **79 / 82 / 85%**). A CP-rést **nem zárja**. A lizin javul jobban (58% → **66 / 74 / 82%**). Ca gyakorlatilag **változatlan (~0,08%)**. Borsót **törni/őrölni kell** (2–3 mm); ez az egyetlen indokolt „darálás”.
+- **Szója nincs** a tartós rendszerben. Az Éden Major tojó **szójapogácsát tartalmaz** — ezért **nem** a 15% borsó tiszta párja. 15% tört borsó = lizin/CP-kiegészítő + külön Ca; Éden = komplett táp (Ca, D3, enzim, 0,77% lizin) **szójával**.
+- **Éden Major tojó 20 kg** (7940 Ft ≈ **397 Ft/kg**, HU-ÖKO-01, 17,27% CP, 3,52% Ca, **0,16% Na**): komplett táp, nem koncentrátum. **Ne keverd a 3:1:1-be** (20–40%-nál a Ca 0,8–1,5% marad). Szója-tiltás mellett tartósan **ne**; diagnózis csak ha a szójapogácsa egyszeri kivétel. II. jércének tojás előtt **nem** (túl sok Ca).
+- **Takarmányborsó 5 / 10 / 15%** (tritikálé helyett): CP 11,4 → **11,9 / 12,4 / 12,8%** (fedezet 76% → **79 / 82 / 85%**). A CP-rést **nem zárja**. A lizin javul jobban (58% → **66 / 74 / 82%**). Ca gyakorlatilag **változatlan (~0,08%)**. Borsót **törni/őrölni kell** (2–3 mm); ez az egyetlen indokolt „darálás”. Szója nélkül ez a **tartós lizinút**.
 - Bio ~100 kg borsó K-E környékén **nincs publikus kisker**. Reális: **tisztított, nem tanúsított** — Réde/Kisbér (K-E, ~40–50 km), Seregélyes (~75 km), Örkény **150 Ft/kg** (~95 km). Ársáv 2026 ősz: **150–200 Ft/kg** mázsás tételben.
-- **Gabona darálása: NEM** felnőtt, kifutós tojónál (tojásszám-hatás **elhanyagolható**). A nap végére maradó egész kukorica **szelektív evés**, nem emésztési kudarc. Előbb **csökkentsd a napraforgót 5–10%-ra**, adj **külön durva Ca + grit**.
+- **Gabona darálása: NEM** felnőtt, kifutós tojónál (tojásszám-hatás **elhanyagolható**). A nap végére maradó egész kukorica **szelektív evés**, nem emésztési kudarc. Előbb **csökkentsd a napraforgót 5–10%-ra**. **Grit már megy** — marad külön tálka. Hiányzik a **takarmánymész** (Ca), nem a grit.
+- **Takarmánymész kell** a tojóknak (külön, durva, *ad libitum*); a porított tojáshéj ~2 tojás/nap mellett nem skáláz. **Só kell keverve** ~3–4 g/kg keverék (~5–7 g/nap a 20 tojóra); nem nyalósó, nem a vízbe, ne duplázd premix/Éden mellett.
 - **Világítás: vedlés után igen**, cél **14L:10D** (bio plafon **16 h fény + 8 h egybefüggő sötét**, (EU) 2018/848). Realista tél: **+2,5–4,5 tojás/tyúk/hét** vs. 0–1,5 fény nélkül; **nem** ipari 6–7/hét. Hardver: **2700 K**, ~10 lux tyúkmagasságban, dimmelés vagy csak-reggeli plusz.
-- **Minimum munka:** napraforgó ↓ + durva mész/tojáshéj + grit. **Kiegyensúlyozott ROI:** + tört borsó 10–15% + öko tojópremix (RoBIOmix 5%) + téli 14 h. **Max. tojás:** 100% Éden *vagy* magasabb borsó/szójapogácsa + 14–16 h — költség nő.
+- **Minimum munka:** napraforgó ↓ + durva takarmánymész külön (grit marad) + só a keverékbe. **Kiegyensúlyozott ROI:** + tört borsó 10–15% + (opcionális, szójamentes) öko tojópremix + téli 14 h. **Max. tojás szója nélkül:** 20–25% borsó óvatosan + Ca + fény — **nem** 100% Éden.
 - Egy keverék I. tojónak és II. jércének **továbbra is hiba**. Szintetikus Met/Lys ökológiaiban **tilos**; még a gyári táp metioninja is csak **0,28%**.
 - 15 perc/nap tartható, ha a keverék előre készül; borsót **heti tételben** törni, nem naponta.
 - NRC 10. kiadás (National Academies, **2026**): emészthető aminosav + modellek; operatív %-okhoz itt a **NRC 1994 / Merck 100 g-os oszlop** marad, mert a natív állomány nem Hy-Line, és a 10. kiadás tojó-táblája modellalapú.
@@ -27,15 +40,15 @@ Ez a dokumentum **nem** illeszti be a III. fázis erőforrás-listáját (levél
 
 ## 2. Rendszerkontextus
 
-Két elkülönített, vegyes őshonos magyar állomány, egyenként ~600 m² kifutó; napi gondozás ~15 perc, keverés OK, darálás alapból nem kívánt. Az I. állomány 20 tojó + 2 kakas, ~1,5 éves; költözés (korábban ~30 m²) után a termelés ~2 tojás/nap. A II. állomány ~50 db, ~6 hónapos (jérce + vágandó kakas); a tojás még nem indult érdemben. Jelenleg **egy** 60% tritikálé : 20% kukorica : 20% egész napraforgó keverék megy mindenkinek; búza van, de nincs etetve. Nincs külön mész, nincs említett vitamin–ásvány premix; a Ca főleg porított tojáshéj-visszaadás — ~2 tojás/nap mellett ez a héj Ca-ját közelítheti, de termelés-növekedésnél **nem skáláz**. A keverék becsült profilja (~11,4% CP, ~0,08% Ca, ~10,7% zsír, ~3237 kcal ME/kg) tojóigényhez képest strukturálisan gyenge; a 20% napraforgó onetető mellett szelektív evést is okoz. A nagy kifutó EU-szerű organikus minimumot teljesít, de **nem helyettesíti** a layer-specifikus fehérjét, lizint és kalciumot. A II. fázis A+G iránya (kiegyensúlyozott gabona + kiegészítő, szétválasztott ration) marad a pragmatikus keret — ez a kutatás azt tölti ki termékkel, aránnyal és fénnyel.
+Két elkülönített, vegyes őshonos magyar állomány, egyenként ~600 m² kifutó; napi gondozás ~15 perc, keverés OK, darálás alapból nem kívánt. Az I. állomány 20 tojó + 2 kakas, ~1,5 éves; költözés (korábban ~30 m²) után a termelés ~2 tojás/nap. A II. állomány ~50 db, ~6 hónapos (jérce + vágandó kakas); a tojás még nem indult érdemben. Jelenleg **egy** 60% tritikálé : 20% kukorica : 20% egész napraforgó keverék megy mindenkinek; búza van, de nincs etetve. **Grit (oldhatatlan) már szokott menni.** Nincs külön takarmánymész, nincs említett vitamin–ásvány premix, nincs kevert só; a Ca főleg porított tojáshéj-visszaadás — ~2 tojás/nap mellett ez a héj Ca-ját közelítheti, de termelés-növekedésnél **nem skáláz**. Szója a tartós rationből **kizárt**. A keverék becsült profilja (~11,4% CP, ~0,08% Ca, ~10,7% zsír, ~3237 kcal ME/kg) tojóigényhez képest strukturálisan gyenge; a 20% napraforgó onetető mellett szelektív evést is okoz. A nagy kifutó EU-szerű organikus minimumot teljesít, de **nem helyettesíti** a layer-specifikus fehérjét, lizint és kalciumot. A II. fázis A+G iránya (kiegyensúlyozott gabona + kiegészítő, szétválasztott ration) marad a pragmatikus keret — ez a kutatás azt tölti ki termékkel, aránnyal és fénnyel.
 
 **Referencia-igény (Merck, NRC 1994, fehér tojós, % a takarmányban):**
 
-| Felvétel | CP | Lizin | Met | Met+Cys | Ca |
-|----------|----|-------|-----|---------|-----|
-| 90 g/nap | 16,7% | 0,77% | 0,33% | 0,64% | 3,67% |
-| **100 g/nap** | **15,0%** | **0,69%** | **0,30%** | **0,58%** | **3,30%** |
-| 110 g/nap | 13,6% | 0,63% | 0,27% | 0,53% | 3,00% |
+| Felvétel | CP | Lizin | Met | Met+Cys | Ca | Na (NRC 1994) |
+|----------|----|-------|-----|---------|-----|----------------|
+| 90 g/nap | 16,7% | 0,77% | 0,33% | 0,64% | 3,67% | ~0,17% |
+| **100 g/nap** | **15,0%** | **0,69%** | **0,30%** | **0,58%** | **3,30%** | **0,15%** |
+| 110 g/nap | 13,6% | 0,63% | 0,27% | 0,53% | 3,00% | ~0,14% |
 
 A 3:1:1 magas ME-je miatt a felvétel inkább **~90–95 g** (I. fázis becslés) — a %-os hiány **nagyobb**, mint a 100 g-os oszlop sugallja. Barna/őshonos típus a Merck barna oszlopa szerint még magasabb CP-t igényelne ugyanahhoz a tojástömeghez; natív, alacsony termelésnél a **tömegigény** kisebb, de a Ca és a lizin akkor is limit.
 
@@ -140,16 +153,19 @@ Saját gabonánál a 3:1:1 készpénzköltsége ~0, az Éden akkor is ~21 ezer F
 4. Túletetés a 3237 kcal-os házival keverve.
 5. Öko tojás-címke: a **saját gabona** is tanúsítandó.
 6. 1 zsák ≠ szezonmegoldás.
+7. **Szója:** a táp szójapogácsát tartalmaz — a 2026-10-13 döntés szerint tartósan **kizárt**.
 
-### 3.8 Döntési ajánlás (1 oldal)
+### 3.8 Döntési ajánlás (1 oldal) — szója-tiltással
 
-**Érdemes-e venni?** **Igen, kicsiben** — diagnózisra, nem alapadagra.
+**A 15% tört borsó és az Éden Major nem ugyanaz.** A borsó lizin-kiegészítő (Ca nélkül). Az Éden komplett táp (Ca, D3, enzim, 0,77% lizin) **szójapogácsával**.
 
-**Mennyit?** I. tojóknak **1–2 zsák (20–40 kg)**, 10–14 nap **100%**, keverés nélkül. Ha a tojás érdemben nő (pl. 2 → 5+ /nap): a gát takarmány volt → utána **házi reform + RoBIOmix**, ne maradj 397 Ft/kg-on. Ha alig nő: keresd vedlés, parazita, fészek, fény, ivararány — ne vegyél raklapnyi tápot.
+**Érdemes-e venni?** Szója nélkül tartósan **nem**. Egyszeri diagnózis (1 zsák, 100%, keverés nélkül) csak akkor, ha a szójapogácsa **egyszeri kivétel**.
 
-**Feltételek:** II. állománynak tilos tojásig; öko-értékesítéshez aktuális tanúsítvány; onetetőn ne keverd egész nappalforgóval; extra premixet ne tegyél mellé.
+**3:1:1-gyel kombinálni: nem.** 20–40% Éden + házi: Ca 0,8–1,5%, zsír még ~8–9%, lizin alig nő — a drága premix/mész elvész. Ha mégis mindkettő asztalon van: délelőtt **csak** Éden, délután kevés egész gabona **külön**; extra só/premix **ne**.
 
-**RoBIOmix külön** (25 kg, 20 000 Ft = 800 Ft/kg, HU-ÖKO-01): a tartós, olcsóbb út. 5% a házi keverékbe ≈ 40 Ft/kg készre. Analitika a weben **hiányzik** — zsákcímke kell, mielőtt plusz meszet adsz (a premix maga is Ca-s).
+**Mennyit, ha a szója egyszer belefér?** I. tojóknak **1 zsák**, ~8–10 nap 100%. Utána vissza szója-mentes házira (borsó + mész + só). II. állománynak tilos tojásig.
+
+**RoBIOmix külön** (25 kg, 20 000 Ft = 800 Ft/kg, HU-ÖKO-01): vitamin–ásvány, nem szója-táp — **címkén ellenőrizd a hordozót**. 5% a házi keverékbe. Ha megy, a sót **ne duplázd**; a meszet külön tálkában add, ne vakon +7%-ot a mixbe.
 
 ---
 
@@ -233,6 +249,44 @@ Több CP (~26%), jó lizin, **vicin/convicin** → standard fajtánál tojónál
 
 Kifejlett tojó: a fehérjetakarmány **öko / átállási** kell legyen, ha tanúsított öko tojást adsz el. Hobbi saját fogyasztásra a „tiszta takarmány” borsó **ökológiai keretben kompromisszum** — jelöld külön. A 5% konvencionális fehérje **nem** felnőtt tojóra való.
 
+### 4.6 Lizin szója nélkül (INRA as-fed)
+
+A lizin **hüvelyesben** van, nem a 3:1:1-ben. Szója kizárva: marad a **tört borsó** (és óvatosan a lóbab). L-lizin HCl öko-ban **tilos**.
+
+| Anyag | Lizin g/kg | Nálatok |
+|-------|----------:|---------|
+| Kukorica | ~2,4 | leggyengébb |
+| Búza | 3,2 | van raktáron, nem zárja a rést |
+| Tritikálé | 3,9 | a mix 60%-a |
+| Egész napraforgó | 6,0 | fehérje lizin-szegény |
+| **Takarmányborsó** | **14,8** | **tartós forrás**; törni kell |
+| Lóbab | 16,6–17,2 | vicin; másodlagos |
+| Szójapogácsa | ~27 | **kizárva** |
+| Éden Major tojó | 7,7 | komplett, **szójás** — tartósan nem |
+
+15% tört borsó (tritikálé helyett) → ~0,57% lizin (**~82%** a 0,69%-os célnak). Borsóval egyedül ~25–30% kellene a 0,69%-hoz — első körben **ne**. Következő lizinlépés szója nélkül: 20–25% borsó *után*, ha a Ca+kevesebb napraforgó már megvan, vagy lóbab ≤10%.
+
+### 4.7 Takarmánymész, grit, só
+
+**Grit** (oldhatatlan kavics/gránit): **már megy.** Zúzógyomor, egész szem. **Nem Ca.** Marad külön tálka.
+
+**Takarmánymész** (CaCO₃, ~36–38% Ca): tojáshéj + csont. A 3:1:1 Ca-ja ~0,08% vs. NRC **3,30%**. 20 tojó × ~3,3 g Ca/nap ≈ **66 g Ca/nap** komoly termelésnél; ~2 tojás visszaadása ~**4–5 g**. A porhéj onetetőn ott marad; a durva (2–5 mm) frakció a délutáni héjépítéshez kell.
+
+- **Kell** tojóknak, ha a tojásszám nőni fog. Ökológiaiban **engedett**.
+- **Külön tálka**, *ad libitum* I. tojóknak — **ne** 7%-ot a keverékbe (CP-hígítás).
+- II. jércének tojás előtt **ne** (növendék Ca ~0,9–1,2%).
+- Dolomit ne legyen az egyetlen Ca (Mg). Kagylóhéj ugyanaz a szerep, drágább.
+- D3 nincs a mészben — télen napfény vagy premix.
+
+**Só** (NaCl): a gabona Na-ja ~0,01–0,03%; NRC tojó **0,15% Na** / ~0,13% Cl → **~3–4 g só / kg keverék** (~0,3–0,4%). I. 20 tojó ~1,8 kg/nap → **~5–7 g só/nap** a csapatnak (havi ~200 g).
+
+- **Keverve** a heti gabonába; jódos konyhasó / takarmánysó OK; útszóró, mosogatógép-só nem.
+- **Nem** nyalósó / sókő (túlevés, vizes ürülék, héjromlás). **Nem** az ivóvízbe (héj + vese). Télen **olvadó víz** kötelező.
+- Éden 100% vagy RoBIOmix 5%: a Na **abban van** — ne duplázd.
+- Sorrend tojásra: Ca (mész) → lizin (borsó) → napraforgó le → só apró korrekció. Só egymagában a 2 tojás/napot nem viszi 8-ra.
+
+**Három tálka + egy keverék:** keverék (gabona ± tört borsó **+ só**) | grit (megvan) | durva mész. Nem négy sótálca.
+
 ---
 
 ## 5. Fejezet 3 — Gabona darálása és tojástermelés
@@ -269,7 +323,7 @@ Ipari dercénél a finom frakció = vitamin/AA — empty feeder délben, hogy el
 
 | Opció | Tojásszám | Munka | Ítélet |
 |-------|-----------|-------|--------|
-| Semmi darálás + napraforgó ↓ + külön Ca + grit | A **struktúra** javul | 15 percben fér | **Alap** |
+| Semmi darálás + napraforgó ↓ + külön mész (grit már megy) | A **struktúra** javul | 15 percben fér | **Alap** |
 | Csak kukorica durva zúzása (repedt, nem liszt) | Elhanyagolható–közepes, **ha** a bent maradás a felvétel gátja | Heti tétel | **Részben**, miután a napraforgó lement |
 | Teljes keverék darálása | Elhanyagolható; napraforgóolaj **oxidálódik** | Napi, eszköz | **Nem** |
 | Áztatás etetés előtt | SARE on-farm: **−11%** tojás | Közepes | **Kerülendő** |
@@ -288,7 +342,7 @@ Ha a tyúk már **tele van napraforgóval**, a kukorica zúzása csak **több ke
 
 **Nem** a teljes keverék darálására. **Részben** a kukoricára, csak ha a napraforgó már lecsökkent és a szem még mindig ott marad. **Igen** a borsó törésére (heti). Hatás skála darálásra önmagában: **elhanyagolható**. A napraforgó-szelekció + Ca-hiány: **közepes–jelentős**.
 
-**Minimális munka, legjobb opció:** ne darálj gabonát; 3 tálka (egész gabona / tört borsó+premix / durva Ca); oldhatatlan grit; napraforgó korlátozva; kukoricát csak akkor zúzd durván, ha 1 hét próba után még mindig otthagyják.
+**Minimális munka, legjobb opció:** ne darálj gabonát; grit **marad** (már megy); keverékbe **só** 3–4 g/kg; külön tálka **durva mész**; napraforgó korlátozva; tört borsó heti tétel. Kukoricát csak akkor zúzd durván, ha 1 hét próba után még mindig otthagyják.
 
 ---
 
@@ -378,42 +432,41 @@ Telepítés: lámpa ülőrúd/mozgótér fölött, **nem a fészekbe** (fészek 
 
 ## 7. Integrált javaslat — 3 szint
 
-Feltétel mindháromnál: **I. és II. keverék szétválasztása**; II. tojótáp Ca csak első tojások után.
+Feltétel mindháromnál: **I. és II. keverék szétválasztása**; II. tojó-Ca csak első tojások után; **szója nincs**; grit **marad**.
 
 ### 7.1 Minimum munka / minimális költség (15 perc/nap)
 
 1. Napraforgó **20% → 8–10%** (a maradék mehet vágandó kakasnak).
-2. **Külön tálka:** durva mész vagy 3–5 mm tojáshéj + kagyló, *ad libitum* tojóknak.
-3. Oldhatatlan **grit**.
-4. Ne darálj gabonát; onetetőn ne keverd a Ca-t a maggal.
+2. **Külön tálka:** durva takarmánymész (vagy 3–5 mm tojáshéj), *ad libitum* tojóknak. Grit külön, ahogy eddig.
+3. **Só keverve:** 3–4 g/kg keverék; mindig olvadó víz.
+4. Ne darálj gabonát; onetetőn ne keverd a meszet a maggal.
 5. Világítás: csak ha vedlés lecsengett — **A hardver**, 14 h, reggeli plusz.
-6. Éden: **ne** ebben a szintben (kivéve 1 zsák diagnózis, ha 2 hét múlva még 2 tojás/nap).
+6. Éden: **ne** (szója).
 
 **Várható:** héjjavulás **közepes**; tojásszám **elhanyagolható–közepes** (Ca igen, lizin/CP még gyenge). I. csapat: **3–6 tojás/nap** 3–6 hét, ha nincs vedlés.
 
-### 7.2 Kiegyensúlyozott (legjobb ROI becslés)
+### 7.2 Kiegyensúlyozott (legjobb ROI becslés) — ajánlott szója nélkül
 
 A 7.1 + :
 
 1. **Tört takarmányborsó 10–15%** (fehérvirágú/sárga), tritikálé helyett; heti törés 2–3 mm.
-2. **RoBIOmix 5%** a tojókeverékbe (címke szerint; ne duplázd a meszet vakon) — HU-ÖKO-01, 20 000 Ft/25 kg.
-3. Búza **mehet** a tritikálé egy részének helyére (van raktáron).
+2. Opcionális **RoBIOmix 5%**, ha a címkén nincs szója-hordozó; Na/sót ne duplázd; mész marad külön tálka.
+3. Búza **mehet** a tritikálé egy részének helyére (van raktáron) — lizinben nem váltja a borsót.
 4. Világítás **B**: 2700 K + dimmelés, okt–márc., vedlés után, 14L:10D.
-5. Éden: 1 zsák diagnózis **opcionális** a borsó előtt, hogy lásd a plafont.
 
-**Költség I. 20 tojó:** gabona opportunity ~5–8 ezer Ft/hó + borsó ~1,5 ezer (8 kg×180 Ft) + premix ~2 ezer + villany elhanyagolható. Vs. 100% Éden ~21 ezer.
+**Költség I. 20 tojó:** gabona opportunity ~5–8 ezer Ft/hó + borsó ~1,5 ezer + mész/só elhanyagolható + premix ~2 ezer ha kell. Vs. 100% Éden ~21 ezer **és szója**.
 
 **Várható I.:** **6–12 tojás/nap** 6–8 hét (30–60% hen-day), tél fénnyel a sáv alsó fele, tavasz a felső. II. jérce: 10% borsó, **alacsony Ca**, külön keverék.
 
-### 7.3 Max. tojás (költség és munka nőhet)
+### 7.3 Max. tojás szója nélkül (költség és munka nőhet)
 
-1. I. tojó: **100% Éden** *vagy* 15–25% borsó + öko szójapogácsa/napraforgó-préselvény a Met/CP zárásához + 5% premix + külön durva Ca. 15% borsó **önmagában nem** viszi 15% CP-re.
+1. I. tojó: **15–25% tört borsó** + napraforgó-préselvény (nem egész mag) a Met/CP felé + külön durva Ca + só a mixben. 15% borsó **önmagában nem** viszi 15% CP-re. **100% Éden kiesik** a szója miatt.
 2. 14–16 h fény, dimmelt alkony (bio plafon 16/8).
-3. Szekvenciális etetés: reggel koncentrátum/táp, délután egész gabona (Umar Faruk 2010) — onetető nélküli kontroll.
+3. Szekvenciális etetés: reggel borsós keverék, délután egész gabona — onetető nélküli kontroll.
 4. II. vágandó kakas: magas ME, **ne** tojó Ca.
-5. Darálás továbbra sem kötelező a gabonára; borsó/pogácsa tört.
+5. Gabona darálása továbbra sem; borsó tört.
 
-**Várható I. plafon natív:** **8–14 tojás/nap** csúcsidőben (~40–70% hen-day), **nem** 18–20. Éves +20–50 tojás/tyúk a fénytől, ha a táp bírja.
+**Várható I. plafon natív, szója nélkül:** **7–12 tojás/nap** csúcsidőben reálisabb, mint a szójás komplett táp 8–14 sávja; **nem** 18–20. Éves +20–50 tojás/tyúk a fénytől, ha a táp bírja.
 
 ---
 
@@ -421,18 +474,17 @@ A 7.1 + :
 
 **Bázis:** I. 20 tojó, 90 g/nap ≈ 54 kg/hó. II. nincs benne (külön keverék). Tojáshatás: 4–8 hét, vedlés nélkül, tartomány. Bio kockázat: tanúsított öko tojás-értékesítéshez.
 
-| Opció | Költség/hó becslés (I. 20 tojó) | Várható tojás-hatás | Munka perc/nap | Bio kockázat |
-|-------|----------------------------------|---------------------|----------------|--------------|
-| Most: 3:1:1 + porhéj | ~0–5 600 Ft (saját vs. vásárolt gabona) | ~2/nap — **referencia** | ~15 | Alacsony, ha saját gabona; kiegészítő nincs |
-| Min: napraforgó ↓ + durva Ca + grit | +200–800 Ft (mész) | Elhanyagolható–közepes; **3–6/nap** | ~15 | Mész engedett; héj saját |
-| Borsó 15% tört, napraforgó marad 20% | +~800–1 500 Ft | Közepes lizin, Ca még 0; **3–7/nap** | 15 + heti törés ~20 perc | Nem tanúsított borsó = öko tojás-címke **kockázat** |
-| Kiegyensúlyozott: borsó 10–15% + RoBIOmix 5% + Ca tálka + napraforgó 8% | ~7–9 ezer vásárolt gabonánál; saját gabonánál ~3–4 ezer kiegészítő | **Közepes–jelentős; 6–12/nap** | ~15–20 | Premix HU-ÖKO-01 OK; borsó státusz a szűk keresztmetszet |
-| Éden 20–40% a 3:1:1-be keverve | ~9–14 ezer | Gyenge ROI: Ca felhígul | ~15 | Premix duplázás kockázat |
-| 100% Éden | **~21 400** + szállítás | Jelentős, ha takarmány a gát; **6–12/nap**, diagnózis 10 nap | ~10 (zsákos) | „Használható öko-ban”; saját gabona kiesik a mixből |
-| Csak gabona darálása | Eszköz 20–80 ezer egyszer + perc | **Elhanyagolható** | +10–20 | — |
-| Világítás A (időzítő) | ~10 ezer egyszer, ~100 Ft/hó áram | Télen **közepes**; +20–50 tojás/év/tyúk | ~0 (beállítva) | 16/8 betartandó |
-| Világítás B (dimmelhető okos) | ~20–35 ezer egyszer | Mint A + kevesebb pánik | ~0 | Ugyanaz |
-| Max: 100% Éden + 14–16 h B | ~21 ezer/hó + lámpa | **Jelentős natív plafonig** (8–14/nap csúcs) | ~10 | 16/8 + táp tanúsítvány |
+| Opció | Költség/hó becslés (I. 20 tojó) | Várható tojás-hatás | Munka perc/nap | Bio / szója |
+|-------|----------------------------------|---------------------|----------------|-------------|
+| Most: 3:1:1 + porhéj + grit | ~0–5 600 Ft | ~2/nap — **referencia** | ~15 | Szója nincs; Ca/Na hiány |
+| Min: napraforgó ↓ + durva mész + só 3–4 g/kg (grit marad) | +200–800 Ft (mész) + só | Elhanyagolható–közepes; **3–6/nap** | ~15 | Mész és só engedett |
+| Borsó 15% tört, napraforgó 20% marad, mész nélkül | +~800–1 500 Ft | Lizin közepes, Ca 0; **3–7/nap** | 15 + heti törés | Borsó státusz / öko címke |
+| **Ajánlott:** borsó 10–15% + mész tálka + só + napraforgó 8% | ~6–8 ezer vásárolt gabonánál; sajátnál ~2–4 ezer kiegészítő | **Közepes–jelentős; 6–12/nap** | ~15–20 | Szója nincs |
+| Éden 20–40% a 3:1:1-be keverve | ~9–14 ezer | Gyenge ROI: Ca felhígul | ~15 | **Szója van; ne** |
+| 100% Éden | **~21 400** + szállítás | Jelentős, ha takarmány a gát | ~10 | **Szója van** — tartósan nem |
+| Csak gabona darálása | Eszköz 20–80 ezer | **Elhanyagolható** | +10–20 | — |
+| Világítás A / B | ~10–35 ezer egyszer | Télen **közepes**; +20–50 tojás/év/tyúk | ~0 | 16/8 |
+| Max szója nélkül: 20–25% borsó + mész + 14–16 h | kiegészítő nő | Natív plafon **7–12/nap** csúcs | ~20 | Szója nincs |
 
 ---
 
@@ -442,7 +494,8 @@ Jelölés: **T** tudományos / hivatalos; **G** gyártói címke; **P** piactér
 
 ### Takarmányigény, keverék
 
-- **T** Merck Veterinary Manual — Nutritional Requirements of Poultry (NRC 1994 tábla): https://www.merckvetmanual.com/poultry/nutrition-and-management-poultry/nutritional-requirements-of-poultry
+- **T** INRA lysine tábla (borsó, gabona, napraforgó): https://www.feedtables.com/content/lysine
+- **T** Merck Veterinary Manual — Nutritional Requirements of Poultry (NRC 1994 tábla, Na 0,15% tojónál): https://www.merckvetmanual.com/poultry/nutrition-and-management-poultry/nutritional-requirements-of-poultry
 - **T** NRC 1994: https://img1.wsimg.com/blobby/go/cef62d35-7a84-4a76-a0b6-562062e3ac2e/downloads/NRC%20Aves%201994.pdf
 - **T** National Academies, Nutrient Requirements of Poultry, 10th ed. (2026): https://www.nationalacademies.org/read/25395
 - **T** INRA Feedtables — pea: https://www.feedtables.com/content/pea
@@ -512,7 +565,7 @@ Belső tudásbázis: [fazis-I-jelenlegi-rendszer.md](./fazis-I-jelenlegi-rendsze
 
 ## 10. Bizonytalanságok (legalább 5)
 
-1. **Napi adag g/tyúk** és **onetető** használat — ismeretlen; a 90 g / 54 kg/hó és minden Ft/tojás ettől függ.
+1. **Napi adag g/tyúk** és **onetető** használat — ismeretlen; a 90 g / 54 kg/hó és minden Ft/tojás ettől függ. **Grit:** ismert, megy. **Szója:** kizárva.
 2. **Költözés / stressz / vedlés** vs. takarmány: a 2 tojás/nap okát 10–14 napos 100% Éden **elválaszthatja**, de nem labor.
 3. **Vegyes genetika** I. állományban (kopasznyakú vs. tollas) — termelési plafon egyedenként eltér.
 4. Gabona- és borsó**tétel** ME/CP/toxin ±10–20%; a 11,4% CP irodalmi közép, nem NIR.
@@ -527,13 +580,16 @@ Belső tudásbázis: [fazis-I-jelenlegi-rendszer.md](./fazis-I-jelenlegi-rendsze
 
 ## 11. Nyitott kérdések (felhasználói döntés)
 
+**Lezárva 2026-10-13:** szója **nem**; grit **megy**; takarmánymész **kell** (külön); só **kell keverve** 3–4 g/kg; Éden **ne keverve** a 3:1:1-gyel; 15% borsó ≠ Éden.
+
 1. **Önetető** van-e, és egy vályúban keveredik-e a mag a kiegészítővel? Ettől függ a choice feeding vs. szekvenciális etetés.
 2. **Bio státusz célja:** saját fogyasztás / piaci öko tojás? Utóbbinál a nem tanúsított borsó és a saját gabona a szűk keresztmetszet.
-3. **1–2 zsák Éden diagnózis** most, vagy egyből borsó+premix+mész?
-4. **II. vágás időpontja** — addig a jérce ne kapjon 3,5% Ca-t.
+3. **Éden diagnózis** (1 zsák, szójás kivétel) vagy egyből borsó+mész+só? Alapértelmezés szója-tiltás mellett: **egyből házi reform**.
+4. **II. vágás időpontja** — addig a jérce ne kapjon tojó-meszet.
 5. Van-e **Wi-Fi az ól közelében**, és kell-e dimmelés, vagy elég az IP44 kapcsolóóra?
 6. **Vedlés** látható-e most (tollvesztés, tarajszín)? Ha igen, a lámpa várjon.
 7. **Borsótörés:** van-e kalapácsos/törő, vagy 100 kg-ot előre törtessétek a termelővel?
 8. Napi **pontos kg** a 72 db-re — egy hét mérlegelés (kiadott minus bent maradt) helyre tenné az összes Ft/tojás számot.
+9. RoBIOmix **hordozó** szója-e a címkén — ha igen, premix nélkül, csak mész+só+borsó.
 
 A komposzt/levél/trágya-illesztés **továbbra is** a [fazis-III-placeholder.md](./fazis-III-placeholder.md) döntése után következik; ide csak annyi tartozik, hogy a borsó helyben vethető lenne (havi 1 vetés keret), de az idei 100 kg-ot **vásárolni** kell, ha a tojás az első 8 hét célja.
