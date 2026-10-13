@@ -1,6 +1,6 @@
 # Wi‑Fi **PTZ** IP kamerák piackutatás – tanyai állatmegfigyelés (2 use case)
 
-**Készült:** 2026. október 12. (átstrukturálva: külön ól-belső vs kültéri PTZ)  
+**Készült:** 2026. október 12. (átstrukturálva: külön ól-belső vs kültéri PTZ; kiegészítve: 2026-10-13 Temu csomagtartalom / SD vs USB táp)  
 **Scope:** Csak **forgatható / dönthető (Pan-Tilt, PTZ)** kamerák – **fix (bullet/dome) modellek nincsenek** a shortlistben.  
 **Módszer:** Gyártói/adatlapok, FAQ/manual, fórumok, magyar webshopok, Temu/Ali/eMAG – marketing állítások ellenőrzése ahol lehet.
 
@@ -27,7 +27,7 @@ Ha az ár **tartomány**, minden sáv a saját színével jelenik meg.
 | **Környezet** | Védett, esőmentes, **éjjeli** nézés | Eső, por, tél – **megbízhatóság** |
 | **Darabszám** | **2–3** olcsó Wi‑Fi PTZ | **1** megbízható kültéri PTZ |
 | **Must-have** | Távoli **pan/tilt**, microSD + mozgás, **diszkrét IR** (ne világítson fehérrel) | **360° PTZ**, IP66+, stabil app, SD, **Infrared/B&W éjszaka** |
-| **Realista ár/db** | Zöld–sárga (<span style="color:#2e7d32;font-weight:600">~4–6 e Ft</span> OEM) vagy sárga márkás | Piros (<span style="color:#c62828;font-weight:600">~19–33 e Ft</span> márkás) |
+| **Realista ár/db** | Zöld–sárga (Temu 2-pack élő: <span style="color:#2e7d32;font-weight:600">~3,3 e Ft/db</span> + SD külön; egyéb OEM <span style="color:#2e7d32;font-weight:600">~4–6 e Ft</span>) vagy sárga márkás | Piros (<span style="color:#c62828;font-weight:600">~19–33 e Ft</span> márkás) |
 | **Első ajánlás** | **Temu 2× PTZ** + 3. azonos app OEM, vagy **3× olcsó beltéri PTZ** (Cam720/V380/Tuya) IR móddal | **Tapo C520WS** (Infrared éjszaka!) vagy **Reolink E1 Outdoor E540** (ONVIF, erős szoftver) |
 | **Kerülendő** | „Color night” alap, auto tracking + fehér fény | Smart/Starlight **default** (állat trigger → fény); **Imou Cruiser SC** csak IR módra állítva |
 
@@ -63,14 +63,30 @@ Ha az ár **tartomány**, minden sáv a saját színével jelenik meg.
 | Mező | Érték |
 |---|---|
 | **PTZ** | Igen (360° jellegű beltéri PTZ OEM) |
-| **Ár / db** | Becslés: <span style="color:#2e7d32;font-weight:600">~4 000–5 500 Ft/db</span> (2-es csomag /2) + szállítás; felső sáv: <span style="color:#f9a825;font-weight:600">~6 000–7 500 Ft/db</span> – **Temu dinamikus, bizonytalan** |
+| **Ár / 2 db** | Élő HU pillanatkép **2026-10-13:** <span style="color:#2e7d32;font-weight:600">6 528 Ft / 2 db</span> (~<span style="color:#2e7d32;font-weight:600">3 264 Ft/db</span>), 44% off, helyi raktár, 4 munkanap; korábbi lista ~11 817 Ft. Temu **dinamikus**. |
 | **Éjszaka** | **„Color”** marketing → fehér fény kockázat; **IR mód** appban **ellenőrizendő** |
 | **Kültér / IP** | **Nincs** – csak **ól belső** |
+| **SD / „USB card”** | **Nincs memóriakártya a csomagban.** Cím: *compatible with SD/Cloud Storage*; ikon: *SD card max.128G* = **kártyahely**, max **128 GB** microSD/TF. Ha a kártya járna, a Temu-címben szerepelne („with 64GB card”). |
+| **USB táp** | Beltéri plug-in PTZ: jellemzően **2× USB tápkábel** + **2× 5 V adapter** (lot-függő; adapter néha kimarad → telefonos USB-töltő is elég 5 V/1–2 A). **Nem** USB pendrive / USB kártya. |
+| **Külön veendő** | **2× microSD** (ajánlott **128 GB High Endurance**, FAT32) – felhő nélkül nincs helyi felvétel kártya nélkül. |
 | **Beszerzés** | [Temu HU – 601102092951869](https://www.temu.com/hu-en/2pcs--camera-system-with-ptz-pan-tilt-zoom-1080p-fhd-color--two-way-talk---detection-wifi-camera-compatible-with-sd-cloud-storage-for-home-nanny-app-g-601102092951869.html) |
 | **Előny** | **2 kamera 1 rendelés**, olcsó/db, PTZ |
-| **Hátrány** | App/lot, color night, 3. kamera = más csomag |
+| **Hátrány** | App/lot, color night, **SD külön**, 3. kamera = más csomag |
 
 **Pont A:** 6,8/10 (2 db ólra) · **Nem** kültéri use case B.
+
+**Csomagtartalom – SD vs USB (2026-10-13, Temu HU listing + azonos OEM kategória):**
+
+| Tétel | Jár a 2-es csomaggal? | Megjegyzés |
+|---|---|---|
+| 2× beltéri PTZ kamera | **Igen** | SKU: 2 pcs, Night Vision / White |
+| microSD / TF / „USB card” | **Nem** | Csak **slot** (max 128 GB). Hasonló OEM (CloudEdge nanny PTZ): *SD card is not included* ([Trendsrocket](https://trendsrocket.org/3mp-indoor-security-camera-360-ptz-2-4g-wifi-only-cameras-for-home-security-baby-monitor-plug-in-pet-camera-with-phone-app-for-dog-cat-2-way-talk-night-vision-auto-tracking-sd-cloud/)). |
+| USB tápkábel | **Valószínű igen** (2×) | 5 V, micro-USB vagy USB-C – lot-függő. |
+| USB fali adapter (töltő) | **Valószínű igen**, lot-kockázat | Ha nincs a dobozban: bármely **5 V/1–2 A** telefonos USB-töltő. |
+| Rögzítő csavar / kézikönyv | Tipikus igen | – |
+| Távirányító | Bizonytalan | A marketingikonon „Remote control” = app PTZ, nem feltétlen fizikai távirányító. |
+
+> A Temu termékoldal JS/CAPTCHA miatt nem adja ki a teljes packing list HTML-t; a fenti **SD = nem tartozék** a **cím + ikon megfogalmazásából** következik (*compatible with* / *max.128G*), nem unboxing fotóból. Ha a kosárban / galériában *Packing list* kép van kártyával, az felülírja.
 
 ---
 
@@ -180,7 +196,7 @@ Ha az ár **tartomány**, minden sáv a saját színével jelenik meg.
 
 ### Ajánlott csomag 1 – **minimális költség, 2–3 PTZ**
 
-1. **[Temu 2× PTZ](https://www.temu.com/hu-en/2pcs--camera-system-with-ptz-pan-tilt-zoom-1080p-fhd-color--two-way-talk---detection-wifi-camera-compatible-with-sd-cloud-storage-for-home-nanny-app-g-601102092951869.html)** – <span style="color:#2e7d32;font-weight:600">~4–5,5 e Ft/db</span> (becslés)  
+1. **[Temu 2× PTZ](https://www.temu.com/hu-en/2pcs--camera-system-with-ptz-pan-tilt-zoom-1080p-fhd-color--two-way-talk---detection-wifi-camera-compatible-with-sd-cloud-storage-for-home-nanny-app-g-601102092951869.html)** – élő: <span style="color:#2e7d32;font-weight:600">6 528 Ft / 2 db</span> (2026-10-13) + **2× 128 GB High Endurance microSD külön** (a kártya **nem** jár)  
 2. Harmadik kamera: **ugyanazon app** (QR a csomagból!) vagy **[Cam720 beltéri PTZ Ali](https://www.aliexpress.com/w/wholesale-jooan-1080p-ptz-wifi-camera.html)** – <span style="color:#2e7d32;font-weight:600">~5–6 e Ft</span>
 
 **Első éjszaka teszt:** nincs fehér fény → különben **IR mód** + **tracking off** + **sound/light alarm off**.
@@ -376,7 +392,7 @@ Beszerzés: [konzolvilag.hu](https://www.konzolvilag.hu/otthon/tp-link-wireless-
 
 ## Forrásjegyzék (PTZ + HU árak)
 
-- Temu: [601102092951869](https://www.temu.com/hu-en/2pcs--camera-system-with-ptz-pan-tilt-zoom-1080p-fhd-color--two-way-talk---detection-wifi-camera-compatible-with-sd-cloud-storage-for-home-nanny-app-g-601102092951869.html)  
+- Temu: [601102092951869](https://www.temu.com/hu-en/2pcs--camera-system-with-ptz-pan-tilt-zoom-1080p-fhd-color--two-way-talk---detection-wifi-camera-compatible-with-sd-cloud-storage-for-home-nanny-app-g-601102092951869.html) (HU élő ár 2026-10-13: 6 528 Ft / 2 db; SD kártya **nem** a csomagban – *compatible with SD*, max 128 GB slot) · CloudEdge OEM: [SD not included](https://trendsrocket.org/3mp-indoor-security-camera-360-ptz-2-4g-wifi-only-cameras-for-home-security-baby-monitor-plug-in-pet-camera-with-phone-app-for-dog-cat-2-way-talk-night-vision-auto-tracking-sd-cloud/)  
 - Cam720/JOOAN: [manual](https://manuals.plus/jooan/cam-720-dual-lens-security-camera-manual), [setup](https://cam720app.com/cam720-camera-setup-manual/)  
 - V380: [light control](https://v380.app/how-to-use-the-light-control-function/)  
 - Tapo: [C220 HU](https://www.tapo.com/hu/product/smart-camera/tapo-c220/), [C520WS HU](https://www.tapo.com/hu/product/outdoor-security-cameras/tapo-c520ws/), [éjszaka FAQ](https://www.tapo.com/us/faq/637/)  
