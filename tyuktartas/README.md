@@ -3,8 +3,8 @@
 Holistikus rendszerszintű vizsgálat: két elkülönített őshonos magyar tyúkállomány, gabona-alapú takarmányozás, ~600 m² terület / állomány, bio/ökologikus és permakultúra szempontok.
 
 **Kutatás indítása:** 2026. szeptember vége  
-**Utolsó frissítés (dokumentum):** 2026. szeptember 28.  
-**Státusz:** I. és II. fázis **lezárva**; **III. fázis (meglévő erőforrások beillesztése) várakozik** felhasználói döntésre (human-in-the-loop).
+**Utolsó frissítés (dokumentum):** 2026. október 13.  
+**Státusz:** I. és II. fázis **lezárva**; kiegészítő kutatás (Éden Major, borsó, darálás, világítás) **elkészült**; **III. fázis (meglévő erőforrások: levél, trágya, komposzt) várakozik** felhasználói döntésre.
 
 ## Dokumentumok
 
@@ -14,7 +14,8 @@ Holistikus rendszerszintű vizsgálat: két elkülönített őshonos magyar tyú
 | [fazis-II-alternativak.md](./fazis-II-alternativak.md) | Lehetséges rendszerirányok, összehasonlítás, gazdaság, ökológia, permakultúra |
 | [takarmany-szamitasok.md](./takarmany-szamitasok.md) | 3:1:1 keverék profil, NRC-összevetés, csoportok napi igénye |
 | [forrasok-es-bizonytalansagok.md](./forrasok-es-bizonytalansagok.md) | Hivatkozások, tudományos vs. tapasztalati megkülönböztetés, hiányzó adatok |
-| [fazis-III-placeholder.md](./fazis-III-placeholder.md) | III. fázis kerete — **nem készült el** a döntésig |
+| [kutatas-tojasnoveles-kiegeszitok-vilagitas.md](./kutatas-tojasnoveles-kiegeszitok-vilagitas.md) | Tojásnövelés: Éden Major, takarmányborsó, darálás, lámpázás (2026-10-13) |
+| [fazis-III-placeholder.md](./fazis-III-placeholder.md) | III. fázis kerete (levél/trágya/komposzt) — **nem készült el** a döntésig |
 
 ## Metodológiai alapelv
 
