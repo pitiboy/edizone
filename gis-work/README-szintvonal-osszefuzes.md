@@ -10,12 +10,22 @@ A két CAD forrás **ugyanabban a koordináta-rendszerben** van (EOV-szerű mét
 | `geodeta-szintvonal-osszefuzve.dwg` | Ugyanez DWG formátumban (AutoCAD / QGIS) |
 | `geodeta-szintvonal-osszefuzve.png` | Gyors ellenőrző előnézet |
 | `ortofoto-geodeta-szintvonal.png` | Ortofotó + geodéta vonalak + szintvonalak (2. lépés előnézet) |
+| `googlemaps-geodeta-szintvonal.png` | **Google Maps műhold** + geodéta + szintvonal (friss műholdkép) |
+| `googlemaps-geodeta-szintvonal.tif` | Ugyanez georeferált GeoTIFF-ben (EOV / EPSG:23700) |
 
 Újrafuttatás:
 
 ```bash
 python3 /workspace/gis-work/merge_contours.py
+python3 /workspace/gis-work/google_maps_composite.py
 ```
+
+### Google Maps kompozit illesztés
+
+- A CAD koordináták **EOV (EPSG:23700)** méterben vannak.
+- A Google műhold csempék Web Mercatorból EOV-ba kerülnek visszavetítésre.
+- Ha elérhető a korábbi ortofotó, **phase-correlation** finomhangolást kap (legjobb illesztés).
+- A telek középpontja a megadott Google Maps linkhez képest tipikusan **~7 m** eltérésen belül van (WGS84 ellenőrzés).
 
 ## 2. lépés – prompt ortofotóra helyezéshez
 
