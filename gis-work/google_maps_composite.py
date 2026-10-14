@@ -42,8 +42,8 @@ GOOGLE_TILE_URL = "https://mt1.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}"
 EOV = CRS.from_epsg(23700)
 # Melléképület sarok-illesztés: a Google NW sarka a DWG SE sarkán volt.
 # Korrekció: Google háttér további eltolása keleti + déli irányban (méter, EOV).
-BUILDING_FOOTPRINT_SHIFT_EAST_M = 1.6
-BUILDING_FOOTPRINT_SHIFT_SOUTH_M = 1.4
+BUILDING_FOOTPRINT_SHIFT_EAST_M = 2.0
+BUILDING_FOOTPRINT_SHIFT_SOUTH_M = 0.6
 WEB_MERCATOR = CRS.from_epsg(3857)
 TO_WGS84 = Transformer.from_crs(EOV, "EPSG:4326", always_xy=True)
 TO_EOV = Transformer.from_crs("EPSG:4326", EOV, always_xy=True)
@@ -280,7 +280,7 @@ def plot_composite(
     ax.set_aspect("equal")
     ax.axis("off")
     ax.set_title(f"Google Maps műhold + geodéta + szintvonal ({alignment_note})", fontsize=10)
-    fig.savefig(OUT_PNG, bbox_inches="tight", pad_inches=0.05)
+    fig.savefig(OUT_PNG, dpi=220, pad_inches=0)
     plt.close(fig)
 
 
