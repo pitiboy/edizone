@@ -23,6 +23,7 @@ from rasterio.warp import Resampling, reproject
 from scipy.ndimage import shift as nd_shift
 from shapely.geometry import LineString, box
 from skimage.color import rgb2gray
+from skimage.feature import canny
 from skimage.registration import phase_cross_correlation
 
 from merge_contours import (
@@ -35,10 +36,14 @@ from merge_contours import (
 WORK = Path("/workspace/gis-work")
 OUT_PNG = WORK / "googlemaps-geodeta-szintvonal.png"
 OUT_TIF = WORK / "googlemaps-geodeta-szintvonal.tif"
+OUT_ANNEX_CHECK = WORK / "googlemaps-alignment-check-annex.png"
 
 GOOGLE_TILE_URL = "https://mt1.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}"
-GOOGLE_MAPS_CENTER = (47.5494997, 18.2673182)  # lat, lon from user link
 EOV = CRS.from_epsg(23700)
+# Melléképület sarok-illesztés: a Google NW sarka a DWG SE sarkán volt.
+# Korrekció: Google háttér további eltolása keleti + déli irányban (méter, EOV).
+BUILDING_FOOTPRINT_SHIFT_EAST_M = 6.5
+BUILDING_FOOTPRINT_SHIFT_SOUTH_M = 4.0
 WEB_MERCATOR = CRS.from_epsg(3857)
 TO_WGS84 = Transformer.from_crs(EOV, "EPSG:4326", always_xy=True)
 TO_EOV = Transformer.from_crs("EPSG:4326", EOV, always_xy=True)
@@ -172,33 +177,74 @@ def apply_pixel_shift(rgb: np.ndarray, col_shift: float, row_shift: float) -> np
     return np.moveaxis(shifted, -1, 0).astype(np.uint8)
 
 
-def anchor_shift_to_google_pin(plot_region: box) -> tuple[float, float]:
-    px = (plot_region.bounds[0] + plot_region.bounds[2]) / 2
-    py = (plot_region.bounds[1] + plot_region.bounds[3]) / 2
-    g_lon, g_lat = GOOGLE_MAPS_CENTER[1], GOOGLE_MAPS_CENTER[0]
-    gx, gy = TO_EOV.transform(g_lon, g_lat)
-    return float(px - gx), float(py - gy)
-
-
 def refine_with_orthophoto(
     google_rgb: np.ndarray,
     ortho_rgb: np.ndarray,
     resolution: float,
-    max_shift_m: float = 8.0,
+    max_shift_m: float = 15.0,
 ) -> tuple[np.ndarray, tuple[float, float]]:
     g = rgb2gray(np.moveaxis(google_rgb, 0, -1))
     o = rgb2gray(np.moveaxis(ortho_rgb, 0, -1))
-    g = (g - g.mean()) / (g.std() + 1e-6)
-    o = (o - o.mean()) / (o.std() + 1e-6)
+    h, w = g.shape
+    # Korreláció csak a telek belső ablakán (kevesebb külső zaj).
+    row0, row1 = int(h * 0.28), int(h * 0.78)
+    col0, col1 = int(w * 0.22), int(w * 0.78)
+    g_crop = g[row0:row1, col0:col1]
+    o_crop = o[row0:row1, col0:col1]
 
-    shift, error, _ = phase_cross_correlation(o, g, upsample_factor=10)
+    shift, error, _ = phase_cross_correlation(o_crop, g_crop, upsample_factor=20)
     row_shift, col_shift = shift
     max_px = max_shift_m / resolution
-    if abs(col_shift) > max_px or abs(row_shift) > max_px or error > 0.35:
+    if abs(col_shift) > max_px or abs(row_shift) > max_px:
         return google_rgb, (0.0, 0.0)
 
     refined = apply_pixel_shift(google_rgb, float(col_shift), float(row_shift))
     return refined, (float(col_shift), float(row_shift))
+
+
+def apply_eov_shift(
+    google_rgb: np.ndarray, east_m: float, south_m: float, resolution: float
+) -> np.ndarray:
+    # Pozitív kelet/dél érték a DWG vonalak délkeleti irányú igazítását jelenti.
+    return apply_pixel_shift(
+        google_rgb,
+        col_shift=-east_m / resolution,
+        row_shift=-south_m / resolution,
+    )
+
+
+def annex_check_crop(
+    region: box,
+    google_rgb: np.ndarray,
+    vector_lines,
+) -> None:
+    annex = box(591300.5, 245344.5, 591309.5, 245351.5)
+    rgb = np.moveaxis(google_rgb, 0, -1)
+    fig, ax = plt.subplots(figsize=(5, 5), dpi=240)
+    ax.imshow(
+        rgb,
+        extent=(region.bounds[0], region.bounds[2], region.bounds[1], region.bounds[3]),
+        origin="upper",
+    )
+    selected = []
+    for line in vector_lines:
+        lb = box(
+            min(line[0][0], line[1][0]),
+            min(line[0][1], line[1][1]),
+            max(line[0][0], line[1][0]),
+            max(line[0][1], line[1][1]),
+        )
+        if annex.intersects(lb):
+            selected.append(line)
+    if selected:
+        ax.add_collection(LineCollection(selected, colors="#FFFFFF", linewidths=2.0, zorder=3))
+        ax.add_collection(LineCollection(selected, colors="#111111", linewidths=1.0, zorder=4))
+    ax.set_xlim(annex.bounds[0] - 4, annex.bounds[2] + 4)
+    ax.set_ylim(annex.bounds[1] - 4, annex.bounds[3] + 4)
+    ax.set_aspect("equal")
+    ax.axis("off")
+    fig.savefig(OUT_ANNEX_CHECK, bbox_inches="tight", pad_inches=0.02)
+    plt.close(fig)
 
 
 def plot_composite(
@@ -269,34 +315,24 @@ def main() -> None:
     google_eov, eov_transform = warp_to_eov(google_rgb, google_transform, view_region, resolution=resolution)
 
     alignment_note = f"EPSG:23700, zoom={zoom}"
-    anchor_dx, anchor_dy = anchor_shift_to_google_pin(plot_region)
-    google_eov = apply_pixel_shift(
+
+    google_eov = apply_eov_shift(
         google_eov,
-        col_shift=anchor_dx / resolution,
-        row_shift=-anchor_dy / resolution,
+        east_m=BUILDING_FOOTPRINT_SHIFT_EAST_M,
+        south_m=BUILDING_FOOTPRINT_SHIFT_SOUTH_M,
+        resolution=resolution,
     )
-    alignment_note += f", Google pin igazítás ~{math.hypot(anchor_dx, anchor_dy):.1f} m"
-
-    ortho = load_ortho_on_grid(view_region, (google_eov.shape[1], google_eov.shape[2]), resolution)
-    if ortho is not None and ortho.size > 0:
-        google_eov, shift_px = refine_with_orthophoto(google_eov, ortho, resolution)
-        if shift_px != (0.0, 0.0):
-            alignment_note += f", orto finomhangolás dx={shift_px[0]:.2f}px dy={shift_px[1]:.2f}px"
-
-    plot_cx = (plot_region.bounds[0] + plot_region.bounds[2]) / 2
-    plot_cy = (plot_region.bounds[1] + plot_region.bounds[3]) / 2
-    plot_lon, plot_lat = TO_WGS84.transform(plot_cx, plot_cy)
-    center_dist_m = math.hypot(
-        (plot_lat - GOOGLE_MAPS_CENTER[0]) * 111_320,
-        (plot_lon - GOOGLE_MAPS_CENTER[1]) * 111_320 * math.cos(math.radians(plot_lat)),
+    alignment_note += (
+        f", melléképület korrekció E+{BUILDING_FOOTPRINT_SHIFT_EAST_M:.1f} m "
+        f"S+{BUILDING_FOOTPRINT_SHIFT_SOUTH_M:.1f} m"
     )
-    alignment_note += f", telek-közép vs Google link ~{center_dist_m:.1f} m (WGS84)"
 
     vector_lines = collect_vector_segments(merged, plot_region)
     contour_segments = collect_contour_segments(merged, plot_region)
 
     save_geotiff(google_eov, eov_transform, OUT_TIF)
     plot_composite(view_region, google_eov, vector_lines, contour_segments, alignment_note)
+    annex_check_crop(view_region, google_eov, vector_lines)
 
     print(f"Google composite PNG: {OUT_PNG}")
     print(f"Google composite GeoTIFF (EOV): {OUT_TIF}")
