@@ -43,7 +43,7 @@ EOV = CRS.from_epsg(23700)
 # Melléképület sarok-illesztés: a Google NW sarka a DWG SE sarkán volt.
 # Korrekció: Google háttér további eltolása keleti + déli irányban (méter, EOV).
 BUILDING_FOOTPRINT_SHIFT_EAST_M = 1.6
-BUILDING_FOOTPRINT_SHIFT_SOUTH_M = 2.5
+BUILDING_FOOTPRINT_SHIFT_SOUTH_M = 1.4
 WEB_MERCATOR = CRS.from_epsg(3857)
 TO_WGS84 = Transformer.from_crs(EOV, "EPSG:4326", always_xy=True)
 TO_EOV = Transformer.from_crs("EPSG:4326", EOV, always_xy=True)

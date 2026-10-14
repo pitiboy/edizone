@@ -25,7 +25,7 @@ python3 /workspace/gis-work/google_maps_composite.py
 - A CAD koordináták **EOV (EPSG:23700)** méterben vannak.
 - A Google műhold csempék Web Mercatorból EOV-ba kerülnek visszavetítésre.
 - Ha elérhető a korábbi ortofotó, **phase-correlation** finomhangolást kap (legjobb illesztés).
-- Google illesztés: melléképület sarok alapján finom **délkeleti** korrekció (kb. **1,6 m kelet + 2,5 m dél**), ellenőrző vágat: `googlemaps-alignment-check-annex.png`.
+- Google illesztés: melléképület sarok alapján finom korrekció (kb. **1,6 m kelet + 1,4 m dél**), ellenőrző vágat: `googlemaps-alignment-check-annex.png`.
 
 ## 2. lépés – prompt ortofotóra helyezéshez
 
