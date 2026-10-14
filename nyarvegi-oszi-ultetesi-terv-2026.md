@@ -99,7 +99,7 @@ Feltétel: **4 × 3 m² emeltágyás** + üvegházban **~10 m² ültetőfelület
 | **Gyökér / saláta** (leszálló + fogyó) | **szept. 9–11** · **okt. 3–10** · **nov. 3–9** |
 | Leszálló | aug. 13–27 · szept. 9–24 · **okt. 3–17** · **nov. 3–17** |
 
-> **Szept. 25 után / október–november:** [`oszi-ultetes-kiegeszites-2026-szept25-nov.md`](oszi-ultetes-kiegeszites-2026-szept25-nov.md). **Tél alá vetés + téli hónapok vetése (dec.–márc.):** [`tel-ala-vetes-2026-2027.md`](tel-ala-vetes-2026-2027.md) (kültér / walipini / üvegház elkülönítve).
+> **Szept. 25 után / október–november:** [`oszi-ultetes-kiegeszites-2026-szept25-nov.md`](oszi-ultetes-kiegeszites-2026-szept25-nov.md) (fókusz: **okt. 12 – nov. 30**). **Tél alá vetés, fő táblázat okt. 12. – dec. 15., áttelelés:** [`tel-ala-vetes-2026-2027.md`](tel-ala-vetes-2026-2027.md) — jan.–márc. **új vetés** csak opcionális beltéri kiegészítés, nem tél alá vetés.
 
 > Ha nincs tökéletes metszet: **leszálló elsőbbség**. Pontos elem-nap: [Maria Thun 2026](https://www.biodin.hu/aktualitasok/mar-kaphato-a-2026-os-vetesi-naptar).
 
@@ -266,7 +266,8 @@ Rövid áttekintés; teljes vetési táblázat, holdnapok, walipini vs. üveghá
 | **nov. 3–9** | Saláta pótlás üvegházban (fogyó + leszálló) |
 | **nov. 9–17** | Utolsó borsóhajtás / baby leaf; utána szedés–áttelelés |
 | **nov.–dec.** | Téli retek tárolóra; levelek szedése; lóbab / kel átteleltetése; üvegház fűtés dec.-től (ha van) |
-| **dec. 30 – már.** | **Téli vetés** (üvegház, walipini, korlátozott kültér): [`tel-ala-vetes-2026-2027.md`](tel-ala-vetes-2026-2027.md) |
+| **dec. 1–15** | Áttelelés, mulcs — **nincs** szabadföldi új vetés: [`tel-ala-vetes-2026-2027.md`](tel-ala-vetes-2026-2027.md) |
+| **dec. 30 – már.** | *Opcionális* beltéri vetés (borsóhajtás, mikrozöld) — ugyanott **külön fejezet** |
 
 ---
 
