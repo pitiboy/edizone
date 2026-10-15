@@ -1,8 +1,8 @@
 # Tyúkól intelligens, fokozatosan halványuló világítása — technológiai kutatás
 
-**Dokumentum verzió:** 1.2 (házi tartás, 14/10 fény–sötét, Victron, RE315)  
+**Dokumentum verzió:** 1.3 (MultiPlus-II 3000, sötét környezet, redőny nélkül)  
 **Kutatás dátuma:** 2026. október 15.  
-**Utolsó frissítés:** 2026. október 15. (állatjóléti cél + szigetüzem + Wi‑Fi extender)  
+**Utolsó frissítés:** 2026. október 15.  
 **Helyszín:** Magyarország  
 **Célterület:** ~6,25 m² (2,5 × 2,5 m), belmagasság ~2,5 m, ~30 tyúk  
 
@@ -24,7 +24,7 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 | **Állatjólét (jog / ajánlás)** | A **2007/43/EK** broiler irányelv **20 lux** minimumot és sötét periódusokat ír elő **hústyúk tartására** — a házi ~30 tyúkos tartás **joghatása eltérő** (lásd 4. fejezet). A magyar **32/1999. FVM rendelet** általánosan előír sötét nyugalmi időt mesterséges világításnál ([NJT 32/1999](https://njt.jog.gov.hu/jogszabaly/1999-32-20-82)). |
 | **Ajánlott csomagok (előzetes, jóváhagyás nélkül)** | **Nullvezetés + 230 V a tyúkólnál** és **DIY elfogadott:** elsődleges javaslat **12 V WLED** (egyszerűbb) *vagy* **Shelly Dimmer Gen3** (kevesebb barkács, 230 V lámpatest). **Közepes:** Shelly Gen3 + dimmelhető E27/panel. **Legjobb összesített (frissítve):** **WLED 12 V** — a helyszínen van 230 V a PSU-hoz, a madár-zónában SELV; opcionális Shelly csak ha nem akarsz firmware-t. |
 
-**Helyszín profil (frissítve):** **házi vegyes tojó** (~30 db), cél **14 h fény + 10 h sötét**, **2 ablak** (természetes fény), **Victron szigetüzem** (4 kVA körüli inverter, **16 A FI** a kimeneten), Wi‑Fi **TP‑Link RE315** **Repeater** mód. **Még nyitott:** pontos Victron típus (szinusz / dimmer kompat.), extender–modem távolság és jelerősség.
+**Helyszín profil (frissítve):** **házi vegyes tojó** (~30 db), cél **14 h fény + 10 h sötét**, **2 ablak** (redőny **nincs**), **sötét környezet** (falu széle, nincs fényszennyezés), **Victron MultiPlus-II 3000** szigetüzem, **16 A FI** a kimeneten, Wi‑Fi **TP‑Link RE315** **Repeater**. **Még nyitott:** extender–modem távolság / jelerősség.
 
 ---
 
@@ -36,7 +36,8 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 - ~30 tyúk, **házi vegyes tojó** (magyar barna, fehér, kendermagos, kopasznyakú).
 - **Fotoperiódus cél:** **14 óra fény + 10 óra sötét** (24 órás ciklus).
 - **Természetes fény:** **2 ablak** két oldalon (évszakonként változó hozzájárulás).
-- **Villamos ellátás:** **szigetüzemű Victron rendszer**, ~**4 kVA inverter**; tyúkól **230 V / N / PE** az inverter kimenetéről; **16 A FI védelem** (FI megszakító / FI relé) a kimeneten (felhasználói leírás).
+- **Villamos ellátás:** **Victron MultiPlus-II 3000** szigetüzem; tyúkól **230 V / N / PE** az inverter kimenetéről; **16 A FI védelem** a kimeneten.
+- **Környezeti fény:** **nincs redőny**; a település **sötét**, **nincs fényszennyezés** — hold / hajnal **alacsony háttérfény**, de **nem** városi szint.
 - Wi‑Fi: **4G Wi‑Fi modem** + **TP‑Link RE315** (AC1200) **Repeater** mód; nincs UTP a tyúkólnál.
 - **DIY firmware (WLED/ESPHome)** elfogadható, ha **egyszerűen** karbantartható.
 - Elsődleges cél: olcsó, egyszerű, biztonságos, megbízható **esti fokozatos halványítás** a **10 órás sötét blokk** elején.
@@ -70,7 +71,8 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 | 230 V / N / PE a tyúkólnál? | **Igen** (Victron kimenet) | Shelly Gen3 **N-nel**; **12 V PSU** is az inverter 230 V-ról; lásd **9.4** szigetüzem. |
 | Tartás | **Házi vegyes tojó**, ~30 db | 4.5 **14/10** program; broiler 20 lux **kötelező** nem cél, de **32/1999** sötét idő releváns. |
 | Fény / sötét cél | **14 h + 10 h** | Fix órás váz (4.5); **ablak** miatt szezonális finomhangolás. |
-| Ablak | **2 db**, két oldalon | Nappali természetes fény **csökkenti** szükséges mesterséges fényt; **sötét periódusban** redőny/zsalugáter ajánlott (**N/I** van-e). |
+| Ablak | **2 db**, redőny **nincs** | Nappali természetes fény változik; **sötét 10 h:** alacsony **holdfény** behatolhat — **falu széle, nincs fényszennyezés** → **általában elfogadható** sötét (felhasználó); **holdteli éjszaka** még mindig enyhe fény az ablakon (**N/I** lux). |
+| Victron | **MultiPlus-II 3000** | **Tiszta szinusz** — **Shelly triac** és **12 V PSU** kompatibilitás **jó várakozás** (9.4); gyári spec: tiszta szinusz AC kimenet. |
 | FI védelem | **16 A FI** inverter kimeneten | **Igen, FI relére / FI megszakítóra gondoltunk** — a leírásod **megfelelő**; lásd 9.4. |
 | Wi‑Fi | **RE315 Repeater** + 4G modem | Dupla rádióugrás, **eszköz-ütemezés kötelező** (10.1). |
 | DIY firmware | **Igen, egyszerű** | **WLED** elsődleges. |
@@ -103,11 +105,10 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 
 ### 3.2 Továbbra is nyitott (opcionális finomítás)
 
-1. **Pontos Victron inverter típus** (pl. MultiPlus-II 3000/5000?) — **szinusz** kimenet dimmer kompatibilitáshoz (**N/I** modellszám).
-2. Tyúkól ↔ **RE315 ↔ modem** távolság és **jelminőség** (dBm) — gyenge jel esetén WLED idő drift + offline vezérlés.
-3. Van-e **redőny / fólia** a sötét 10 órára (ablak miatt hold / hajnal fény)?
-4. **Katasztrófa tolerancia** és **távoli elérés** szükségessége (4G-n kívülről).
-5. **Tojástermelés** célja: téli fény **pótlás** prioritás — befolyásolja a reggeli bekapcsolás időpontját.
+1. Tyúkól ↔ **RE315 ↔ modem** távolság és **jelminőség** (dBm) — gyenge jel esetén WLED idő drift + offline vezérlés.
+2. **Katasztrófa tolerancia** és **távoli elérés** szükségessége (4G-n kívülről).
+3. **Tojástermelés** célja: téli fény **pótlás** prioritás — befolyásolja a reggeli bekapcsolás időpontját.
+4. **Hold / kelő nap** lux az ablakon a 20:00–06:00 blokkban — opcionális **egyszeri mérés** sötétben (ha aggodalom van).
 
 ---
 
@@ -176,7 +177,7 @@ ahol \(A = 6{,}25\,\mathrm{m}^2\), \(\Phi_\mathrm{lm}\) = fényforrás fényára
 
 | Fázis | Óra (példa) | Mesterséges fény | Megjegyzés |
 |-------|-------------|------------------|------------|
-| Sötét blokk | **20:00 → 06:00** (10 h) | **Ki** (0%) | Ablak: **hold/hajnal** behatolhat — redőny csökkenti |
+| Sötét blokk | **20:00 → 06:00** (10 h) | **Ki** (0%) | **Nincs redőny**; **sötét falu** → alacsony háttérfény; **holdteli** enyhén világíthat |
 | Reggeli felkapcsolás (opc.) | 06:00 → 06:30 | Rámpa 0→100% (30 perc) | WLED Nightlight / Shelly transition |
 | Nappali fény időszak | 06:30 → 19:30 | 100% (vagy alacsonyabb max) | Ha nappali ablak fény **elég**, lehet **alacsonyabb %** (N/I luxmérés) |
 | Esti naplemente rámpa | **19:30 → 20:00** (30 perc) | 100% → 0% folyamatos | **Központi követelmény** |
@@ -190,7 +191,7 @@ ahol \(A = 6{,}25\,\mathrm{m}^2\), \(\Phi_\mathrm{lm}\) = fényforrás fényára
 |--------|-------|-----------------------------|
 | Nyár | Hosszú természetes fény | **Túl hosszú** fényperiódus kockázata, ha mesterséges is megy — **szezonális** korábbi esti off vagy max fényerő csökkentés |
 | Tél | Rövid nap | Mesterséges **14 h** pótlás fontosabb; reggeli **06:00** be kapcsolás indokolt |
-| Egész év | 2 oldali ablak | **Egyenetlen** megvilágítás — **2× fényforrás** (4.1.1) továbbra is indokolt |
+| Egész év | 2 oldali ablak, **sötét környezet** | **Esti/éjszakai** külső fény **minimális** (nincs fényszennyezés) → **redőny hiánya kevésbé kritikus**, mint városban; **2× fényforrás** (4.1.1) továbbra is indokolt |
 
 **Napkelte/napnyugta kötés vs fix óra:** WLED/Shelly **sunset trigger** finomíthatja az **esti rámpát**, de a **14/10 összesített** célhoz **fix off/on óra** (vagy „legalább 10 h off”) ellenőrzés szükséges — **hibrid** beállítás: pl. rámpa **napnyugta −30 perc** kezdet, de **legkésőbb 20:00-ra off** (felhasználói finomhangolás).
 
@@ -347,7 +348,7 @@ Vegyes házi fajták (barna, fehér, kendermagos, kopasznyakú) **különböző 
 
 ### 9.4 Szigetüzem: Victron inverter + FI védelem
 
-**Ismert rendszer (felhasználó):** ~**4 kVA Victron inverter**, tyúkól **230 V** az inverter **AC kimenetéről**; **16 A FI megszakító** és **FI relé** a kimeneten.
+**Ismert rendszer (felhasználó):** **Victron MultiPlus-II 3000** (3 kVA folyamatos / 4 kVA csúcs jellegű kategória), tyúkól **230 V** az inverter **AC kimenetéről**; **16 A FI megszakító** és **FI relé** a kimeneten.
 
 | Fogalom | Értelmezés | Tyúkól világításra |
 |---------|------------|---------------------|
@@ -357,8 +358,8 @@ Vegyes házi fajták (barna, fehér, kendermagos, kopasznyakú) **különböző 
 
 **Victron + dimmer (Shelly triac):**
 
-- A **Victron MultiPlus / Quattro** család **szinuszos** inverter; triac dimmerrel **általában kompatibilis**, ellenben a **Módosított szinusz** inverterekkel gyakori a **villogás / berregés**.
-- **Pontos inverter típusszám N/I** — telepítés előtt **1× teszt**: dimmelhető LED **min–max**, **off** állapotban nincs **halvány világítás**.
+- A **MultiPlus-II** **tiszta szinusz** AC kimenetet ad ([Victron MultiPlus-II dokumentáció](https://www.victronenergy.com/inverters-chargers/multiplus-ii)) — **Shelly Dimmer Gen3** (trailing edge) és **12 V kapcsolóüzemű PSU** **jó kompatibilitás várható**.
+- Telepítés előtt **rövid teszt** továbbra is ajánlott: dimmelhető LED **min–max**, **off** = nincs **szellemfény**, áramszünet / inverter restart után **program helyreáll**.
 - **12 V WLED PSU:** kapcsolóüzemű tápegység **kevésbé érzékeny** az inverter kimenet minőségére, mint a triac.
 
 **Áramszünet (akkufeszültség kifut / inverter leáll):**
@@ -683,14 +684,14 @@ Hasonló J1-hez + **~0 Ft szoftver**, esetleg **Home Assistant** opcionális (+2
 | 16 | Sonoff D1 API | https://help.sonoff.tech/docs/D1-API | 2026-10-15 |
 | 17 | Season Generator SOL-LED | https://www.allevamentoredwing.com/en/prodotti/season-generator-sol-led-12v/ | 2026-10-15 |
 | 18 | Farmtronics LD dimmer module | https://www.farmtronics.com.au/store/LD-Light-Dimming-Module-p833825073 | 2026-10-15 |
+| 19 | Victron MultiPlus-II | https://www.victronenergy.com/inverters-chargers/multiplus-ii | 2026-10-15 |
 
 ---
 
 ## 21. Javasolt következő lépések (jóváhagyást igénylő)
 
-1. **Victron inverter pontos típusa** — szinusz dimmer teszthez (3.2).
-2. **Architektúra (kutatási javaslat):** **WLED 12 V** + **4.5.1** időzítés (14/10, 30 perc esti rámpa); alternatíva: **Shelly Gen3** ugyanezzel az ütemezéssel.
-3. **Ablak / sötét:** sötét 10 órára **redőny/zsalugáter** mérlegelése (hold, korai hajnal).
+1. **Architektúra (kutatási javaslat):** **WLED 12 V** + **4.5.1** időzítés (14/10, 30 perc esti rámpa); alternatíva: **Shelly Gen3** + MultiPlus-II 3000 (szinusz).
+3. **Sötét környezet (redőny nélkül):** **általában OK** a 10 h blokk; opcionális **holdteli éjszaka** viselkedés megfigyelése.
 4. **Lux** 5 ponton **06:30** és **19:00** körül — elég-e a **2× ~10 W** ablak mellett.
 5. **Pilot 1–2 hét:** viselkedés (ülés a percben, reggeli aktivitás); tojástermelés napló (**opcionális**).
 6. **Victron kimenet:** FI **teszt gomb** / havi ellenőrzés; világítás **16 A ágon** maradjon.
