@@ -1,8 +1,8 @@
 # Tyúkól intelligens, fokozatosan halványuló világítása — technológiai kutatás
 
-**Dokumentum verzió:** 1.1 (felhasználói helyszín-visszajelzés)  
+**Dokumentum verzió:** 1.2 (házi tartás, 14/10 fény–sötét, Victron, RE315)  
 **Kutatás dátuma:** 2026. október 15.  
-**Utolsó frissítés:** 2026. október 15. (villamos + hálózat + DIY preferencia)  
+**Utolsó frissítés:** 2026. október 15. (állatjóléti cél + szigetüzem + Wi‑Fi extender)  
 **Helyszín:** Magyarország  
 **Célterület:** ~6,25 m² (2,5 × 2,5 m), belmagasság ~2,5 m, ~30 tyúk  
 
@@ -24,7 +24,7 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 | **Állatjólét (jog / ajánlás)** | A **2007/43/EK** broiler irányelv **20 lux** minimumot és sötét periódusokat ír elő **hústyúk tartására** — a házi ~30 tyúkos tartás **joghatása eltérő** (lásd 4. fejezet). A magyar **32/1999. FVM rendelet** általánosan előír sötét nyugalmi időt mesterséges világításnál ([NJT 32/1999](https://njt.jog.gov.hu/jogszabaly/1999-32-20-82)). |
 | **Ajánlott csomagok (előzetes, jóváhagyás nélkül)** | **Nullvezetés + 230 V a tyúkólnál** és **DIY elfogadott:** elsődleges javaslat **12 V WLED** (egyszerűbb) *vagy* **Shelly Dimmer Gen3** (kevesebb barkács, 230 V lámpatest). **Közepes:** Shelly Gen3 + dimmelhető E27/panel. **Legjobb összesített (frissítve):** **WLED 12 V** — a helyszínen van 230 V a PSU-hoz, a madár-zónában SELV; opcionális Shelly csak ha nem akarsz firmware-t. |
 
-**Még tisztázandó** (3. fejezet): tartás típusa (tojó/hústyúk/házi), célzott világítási/sötét óraszám, ablak/természetes fény, FI védelem és extender pontos üzemmódja.
+**Helyszín profil (frissítve):** **házi vegyes tojó** (~30 db), cél **14 h fény + 10 h sötét**, **2 ablak** (természetes fény), **Victron szigetüzem** (4 kVA körüli inverter, **16 A FI** a kimeneten), Wi‑Fi **TP‑Link RE315** **Repeater** mód. **Még nyitott:** pontos Victron típus (szinusz / dimmer kompat.), extender–modem távolság és jelerősség.
 
 ---
 
@@ -33,12 +33,13 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 ### 2.1 Rögzített helyszín- és állományadatok
 
 - Magyarország, tyúkól ~6,25 m², belmagasság ~2,5 m.
-- ~30 tyúk.
-- Wi‑Fi: **4G Wi‑Fi modem (router)** + **TP‑Link extender** (tyúkól felől csatlakozás; **LAN szintű** elérés, **internet a 4G-n**).
-- Nincs UTP/Ethernet a tyúkólnál.
-- **230 V, nullvezeték (N) és védőföld (PE)** a tyúkólnál **rendelkezésre áll** (felhasználói visszajelzés).
+- ~30 tyúk, **házi vegyes tojó** (magyar barna, fehér, kendermagos, kopasznyakú).
+- **Fotoperiódus cél:** **14 óra fény + 10 óra sötét** (24 órás ciklus).
+- **Természetes fény:** **2 ablak** két oldalon (évszakonként változó hozzájárulás).
+- **Villamos ellátás:** **szigetüzemű Victron rendszer**, ~**4 kVA inverter**; tyúkól **230 V / N / PE** az inverter kimenetéről; **16 A FI védelem** (FI megszakító / FI relé) a kimeneten (felhasználói leírás).
+- Wi‑Fi: **4G Wi‑Fi modem** + **TP‑Link RE315** (AC1200) **Repeater** mód; nincs UTP a tyúkólnál.
 - **DIY firmware (WLED/ESPHome)** elfogadható, ha **egyszerűen** karbantartható.
-- Elsődleges cél: olcsó, egyszerű, biztonságos, megbízható **esti fokozatos halványítás**.
+- Elsődleges cél: olcsó, egyszerű, biztonságos, megbízható **esti fokozatos halványítás** a **10 órás sötét blokk** elején.
 
 ### 2.2 Funkcionális elvárások (11 pont)
 
@@ -62,15 +63,18 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 - Egyetlen fő fényforrás vagy egy zóna elegendő lehet 6,25 m²-hez (**lux mérés javasolt** — 4. fejezet).
 - A **230 V** a helyszínen van: **Shelly Gen3 trailing-edge** és **230 V → 12 V PSU** is reális; a **nullvezetés** miatt **nincs szükség** 20 W bypass-ra alacsony terhelésnél ([Shelly KB](https://kb.shelly.cloud/knowledge-base/shelly-dimmer-gen3)).
 
-### 2.4 Felhasználói visszajelzés (2026-10-15)
+### 2.4 Felhasználói visszajelzés
 
 | Kérdés | Válasz | Következmény a tervezésre |
 |--------|--------|---------------------------|
-| 230 V / N / PE a tyúkólnál? | **Igen** | Shelly Gen3 **N-nel**; alacsony watt LED is kikapcsolható; 230 V szerelés **szakember** ajánlott. |
-| Wi‑Fi topológia | 4G modem + TP‑Link extender, internet van | NTP / opcionális távoli elérés OK; **4G kimaradás** ≠ automatikus helyi Wi‑Fi kiesés (extender függő — lásd 10. fejezet). |
-| Tartás típus, óraszám | *Nincs válasz* | Állatjóléti program **még nem zárható le**; 4. fejezet **lux + sötét idő** irányadó. |
-| DIY firmware | **Igen, ha egyszerű** | **WLED** előnyben ESPHome-hoz képest (kevesebb YAML, beépített naplemente makró). |
-| Lux cél | „Elég fény”, számítás OK | 4.1 **lux-becslés** alapján ~**10–15 W LED** elegendő lehet; mérés továbbra is hasznos. |
+| 230 V / N / PE a tyúkólnál? | **Igen** (Victron kimenet) | Shelly Gen3 **N-nel**; **12 V PSU** is az inverter 230 V-ról; lásd **9.4** szigetüzem. |
+| Tartás | **Házi vegyes tojó**, ~30 db | 4.5 **14/10** program; broiler 20 lux **kötelező** nem cél, de **32/1999** sötét idő releváns. |
+| Fény / sötét cél | **14 h + 10 h** | Fix órás váz (4.5); **ablak** miatt szezonális finomhangolás. |
+| Ablak | **2 db**, két oldalon | Nappali természetes fény **csökkenti** szükséges mesterséges fényt; **sötét periódusban** redőny/zsalugáter ajánlott (**N/I** van-e). |
+| FI védelem | **16 A FI** inverter kimeneten | **Igen, FI relére / FI megszakítóra gondoltunk** — a leírásod **megfelelő**; lásd 9.4. |
+| Wi‑Fi | **RE315 Repeater** + 4G modem | Dupla rádióugrás, **eszköz-ütemezés kötelező** (10.1). |
+| DIY firmware | **Igen, egyszerű** | **WLED** elsődleges. |
+| Lux | „Elég fény” + számítás | 4.1.1; **2× ~10 W** továbbra is reális. |
 
 ### 2.5 Skála az értékeléshez (1–5)
 
@@ -88,22 +92,22 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 
 ## 3. Tisztázandó kérdések
 
-### 3.1 Megválaszolt (2026-10-15)
+### 3.1 Megválaszolt
 
-- **230 V, nullvezeték, földelés:** igen, a tyúkólnál.
-- **Wi‑Fi:** egy **4G Wi‑Fi modem** + **TP‑Link extender**; a tyúkól erről kapcsolódik; **van internet** (4G).
-- **DIY firmware:** igen, ha egyszerű (WLED preferált belépési szint).
+- **230 V / N / PE** a tyúkólnál (Victron szigetüzem kimenet).
+- **FI:** 16 A FI védelem az inverter kimenetén (FI megszakító + FI relé — felhasználói rendszer).
+- **Tartás:** házi vegyes tojó; **14 h fény + 10 h sötét** cél.
+- **2 ablak** két oldalon.
+- **Wi‑Fi:** 4G modem + **TP‑Link RE315** **Repeater**.
+- **DIY:** WLED/ESPHome OK, egyszerűség preferált.
 
-### 3.2 Továbbra is nyitott
+### 3.2 Továbbra is nyitott (opcionális finomítás)
 
-1. **FI/RCD** van-e a tyúkól vonalán? (PE megvan; FI **N/I**.)
-2. TP‑Link extender **üzemmód:** csak **Repeater/Extender**, vagy **Access Point** (vezeték nélküli híd vs kábeles uplink a modemhez)?
-3. Tyúkól és extender **távolsága** / jelerősség (gyenge jel → Wi‑Fi eszköz offline).
-4. Tartás: **tojó / hústyúk / házi**? (~30 db)
-5. Van-e **ablak / természetes fény** — hány óra?
-6. Kívánt **világítási ablak** (pl. 6:00–20:00) és **zavartalan sötét** hossza (pl. 8–10 óra)?
-7. **Katasztrófa tolerancia:** ha 1–2 éjszaka fény marad / sötét van, mi a elfogadható?
-8. Szükséges-e **távoli elérés mobilnetről** (4G-n kívülről), vagy elég **helyi Wi‑Fi** a tyúkólnál?
+1. **Pontos Victron inverter típus** (pl. MultiPlus-II 3000/5000?) — **szinusz** kimenet dimmer kompatibilitáshoz (**N/I** modellszám).
+2. Tyúkól ↔ **RE315 ↔ modem** távolság és **jelminőség** (dBm) — gyenge jel esetén WLED idő drift + offline vezérlés.
+3. Van-e **redőny / fólia** a sötét 10 órára (ablak miatt hold / hajnal fény)?
+4. **Katasztrófa tolerancia** és **távoli elérés** szükségessége (4G-n kívülről).
+5. **Tojástermelés** célja: téli fény **pótlás** prioritás — befolyásolja a reggeli bekapcsolás időpontját.
 
 ---
 
@@ -161,6 +165,38 @@ ahol \(A = 6{,}25\,\mathrm{m}^2\), \(\Phi_\mathrm{lm}\) = fényforrás fényára
 - **32/1999. (III. 31.) FVM rendelet:** nem tartható **folyamatos sötétben**; mesterséges világításnál **sötét nyugalmi idő**; tojóknál **24 órás ritmus**, ~**nap harmada zavartalan sötét** ([NJT](https://njt.jog.gov.hu/jogszabaly/1999-32-20-82)).
 - **1998. évi XXVIII. tv. állatvédelem:** a rendelet **kivételei** (pl. kedvtelésből tartott állat — **bizonytalan**, hogy a házi tyúk kategória) — **jogászi értelmezés szükséges** konkrét tartási módra ([NJT 1998/XXVIII](https://njt.jog.gov.hu/jogszabaly/1998-28-00-00)).
 - **Következtetés:** a projekt **állatjóléti programját** (világítási órák, sötét idő) **dokumentálja**, és szükség esetén **NÉBIH / állatorvos** konzultáció.
+
+### 4.5 Házi vegyes tojó — 14 h fény + 10 h sötét program (műszaki váz)
+
+**Felhasználói cél:** 24 órában **14 óra „világított időszak”** + **10 óra zavartalan sötét** (a **halványítási rámpa** ideje a sötétbe vezet, hasonlóan az EU broiler gyakorlathoz, ahol a twilight **nem** számít sötétnek — [2007/43](https://eur-lex.europa.eu/eli/dir/2007/43/oj/eng)).
+
+**Fontos:** a tyúk a **2 ablak miatt** nyáron **több természetes fényt** kap; télen **kevesebbet**. A **14 h** cél **fény + természetes + mesterséges összesített** élmény; a vezérlés **mesterséges fényforrást** kapcsol.
+
+#### 4.5.1 Példa fix órás váz (jóváhagyás / finomhangolás előtt)
+
+| Fázis | Óra (példa) | Mesterséges fény | Megjegyzés |
+|-------|-------------|------------------|------------|
+| Sötét blokk | **20:00 → 06:00** (10 h) | **Ki** (0%) | Ablak: **hold/hajnal** behatolhat — redőny csökkenti |
+| Reggeli felkapcsolás (opc.) | 06:00 → 06:30 | Rámpa 0→100% (30 perc) | WLED Nightlight / Shelly transition |
+| Nappali fény időszak | 06:30 → 19:30 | 100% (vagy alacsonyabb max) | Ha nappali ablak fény **elég**, lehet **alacsonyabb %** (N/I luxmérés) |
+| Esti naplemente rámpa | **19:30 → 20:00** (30 perc) | 100% → 0% folyamatos | **Központi követelmény** |
+| Sötét | 20:00-tól | Off | 10 h |
+
+**Ellenőrzés:** 06:00–20:00 = **14 h** „világos ablak” (rámpákkal együtt a madár számára fokozatos); 20:00–06:00 = **10 h** sötét.
+
+#### 4.5.2 Ablakok hatása
+
+| Évszak | Hatás | Automatizálási következmény |
+|--------|-------|-----------------------------|
+| Nyár | Hosszú természetes fény | **Túl hosszú** fényperiódus kockázata, ha mesterséges is megy — **szezonális** korábbi esti off vagy max fényerő csökkentés |
+| Tél | Rövid nap | Mesterséges **14 h** pótlás fontosabb; reggeli **06:00** be kapcsolás indokolt |
+| Egész év | 2 oldali ablak | **Egyenetlen** megvilágítás — **2× fényforrás** (4.1.1) továbbra is indokolt |
+
+**Napkelte/napnyugta kötés vs fix óra:** WLED/Shelly **sunset trigger** finomíthatja az **esti rámpát**, de a **14/10 összesített** célhoz **fix off/on óra** (vagy „legalább 10 h off”) ellenőrzés szükséges — **hibrid** beállítás: pl. rámpa **napnyugta −30 perc** kezdet, de **legkésőbb 20:00-ra off** (felhasználói finomhangolás).
+
+#### 4.5.3 Fajta-megjegyzés (nem bizonyíték)
+
+Vegyes házi fajták (barna, fehér, kendermagos, kopasznyakú) **különböző aktivitást** mutathatnak; a **14/10** cél **felhasználói üzemeltetési** preferencia — ha **tojástermelés** télen visszaesik, **állatorvos / tenyésztői tapasztalat** alapján **+30–60 perc** reggeli fény **mérlegelhető** (nem automatikus ajánlás).
 
 ---
 
@@ -309,6 +345,29 @@ ahol \(A = 6{,}25\,\mathrm{m}^2\), \(\Phi_\mathrm{lm}\) = fényforrás fényára
 - Shelly / Sonoff **cloud account** → jelszó, 2FA ahol van.
 - **Távoli elérés** csak szükség esetén; helyi vezérlés prioritás.
 
+### 9.4 Szigetüzem: Victron inverter + FI védelem
+
+**Ismert rendszer (felhasználó):** ~**4 kVA Victron inverter**, tyúkól **230 V** az inverter **AC kimenetéről**; **16 A FI megszakító** és **FI relé** a kimeneten.
+
+| Fogalom | Értelmezés | Tyúkól világításra |
+|---------|------------|---------------------|
+| **FI megszakító (RCD)** | Áram-védőkapcsoló: **30 mA** (tipikusan) differenciáláramra old | **Emberi védelem** nedves/poros környezetben — **ajánlott** |
+| **FI relé** | Gyakran **kiegészítő** vagy **külső RCD modul** / védő funkció a Victron kimenetén | A leírásod alapján **van földelés ellenőrzés / FI** — **jó gyakorlat** |
+| **16 A** | Max. terhelés ~**3,7 kW** ohmos | Világítás **~20–40 W** elhanyagolható; **induktív** dimmer terhelés **N/I** harmonikus |
+
+**Victron + dimmer (Shelly triac):**
+
+- A **Victron MultiPlus / Quattro** család **szinuszos** inverter; triac dimmerrel **általában kompatibilis**, ellenben a **Módosított szinusz** inverterekkel gyakori a **villogás / berregés**.
+- **Pontos inverter típusszám N/I** — telepítés előtt **1× teszt**: dimmelhető LED **min–max**, **off** állapotban nincs **halvány világítás**.
+- **12 V WLED PSU:** kapcsolóüzemű tápegység **kevésbé érzékeny** az inverter kimenet minőségére, mint a triac.
+
+**Áramszünet (akkufeszültség kifut / inverter leáll):**
+
+- Világítás **off**; program **megáll**.
+- Visszatéréskor: WLED/Shelly **NTP** (4G modem) után idő szinkron; **ütemezés folytatódhat** — **1–2 nap** drift ellenőrzés, ha NTP nem elérhető.
+
+**Földelés (PE):** sziget rendszerben a **Victron földelési koncepció** (közös föld, neutral bonding) **szakemberi** tervezésű; a tyúkól **PE** csatlakoztatása **kötelező** érintésvédelmi szempontból.
+
 ---
 
 ## 10. Internet-, Wi‑Fi- és felhőfüggőség
@@ -321,25 +380,34 @@ ahol \(A = 6{,}25\,\mathrm{m}^2\), \(\Phi_\mathrm{lm}\) = fényforrás fényára
 | J11 Hue | Bridge LAN | Account setup | Napi: bridge |
 | J12 HA | LAN | Nem | Központ SPOF |
 
-### 10.1 Helyszín-specifikus: 4G modem + TP‑Link extender
+### 10.1 Helyszín-specifikus: 4G modem + TP‑Link RE315 (Repeater)
 
-**Ismert topológia (felhasználó):**
+**Ismert topológia:**
 
 ```
-[ Internet ] ←—— 4G ——→ [ 4G Wi‑Fi modem / router ] ←~~ Wi‑Fi ~~→ [ TP‑Link extender ] ←~~ Wi‑Fi ~~→ [ Tyúkól: Shelly / WLED ]
-                                                              ↑
-                                                    [ Telefon (ugyanaz az SSID) ]
+[ Internet ] ←—— 4G ——→ [ 4G Wi‑Fi modem / router ] ←~~ 2,4/5 GHz ~~→ [ TP‑Link RE315 Repeater ] ←~~ Wi‑Fi ~~→ [ Tyúkól: WLED / Shelly ]
+                                                                                    ↑
+                                                                          [ Telefon ]
 ```
+
+**Eszköz:** [TP‑Link RE315](https://www.tp-link.com/) — **AC1200**, felhasználó szerint **Repeater** üzemmód (nem AP vezetékes háttérhálóval).
 
 | Szempont | Értékelés | Megjegyzés |
 |----------|-----------|------------|
-| Helyi vezérlés (telefon a tyúkólnál) | **Valószínűleg jó**, ha telefon és IoT eszköz **ugyanazon az extender/modem SSID-n** van | **N/I:** AP isolation |
-| NTP / idő | 4G internet **van** → Shelly/WLED idő szinkron **működhet** | 4G outage: eszköz **utolsó idő** + drift |
-| Távoli elérés otthonról (mobilnet) | **Lehetséges**, ha modem **port forward / VPN** — **N/I** beállítás | Shelly cloud opcionális, nem kötelező |
-| Internetkimaradás (4G leáll) | **Helyi Wi‑Fi** extender ↔ eszközök **továbbra is működhet** | Extender **Repeater** módban a modem Wi‑Fi-jétől függ; **AP mód + vezeték** stabilabb (**N/I**) |
-| Üzemeltetési kockázat | Extender + 4G modem **SPOF** | **WLED/Shelly helyi ütemezés** továbbra is fontosabb, mint a felhő |
+| Helyi vezérlés | **Jó**, ha telefon + IoT **ugyanahhoz a kiterjesztett hálózathoz** csatlakozik | Repeater gyakran **más SSID** (`…_EXT`) — **ugyanarra kösd** mindkettőt |
+| Sávszél / késleltetés | **Közepes** | Repeater **fél sávszélesség**; világításvezérléshez **elég** |
+| Stabilitás | **Közepes** | **Két ugrás** (tyúkól → RE315 → modem); modem Wi‑Fi gyengülése → **tyúkól offline**, de **ütemezés eszközön fut** |
+| NTP / idő | 4G **van** | Modem+internet leáll → idő **drift**; **havonta ellenőrizd** az off időpontot |
+| Jobb alternatíva (később) | **N/I** kábelút | Ha valaha **Ethernet** a modemhez: RE315 **AP mód** stabilabb — jelenleg **nincs** UTP a tyúkólnál |
 
-**Tervezési elv:** minden automatizmust **eszközön** (WLED timer, Shelly schedule) állíts be; a telefon csak **finomhangolás**.
+**Tervezési elv:** **14/10 program WLED Time & Macros-ban** (fix óra) **és** esti **30 perc Nightlight**; ne **csak** napnyugta trigger, amíg a 10 h sötét **ablakokkal** nincs validálva.
+
+**WLED példa logika (szöveges, nem telepítési utasítás):**
+
+1. **06:00** — preset „Nappali 100%” (vagy 30 perc sunrise Nightlight 06:00-tól).  
+2. **19:30** — API/macro: Nightlight **30 perc**, mode fade → **0%**.  
+3. **20:00** — preset off / timer off.  
+4. Heti ismétlés minden nap.
 
 ---
 
@@ -353,7 +421,7 @@ Skála: **L** = világítás állapota, **A** = automata program, **H** = emberi
 | 2 | Router újraindul | Wi‑Fi eszköz reconnect | Fut időzítés | Nem | Várni | Közepes |
 | 3 | HA leáll | J12: utolsó állapot | Megáll | Igen | HA restart | Magas ha csak HA |
 | 4 | Felhő down | Shelly helyi web: OK | Fut | Nem | Helyi IP | Alacsony |
-| 5 | Áramszünet | Off | Megáll | Nem | NTP szinkron után | Közepes |
+| 5 | Áramszünet (Victron/akkü) | Off | Megáll | Nem | NTP szinkron után | Közepes |
 | 6 | Visszatérő áram | restore_mode függő | Újraindul | Ellenőrizni | WLED/Shelly beállítás | Közepes |
 | 7 | Idő/config elveszik | Rossz időpont | Rossz | Igen | Újrabeállítás | Magas |
 | 8 | Dimmer hibás | Off vagy ON | Nem | Igen | Csere | Magas |
@@ -620,13 +688,14 @@ Hasonló J1-hez + **~0 Ft szoftver**, esetleg **Home Assistant** opcionális (+2
 
 ## 21. Javasolt következő lépések (jóváhagyást igénylő)
 
-1. **Válasz** a 3.2 nyitott kérdésekre: tartás típus, célzott **világítási + sötét órák**, ablak, FI védelem, extender üzemmód.
-2. **Architektúra-előválasztás (kutatási javaslat, nem döntés):** **WLED 12 V** *vagy* **Shelly Gen3** — mindkettő illeszkedik a megadott villamos + Wi‑Fi környezethez.
-3. **Lux gyorsellenőrzés** üres ólban 5 ponton (akár bérleti luxmérő); cél: sarkok **>~15–20 lux** nappali fényerőn (házi „elég fény”).
-4. **Pilot esti rámpa:** 30 perc, tyúk viselkedés (ülnek-e le, kevesebb panaszhang).
-5. **230 V:** PSU/dimmer bekötés **szakemberrel**; 12 V oldal **védett csatorna**, tyúk ne érje a 230 V csatlakozót.
-6. **Wi‑Fi:** IoT eszköz és telefon **ugyanaz az SSID** (extender); jegyezd fel a WLED/Shelly **helyi IP-t** (könyvjelző).
-7. **Telepítés és vásárlás** — külön jóváhagyással, a pilot után.
+1. **Victron inverter pontos típusa** — szinusz dimmer teszthez (3.2).
+2. **Architektúra (kutatási javaslat):** **WLED 12 V** + **4.5.1** időzítés (14/10, 30 perc esti rámpa); alternatíva: **Shelly Gen3** ugyanezzel az ütemezéssel.
+3. **Ablak / sötét:** sötét 10 órára **redőny/zsalugáter** mérlegelése (hold, korai hajnal).
+4. **Lux** 5 ponton **06:30** és **19:00** körül — elég-e a **2× ~10 W** ablak mellett.
+5. **Pilot 1–2 hét:** viselkedés (ülés a percben, reggeli aktivitás); tojástermelés napló (**opcionális**).
+6. **Victron kimenet:** FI **teszt gomb** / havi ellenőrzés; világítás **16 A ágon** maradjon.
+7. **RE315:** extender **közelebb a tyúkólhoz**, ha lehet; **fix IP** vagy DHCP reservation WLED-nek a modemben.
+8. **Telepítés / vásárlás** — külön jóváhagyás a pilot után.
 
 ---
 
