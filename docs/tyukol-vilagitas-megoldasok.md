@@ -1,7 +1,8 @@
 # Tyúkól intelligens, fokozatosan halványuló világítása — technológiai kutatás
 
-**Dokumentum verzió:** 1.0  
+**Dokumentum verzió:** 1.1 (felhasználói helyszín-visszajelzés)  
 **Kutatás dátuma:** 2026. október 15.  
+**Utolsó frissítés:** 2026. október 15. (villamos + hálózat + DIY preferencia)  
 **Helyszín:** Magyarország  
 **Célterület:** ~6,25 m² (2,5 × 2,5 m), belmagasság ~2,5 m, ~30 tyúk  
 
@@ -21,9 +22,9 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 | **Internetfüggetlenség** | A napi működéshez **nem szükséges** folyamatos internet: WLED időzítő, ESPHome `sun` komponens, ChickenLight 12, Shelly **eszközön tárolt** ütemezés (NTP/időszinkron után) működhet helyi Wi‑Fi-n / offline órával. A **felhőközpontú** okosizzók (eWeLink-only scene, Hue account) gyengébbek áramszünet / felhőkimaradás esetén. |
 | **Biztonság** | A tyúkól poros, párás, ammóniás környezet és **állati rágcsálás** miatt a **230 V-os falba süllyesztett dimmer** csak megfelelő **IP-védettségű lámpatesttel**, **zárt elhelyezéssel** és **szakember által végzett** szereléssel ajánlható alapként. **12 V SELV** rendszerrel a tyúkóli szakaszban alacsonyabb az érintésvédelmi kockázat, de a **230 V → 12 V tápegység** elhelyezése és védelme továbbra is kritikus ([MSZ EN 60598 / alacsonyfeszültségű világítás gyakorlat](https://eur-lex.europa.eu/)). |
 | **Állatjólét (jog / ajánlás)** | A **2007/43/EK** broiler irányelv **20 lux** minimumot és sötét periódusokat ír elő **hústyúk tartására** — a házi ~30 tyúkos tartás **joghatása eltérő** (lásd 4. fejezet). A magyar **32/1999. FVM rendelet** általánosan előír sötét nyugalmi időt mesterséges világításnál ([NJT 32/1999](https://njt.jog.gov.hu/jogszabaly/1999-32-20-82)). |
-| **Ajánlott csomagok (előzetes, jóváhagyás nélkül)** | **Olcsó:** 12 V WLED + ESP32 + tápegység + LED szalag. **Közepes:** Shelly Dimmer Gen3 + 0–10 V / trailing-edge kompatibilis fényforrás + helyi ütemezés. **Legjobb összesített:** 12 V ESPHome **vagy** ChickenLight 12 + minőségi PSU — erős helyi automatika, kevés felhőfüggés, javítható. |
+| **Ajánlott csomagok (előzetes, jóváhagyás nélkül)** | **Nullvezetés + 230 V a tyúkólnál** és **DIY elfogadott:** elsődleges javaslat **12 V WLED** (egyszerűbb) *vagy* **Shelly Dimmer Gen3** (kevesebb barkács, 230 V lámpatest). **Közepes:** Shelly Gen3 + dimmelhető E27/panel. **Legjobb összesített (frissítve):** **WLED 12 V** — a helyszínen van 230 V a PSU-hoz, a madár-zónában SELV; opcionális Shelly csak ha nem akarsz firmware-t. |
 
-**Kritikus tisztázandó kérdések** (részletesen 3. fejezet): van-e **nullvezeték** a tyúkólnál; melyik Wi‑Fi hálózat **ugyanahhoz a LAN/routerhez** tartozik; van-e **230 V konnektor vagy csak környező épület-villamos**; a tartás **házi baromfi / tojó / hústyúk** minősége.
+**Még tisztázandó** (3. fejezet): tartás típusa (tojó/hústyúk/házi), célzott világítási/sötét óraszám, ablak/természetes fény, FI védelem és extender pontos üzemmódja.
 
 ---
 
@@ -33,8 +34,10 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 
 - Magyarország, tyúkól ~6,25 m², belmagasság ~2,5 m.
 - ~30 tyúk.
-- Wi‑Fi elérhető (több SSID — **hálózati topológia nem ismert**).
+- Wi‑Fi: **4G Wi‑Fi modem (router)** + **TP‑Link extender** (tyúkól felől csatlakozás; **LAN szintű** elérés, **internet a 4G-n**).
 - Nincs UTP/Ethernet a tyúkólnál.
+- **230 V, nullvezeték (N) és védőföld (PE)** a tyúkólnál **rendelkezésre áll** (felhasználói visszajelzés).
+- **DIY firmware (WLED/ESPHome)** elfogadható, ha **egyszerűen** karbantartható.
 - Elsődleges cél: olcsó, egyszerű, biztonságos, megbízható **esti fokozatos halványítás**.
 
 ### 2.2 Funkcionális elvárások (11 pont)
@@ -57,9 +60,19 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 
 - A tyúkól **beltéri, nem fűtött** lehet; téli fagy és magas páratartalom valószínű.
 - Egyetlen fő fényforrás vagy egy zóna elegendő lehet 6,25 m²-hez (**lux mérés javasolt** — 4. fejezet).
-- A kutatás **nem** feltételez 230 V-os konnektort a tyúkólon belül; ha nincs, **12 V vagy távoli PSU** szükséges.
+- A **230 V** a helyszínen van: **Shelly Gen3 trailing-edge** és **230 V → 12 V PSU** is reális; a **nullvezetés** miatt **nincs szükség** 20 W bypass-ra alacsony terhelésnél ([Shelly KB](https://kb.shelly.cloud/knowledge-base/shelly-dimmer-gen3)).
 
-### 2.4 Skála az értékeléshez (1–5)
+### 2.4 Felhasználói visszajelzés (2026-10-15)
+
+| Kérdés | Válasz | Következmény a tervezésre |
+|--------|--------|---------------------------|
+| 230 V / N / PE a tyúkólnál? | **Igen** | Shelly Gen3 **N-nel**; alacsony watt LED is kikapcsolható; 230 V szerelés **szakember** ajánlott. |
+| Wi‑Fi topológia | 4G modem + TP‑Link extender, internet van | NTP / opcionális távoli elérés OK; **4G kimaradás** ≠ automatikus helyi Wi‑Fi kiesés (extender függő — lásd 10. fejezet). |
+| Tartás típus, óraszám | *Nincs válasz* | Állatjóléti program **még nem zárható le**; 4. fejezet **lux + sötét idő** irányadó. |
+| DIY firmware | **Igen, ha egyszerű** | **WLED** előnyben ESPHome-hoz képest (kevesebb YAML, beépített naplemente makró). |
+| Lux cél | „Elég fény”, számítás OK | 4.1 **lux-becslés** alapján ~**10–15 W LED** elegendő lehet; mérés továbbra is hasznos. |
+
+### 2.5 Skála az értékeléshez (1–5)
 
 | Érték | Jelentés |
 |-------|----------|
@@ -75,32 +88,22 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 
 ## 3. Tisztázandó kérdések
 
-Az alábbi kérdések **döntőek** a végleges architektúra és költség szempontjából. Kérjük, ezekre válasz nélkül ne zárjon le telepítési döntést.
+### 3.1 Megválaszolt (2026-10-15)
 
-### 3.1 Villamos és szerelési környezet
+- **230 V, nullvezeték, földelés:** igen, a tyúkólnál.
+- **Wi‑Fi:** egy **4G Wi‑Fi modem** + **TP‑Link extender**; a tyúkól erről kapcsolódik; **van internet** (4G).
+- **DIY firmware:** igen, ha egyszerű (WLED preferált belépési szint).
 
-1. Van-e a tyúkólon belül **230 V CA konnektor** vagy csak **környező épületből** vezetett világítás?
-2. Elérhető-e a **nullvezeték (N)** a tervezett dimmer helyén? (Shelly Gen3 nulla nélkül is megy, de **min. 20 W** vagy bypass — [Shelly KB Gen3](https://kb.shelly.cloud/knowledge-base/shelly-dimmer-gen3).)
-3. Van-e **védőföld (PE)** és **FI/RCD** védelem** a vonalon?
-4. Ki végezheti a szerelést: **jogosultsággal rendelkező villanyszerelő** szükséges-e (230 V bekötés, falba süllyesztés)?
-5. Mekkora a **kábelút** tyúk → router/Wi‑Fi jel (műfal, fém, távolság)?
+### 3.2 Továbbra is nyitott
 
-### 3.2 Hálózat
-
-6. A „több Wi‑Fi” közül **melyik SSID** tartozik ahhoz a routerhez, amelyen **helyi LAN** elérés kell (telefon app / Home Assistant)?
-7. Van-e ** vendég hálózat izoláció** (AP/client isolation), ami megakadályozza a helyi vezérlést?
-8. Szükséges-e **interneten keresztüli** elérés, vagy elég a **helyi hálózat**?
-
-### 3.3 Tartás és állatjólét
-
-9. A ~30 tyúk **tojó**, **hústyúk**, vagy **vegyes házi** tartás? (Jogkövetelmények eltérnek.)
-10. Van-e már **természetes fény** (ablak) — mennyi órán át?
-11. Kívánt **nappali világítási idő** és **sötét periódus** hossza (óra)?
-
-### 3.4 Üzemeltetés
-
-12. Elfogadható-e **egyedi firmware** (WLED / ESPHome) karbantartása?
-13. Mi a **katasztrófa forgatókönyv**: ha a lámpa hajnalig 100%-on marad, vagy hétig sötét van?
+1. **FI/RCD** van-e a tyúkól vonalán? (PE megvan; FI **N/I**.)
+2. TP‑Link extender **üzemmód:** csak **Repeater/Extender**, vagy **Access Point** (vezeték nélküli híd vs kábeles uplink a modemhez)?
+3. Tyúkól és extender **távolsága** / jelerősség (gyenge jel → Wi‑Fi eszköz offline).
+4. Tartás: **tojó / hústyúk / házi**? (~30 db)
+5. Van-e **ablak / természetes fény** — hány óra?
+6. Kívánt **világítási ablak** (pl. 6:00–20:00) és **zavartalan sötét** hossza (pl. 8–10 óra)?
+7. **Katasztrófa tolerancia:** ha 1–2 éjszaka fény marad / sötét van, mi a elfogadható?
+8. Szükséges-e **távoli elérés mobilnetről** (4G-n kívülről), vagy elég **helyi Wi‑Fi** a tyúkólnál?
 
 ---
 
@@ -111,6 +114,35 @@ Az alábbi kérdések **döntőek** a végleges architektúra és költség szem
 - **Broiler / hústyúk (EU 2007/43/EK):** legalább **20 lux** a madár szemmagasságában, a hasznos felület **≥80%**-án világítási időszakban ([EUR-Lex 2007/43](https://eur-lex.europa.eu/eli/dir/2007/43/oj/eng)).
 - **Mérési módszer (hivatalos ellenőrzés):** luxmérő, madár szemmagasság (~20–30 cm a talajtól), több pont — [EURCAW broiler light PDF](https://sitesv2.anses.fr/en/system/files/EURCAW-Poultry-SFA_2020-light-Broiler.pdf).
 - **6,25 m² tyúkól, ~30 tyúk:** mérnöki **becslés** (nem helyettesíti a mérést): **1× 15–25 W LED** (~1500–2500 lm) vagy **2× 10–15 W** szétosztva **egyenletesebb** megvilágításért. A pontos lux **fényforrás szögétől, reflektortól és fal színétől** függ.
+
+#### 4.1.1 Lux-becslés „elég fény” alapon (6,25 m², ~2,5 m belmagasság)
+
+**Módszer (egyszerűsített):** átlagos fényerősség a talaj síkján, madár szemmagasság ~25 cm:
+
+\[
+E_\mathrm{átl} \approx \frac{\Phi_\mathrm{lm} \cdot \eta_\mathrm{szoba}}{A}
+\]
+
+ahol \(A = 6{,}25\,\mathrm{m}^2\), \(\Phi_\mathrm{lm}\) = fényforrás fényáram (lm), \(\eta_\mathrm{szoba}\) = **0,35–0,55** (kis, világos fal, diffúz/reflektoros LED; **becslés**).
+
+| Konfiguráció | Névleges teljesítmény | Becsült lm (100 lm/W) | Becsült \(E_\mathrm{átl}\) (lux) | Megjegyzés |
+|--------------|----------------------|------------------------|----------------------------------|------------|
+| 1× 10 W E27/panel, mennyezet közép | 10 W | ~1000 lm | **~56–88** | Középen erősebb, sarkok gyengébb |
+| 1× 15 W | 15 W | ~1500 lm | **~84–132** | „Elég fény” házi tyúkólra **általában bőven** |
+| 2× 10 W, szétosztva | 20 W | ~2000 lm | **~112–176** | Egyenletesebb; **ajánlott** ha percek alatt jár a madár |
+| 1× 12 W LED szalag (12 V, diffúz) | 12 W | ~1200 lm | **~67–106** | Szalag hossza/elosztás függő |
+
+**Referencia küszöbök (nem mindegyik kötelező házi tartásra):**
+
+| Szempont | Lux szint | Forrás / értelmezés |
+|----------|-----------|---------------------|
+| EU broiler minimum (hústyúk telep) | **≥20** a hasznos felület 80%-án | [2007/43/EK](https://eur-lex.europa.eu/eli/dir/2007/43/oj/eng) |
+| Házi „elég fény” cél (mérnöki) | **~30–80 átlag** | A fenti 10–15 W tartomány |
+| Esti rámpa vége | **→0** (sötét pihenő) | 32/1999 FVM sötét idő |
+
+**Dimmelés:** ~lineáris lux ≈ fényerő % (LED PWM-nél közelítőleg). 30 perc alatt 100% → 0%: átlag ~50% fényerő → **~fél lux-szint** időintegrálva — a **biológiai hatás** nem azonos a hirtelen kikapcsolással; ezért a **fokozatos rámpa** célja.
+
+**Gyakorlati javaslat (jóváhagyás nélkül):** **2× ~10 W, 2700–3000 K**, magas elhelyezés, **nem** vakító irány a ülőrudak felé; esti program végén **teljes off**. Ha a sarkok sötétek, **mérj** (olcsó luxmérő ~3000–8000 Ft) 5 ponton, üres ólban.
 
 ### 4.2 Színhőmérséklet és spektrum
 
@@ -289,7 +321,25 @@ Az alábbi kérdések **döntőek** a végleges architektúra és költség szem
 | J11 Hue | Bridge LAN | Account setup | Napi: bridge |
 | J12 HA | LAN | Nem | Központ SPOF |
 
-**Több Wi‑Fi hálózat:** feltételezés, hogy **nem** ugyanaz a router — távoli vezérléshez **ugyanaz a L2/L3 hálózat** vagy **VPN** szükséges (tisztázandó, 3. fejezet).
+### 10.1 Helyszín-specifikus: 4G modem + TP‑Link extender
+
+**Ismert topológia (felhasználó):**
+
+```
+[ Internet ] ←—— 4G ——→ [ 4G Wi‑Fi modem / router ] ←~~ Wi‑Fi ~~→ [ TP‑Link extender ] ←~~ Wi‑Fi ~~→ [ Tyúkól: Shelly / WLED ]
+                                                              ↑
+                                                    [ Telefon (ugyanaz az SSID) ]
+```
+
+| Szempont | Értékelés | Megjegyzés |
+|----------|-----------|------------|
+| Helyi vezérlés (telefon a tyúkólnál) | **Valószínűleg jó**, ha telefon és IoT eszköz **ugyanazon az extender/modem SSID-n** van | **N/I:** AP isolation |
+| NTP / idő | 4G internet **van** → Shelly/WLED idő szinkron **működhet** | 4G outage: eszköz **utolsó idő** + drift |
+| Távoli elérés otthonról (mobilnet) | **Lehetséges**, ha modem **port forward / VPN** — **N/I** beállítás | Shelly cloud opcionális, nem kötelező |
+| Internetkimaradás (4G leáll) | **Helyi Wi‑Fi** extender ↔ eszközök **továbbra is működhet** | Extender **Repeater** módban a modem Wi‑Fi-jétől függ; **AP mód + vezeték** stabilabb (**N/I**) |
+| Üzemeltetési kockázat | Extender + 4G modem **SPOF** | **WLED/Shelly helyi ütemezés** továbbra is fontosabb, mint a felhő |
+
+**Tervezési elv:** minden automatizmust **eszközön** (WLED timer, Shelly schedule) állíts be; a telefon csak **finomhangolás**.
 
 ---
 
@@ -425,7 +475,9 @@ Hasonló J1-hez + **~0 Ft szoftver**, esetleg **Home Assistant** opcionális (+2
 
 ## 14. Olcsó megoldás (csomag A)
 
-**Javasolt összetétel:** **12 V WLED** (J1) — ESP32 + Mean Well / V-TAC PSU + meleg fehér LED szalag + védő doboz.
+**Helyszínhez igazítva (230 V + N + PE, DIY OK):** **12 V WLED** (J1) — a **230 V csak a tápegységig** menjen (tyúk zónán **kívül** vagy **zárt dobozban**), a madarak felé **12 V LED szalag/panel**.
+
+**Javasolt összetétel:** ESP32 + WLED + 12 V 60 W PSU + meleg fehér LED szalag + védő doboz.
 
 | Elem | Modell / megjegyzés |
 |------|---------------------|
@@ -446,7 +498,9 @@ Hasonló J1-hez + **~0 Ft szoftver**, esetleg **Home Assistant** opcionális (+2
 
 ## 15. Közepes árú megoldás (csomag B)
 
-**Javasolt összetétel:** **Shelly Dimmer Gen3** + **2× dimmelhető E27 LED** (~15 W) + **nullvezeték** (ha elérhető) + helyi **Advanced Schedule**.
+**Helyszínhez igazítva:** **nullvezetés megvan** → Shelly Gen3 **N-nel**, **2× ~10 W dimmelhető E27** (4.1.1 táblázat), **IP44+** lámpatest, dimmer **tyúk elérésén kívül** (doboz / magas fal).
+
+**Javasolt összetétel:** **Shelly Dimmer Gen3** + helyi **Advanced Schedule** (esti: `brightness 0%`, `transition 1800–2700 s`).
 
 | Elem | Funkció |
 |------|---------|
@@ -464,13 +518,19 @@ Hasonló J1-hez + **~0 Ft szoftver**, esetleg **Home Assistant** opcionális (+2
 
 ## 16. Legjobb összesített megoldás (csomag C)
 
-**Javasolt összetétel:** **ESPHome 12 V monokróm PWM** (J13) *vagy* **WLED (J1)** — döntés a **programozási preferencia** alapján (YAML vs makró).
+**Felhasználói profil alapján (DIY egyszerűség + 230 V a helyszínen + 4G/extender Wi‑Fi):**
 
-**Indoklás:** Igazolt **45 perc** `transition_length`; beépített **`sun` trigger** napnyugtához ([ESPHome sun](https://esphome.io/components/sun/)); **internet nélkül** fut; 12 V a madár-zónában; költség kedvező.
+| Prioritás | Ajánlás | Miért |
+|-----------|---------|-------|
+| **1. (ajánlott)** | **WLED + 12 V** (J1) | Egy telepítés: flash, Wi‑Fi, **Time & Macros → Sunset**, Nightlight **15–45 perc** ([WLED macros](https://kno.wled.ge/features/macros/)); kevesebb karbantartás mint ESPHome YAML |
+| **2. (ha nem akarsz flash-elni)** | **Shelly Gen3** (J5) | Nullvezetés megvan; app/web + **eszköz-ütemezés**; telefon ugyanazon Wi‑Fi-n |
+| **3. (nem első választás most)** | ChickenLight 12 | Jó, de drágább és kevésbé távoli; WLED mellett felesleges duplikáció |
 
-**Opcionális bővítés:** Home Assistant csak távoli felülethez — **nem** kötelező a napi rámpához.
+**ESPHome (J13):** csak akkor, ha később **Home Assistant** ökoszisztémát is építesz; indulásnak **WLED egyszerűbb**.
 
-**Ha zero DIY:** **ChickenLight 12** + minőségi 12 V LED — kevesebb karbantartás, magasabb ár.
+**Indoklás (WLED):** Igazolt **255 perc** nightlight; **internet nem kell** napi működéshez NTP után; **12 V** a tyúk közelében; 230 V a **PSU-nál** jól elválasztható.
+
+**Opcionális bővítés:** Shelly **Plus 1** „vész OFF” külön ágon — **nem** szükséges kezdéshez.
 
 ---
 
@@ -560,13 +620,13 @@ Hasonló J1-hez + **~0 Ft szoftver**, esetleg **Home Assistant** opcionális (+2
 
 ## 21. Javasolt következő lépések (jóváhagyást igénylő)
 
-1. **Válasz** a 3. fejezet tisztázó kérdéseire (nullvezeték, Wi‑Fi topológia, 230 V elérhetőség, tartás típusa).
-2. **Lux mérés** üres tyúkólban prototípus fényforrással (telefon lux app **csak orientáció**, kalibrált mérő jobb).
-3. **Döntés** 12 V vs 230 V architektúráról — **biztonság elsődleges**.
-4. **Pilot:** egy jelölt (J1 vagy J5) **egyetlen esti rámpával** — viselkedés megfigyelése (ugrik-e, marad-e halvány fény).
-5. **Villamos szerelés** jóváhagyása szakemberrel, ha 230 V.
-6. **Állatorvos / baromfi tanácsadó** — sötét/idő program véglegesítése tojó/hústyúk profilhoz.
-7. **Telepítés és vásárlás** — csak a fenti lépések után, külön felhasználói jóváhagyással.
+1. **Válasz** a 3.2 nyitott kérdésekre: tartás típus, célzott **világítási + sötét órák**, ablak, FI védelem, extender üzemmód.
+2. **Architektúra-előválasztás (kutatási javaslat, nem döntés):** **WLED 12 V** *vagy* **Shelly Gen3** — mindkettő illeszkedik a megadott villamos + Wi‑Fi környezethez.
+3. **Lux gyorsellenőrzés** üres ólban 5 ponton (akár bérleti luxmérő); cél: sarkok **>~15–20 lux** nappali fényerőn (házi „elég fény”).
+4. **Pilot esti rámpa:** 30 perc, tyúk viselkedés (ülnek-e le, kevesebb panaszhang).
+5. **230 V:** PSU/dimmer bekötés **szakemberrel**; 12 V oldal **védett csatorna**, tyúk ne érje a 230 V csatlakozót.
+6. **Wi‑Fi:** IoT eszköz és telefon **ugyanaz az SSID** (extender); jegyezd fel a WLED/Shelly **helyi IP-t** (könyvjelző).
+7. **Telepítés és vásárlás** — külön jóváhagyással, a pilot után.
 
 ---
 
