@@ -1,8 +1,9 @@
 # Tyúkól intelligens, fokozatosan halványuló világítása — technológiai kutatás
 
-**Dokumentum verzió:** 1.3 (MultiPlus-II 3000, sötét környezet, redőny nélkül)  
+**Dokumentum verzió:** 1.4 (döntés: WLED, 2 ól, 1 táp)  
 **Kutatás dátuma:** 2026. október 15.  
-**Utolsó frissítés:** 2026. október 15.  
+**Utolsó frissítés:** 2026. október 21.  
+**Telepítési terv + beszerzés:** [tyukol-vilagitas-wled-2ol-telepitesi-terv.md](./tyukol-vilagitas-wled-2ol-telepitesi-terv.md)  
 **Helyszín:** Magyarország  
 **Célterület:** ~6,25 m² (2,5 × 2,5 m), belmagasság ~2,5 m, ~30 tyúk  
 
@@ -22,9 +23,10 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 | **Internetfüggetlenség** | A napi működéshez **nem szükséges** folyamatos internet: WLED időzítő, ESPHome `sun` komponens, ChickenLight 12, Shelly **eszközön tárolt** ütemezés (NTP/időszinkron után) működhet helyi Wi‑Fi-n / offline órával. A **felhőközpontú** okosizzók (eWeLink-only scene, Hue account) gyengébbek áramszünet / felhőkimaradás esetén. |
 | **Biztonság** | A tyúkól poros, párás, ammóniás környezet és **állati rágcsálás** miatt a **230 V-os falba süllyesztett dimmer** csak megfelelő **IP-védettségű lámpatesttel**, **zárt elhelyezéssel** és **szakember által végzett** szereléssel ajánlható alapként. **12 V SELV** rendszerrel a tyúkóli szakaszban alacsonyabb az érintésvédelmi kockázat, de a **230 V → 12 V tápegység** elhelyezése és védelme továbbra is kritikus ([MSZ EN 60598 / alacsonyfeszültségű világítás gyakorlat](https://eur-lex.europa.eu/)). |
 | **Állatjólét (jog / ajánlás)** | A **2007/43/EK** broiler irányelv **20 lux** minimumot és sötét periódusokat ír elő **hústyúk tartására** — a házi ~30 tyúkos tartás **joghatása eltérő** (lásd 4. fejezet). A magyar **32/1999. FVM rendelet** általánosan előír sötét nyugalmi időt mesterséges világításnál ([NJT 32/1999](https://njt.jog.gov.hu/jogszabaly/1999-32-20-82)). |
-| **Ajánlott csomagok (előzetes, jóváhagyás nélkül)** | **Nullvezetés + 230 V a tyúkólnál** és **DIY elfogadott:** elsődleges javaslat **12 V WLED** (egyszerűbb) *vagy* **Shelly Dimmer Gen3** (kevesebb barkács, 230 V lámpatest). **Közepes:** Shelly Gen3 + dimmelhető E27/panel. **Legjobb összesített (frissítve):** **WLED 12 V** — a helyszínen van 230 V a PSU-hoz, a madár-zónában SELV; opcionális Shelly csak ha nem akarsz firmware-t. |
+| **Döntött megoldás (2026-10-21)** | **WLED + ESP32 + 1× 12 V PSU + 2× analóg PWM szalag** — **2 db**, 3–4 m-re egymástól lévő **azonos óla**, **1 vezérlő**. Részletek: [telepítési terv](./tyukol-vilagitas-wled-2ol-telepitesi-terv.md). **Becsült BOM ~28–32 e Ft.** |
+| **Shelly Gen3** | Elvetve a felhasználói WLED döntés miatt; alternatíva maradt a kutatásban. |
 
-**Helyszín profil (frissítve):** **házi vegyes tojó** (~30 db), cél **14 h fény + 10 h sötét**, **2 ablak** (redőny **nincs**), **sötét környezet** (falu széle, nincs fényszennyezés), **Victron MultiPlus-II 3000** szigetüzem, **16 A FI** a kimeneten, Wi‑Fi **TP‑Link RE315** **Repeater**. **Még nyitott:** extender–modem távolság / jelerősség.
+**Helyszín profil:** **házi vegyes tojó** (barna, fehér, kendermagos, kopasznyakú), **2 azonos ól** 3–4 m távolságban, cél **14 h + 10 h sötét**, **téli tojás** (korábbi reggeli fény télen), **2 ablak**, sötét falu, **MultiPlus-II 3000**, **FI 16 A**, **Cudy 4G** + **RE315 Repeater**, távoli elérés **opcionális**, üzem **automata**.
 
 ---
 
@@ -32,7 +34,7 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 
 ### 2.1 Rögzített helyszín- és állományadatok
 
-- Magyarország, tyúkól ~6,25 m², belmagasság ~2,5 m.
+- Magyarország, **2×** tyúkól ~6,25 m² (azonos), **3–4 m** távolság, belmagasság ~2,5 m.
 - ~30 tyúk, **házi vegyes tojó** (magyar barna, fehér, kendermagos, kopasznyakú).
 - **Fotoperiódus cél:** **14 óra fény + 10 óra sötét** (24 órás ciklus).
 - **Természetes fény:** **2 ablak** két oldalon (évszakonként változó hozzájárulás).
