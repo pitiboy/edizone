@@ -1,7 +1,7 @@
 # WLED — 2 tyúkól, 1 vezérlő, 1 táp, 2 szalag (telepítési terv)
 
 **Státusz:** döntött koncepció + megvehető terméklista (nem telepítési jóváhagyás)  
-**Dátum:** 2026. október 23. (§9 válaszok, BOM, távoli elérés)  
+**Dátum:** 2026. október 23. (§9 válaszok, BOM Anro + Modulshop, távoli elérés)  
 **Kapcsolódó kutatás:** [tyukol-vilagitas-megoldasok.md](./tyukol-vilagitas-megoldasok.md)
 
 ---
@@ -53,77 +53,104 @@ Közös GND: PSU ↔ ESP32 ↔ MOSFET ↔ buck ↔ mindkét szalag
 | Paraméter | Javasolt érték | Indoklás |
 |-----------|----------------|----------|
 | Szalag hossz | **~3 m** mennyezet/perem (6,25 m²) | 30–40 madárnál több **árnyék** → hosszabb, egyenletesebb fény |
-| LED teljesítmény / óla | **~7–8 W** (12 W/5 m tekercsből **3 m** vágva) | ~720 lm/óla → becsült **~50–65 lux** átlag (η≈0,45; [kutatás 4.1.1](./tyukol-vilagitas-megoldasok.md)) |
-| WLED max % | **~80–100%** nappal; sarkok sötétek → **luxmérés** üres ólában | 40 madárnál ne menj **6 W/óla** alá hosszú távon |
-| Tekercs | **2× 5 m, 12 W, 2700 K IP65** (Avide) → **2× ~3 m** + maradék | 1 tekercs csak **2×2,5 m** (~6 W/óla) — **30 madárra elég**, **40-nél szorosabb** |
+| LED teljesítmény / óla | **~14,4 W** (**4,8 W/m** × **3 m**, Anro 3528-60 IP65) | Erősebb, mint a korábbi Avide **~7,2 W/óla** — **30–40 tyúknál** jobb árnyékmentesítés; lux → **mérés** üres ólában |
+| WLED max % | **~70–90%** nappal (fényerő limit); sarkok sötétek → **luxmérés** | 9,6 W/m szalag **7120** ezzel a PSU-val **2×3 m-re túl nagy terhelés** — maradj **7154**-nél |
+| Beszerzés | **6 m** méteráras **2700–3200 K**, **IP65**, **3528-60** (Anro) → **2×3 m** + maradék | Nem 5 m tekercs — **méterre rendelés** |
 
-**Terhelés összesen:** 2× ~7,2 W ≈ **14,5 W** + buck/ESP ≈ **1–2 W** → **60 W PSU** bőven elég.
+**Terhelés összesen:** 2× ~14,4 W ≈ **29 W** LED + buck/ESP ≈ **1–2 W** → **Mean Well 60 W** ~50%-on — rendben.
 
 ---
 
-## 4. Beszerzési lista (2 webshop + helyi, bruttó HUF)
+## 4. Beszerzési lista (Anro + Modulshop + helyi, bruttó HUF)
 
-**Árlekérdezés:** 2026-10-23. Szerelés **nincs** benne.
+**Árlekérdezés:** 2026-10-23 (termékoldalak). Szerelés **nincs** benne.
 
-### 4.1 „Diszlec” preferencia — tisztázás
+### 4.1 Preferált bolt — **anrodiszlec.hu** (Anro Díszlec)
 
-A **diszlec.hu / diszlecek.hu / diszlec-stukko.hu** oldalak **díszléc és stukkó** webshopok, **nem** elektronikai alkatrész-forrás. Hasonló névvel elektronikára a **Distrelec.hu** (nagy B2B katalógus, drágább szállítás) — ez **nem** ugyanaz.  
-**Jelen terv:** elektronika **Modulshop.hu**-ról (egy csomag, alacsony szállítás); **meleg fehér IP65 szalag** csak **240volt.hu**-n (Modulshopnál nincs megfelelő 2700 K kültéri fehér szalag).
+Az **Anro Díszlec** ([anrodiszlec.hu](https://www.anrodiszlec.hu/)) **LED / világítás / Mean Well** elektronikai webshop — **ez a preferált forrás** a táp, szalag, IP65 doboz, WAGO és szalag-kábel tételekre.
 
-### 4.2 Modulshop.hu (elsődleges elektronika)
+**Ne keverd** a **diszlec.hu / diszlecek.hu / diszlec-stukko.hu** oldalakkal: azok **díszléc és stukkó** boltok, **nem** ESP32 / MOSFET / buck. Hasonló név: **Distrelec.hu** (B2B katalógus) — szintén **nem** ugyanaz.
+
+**Anrón nincs** (2026-10-23, keresés): **ESP32 DevKit**, **MOSFET trigger modul**, **CN3903** (12→5 V buck), **autó mini biztosíték + foglalat**, **8 mm DC szalagcsatlakozó** — ezek **Modulshop** + **helyi autó-/ barkács** (minimális).
+
+### 4.2 anrodiszlec.hu (elsődleges)
+
+| # | Db | Termék | Bruttó | Link |
+|---|-----|--------|--------|------|
+| A1 | 1 | **Mean Well LPV-60-12**, 12 V / 5 A / 60 W, **IP67** (tyúkódnál javasolt) | **5 890 Ft** | https://www.anrodiszlec.hu/product_info.php/products_id/25163 |
+| A2 | 6 m | **ANRO LED szalag** kültéri **3528-60**, **4,8 W/m**, 12 V, **meleg fehér** (~2700–3200 K), **IP65**, PureSilicone (CRI>90) — **2×3 m/óla** | **6× 1 990 = 11 940 Ft** | https://www.anrodiszlec.hu/product_info.php/products_id/7154 |
+| A2b | *nem aj.* | **3528-120**, **9,6 W/m** (7120) — **2×3 m ≈ 58 W** LED, PSU-hoz szoros | **6× 2 590** | https://www.anrodiszlec.hu/product_info.php/products_id/7120 |
+| A3 | 1 | **S-BOX** kötődoboz **195×145×75 mm**, **IP65**, fekete, csavaros fedél | **3 080 Ft** | https://www.anrodiszlec.hu/product_info.php/products_id/41961 |
+| A4 | 6 | **Wago 221** csatos összekötő, **3×4 mm²** | **6× 180 = 1 080 Ft** | https://www.anrodiszlec.hu/product_info.php/products_id/11220 |
+| A5 | 10 m | **Mentavill** vezeték LED szalaghoz, piros/fekete **2×0,75 mm²** | **10× 210 = 2 100 Ft** | https://www.anrodiszlec.hu/product_info.php/products_id/30480 |
+
+| | Ft |
+|--|-----|
+| **Részösszeg Anro** | **24 090** |
+| Szállítás (házhoz, [tájékoztató](https://www.anrodiszlec.hu/article_info.php/articles_id/51): **1 990 Ft-tól**) | **1 990** |
+| **Anro összesen** | **26 080** |
+
+*Szalag:* méterre rendelés; vágás után **forrasztás** vagy **WAGO** a szalag vezetékén (Anrón nincs olcsó **8 mm DC apa** — opció: [240volt csatlakozó](#46-korábbi-terv-modulshop--240volt-összehasonlításhoz) külön rendelés **nem** kell, ha forrasztasz).
+
+### 4.3 Modulshop.hu (kiegészítő — vezérlés)
 
 | # | Db | Termék | Bruttó | Link |
 |---|-----|--------|--------|------|
 | M1 | 1 | **ESP32 WROOM-32D**, CP2102, USB-C, 38 pin (dual core, 2× PWM) | **3 350 Ft** | https://modulshop.hu/esp32-wroom-32d-cp2102-usb-c-38-pin |
-| M2 | 1 | **12 V 5 A** kapcsolóüzemű tápegység, 230 V AC, 60 W | **2 600 Ft** | https://modulshop.hu/12-voltos-5a-tapegyseg-ac-dc |
 | M3 | 2 | **MosFet trigger modul** 15 A / 400 W (PWM LED-hez) | **2× 450 = 900 Ft** | https://modulshop.hu/mosfet-trigger-modul-15a-400w-734 |
 | M4 | 1 | **CN3903** mini buck **12 V → 5 V** fix, max ~3 A (ESP32 táp a 12 V buszról) | **250 Ft** | https://modulshop.hu/cn3903-mini-dc-dc-step-down-konverter-5v-os-3713 |
-| M5 | *alt.* | **IRLZ44N** logic-level MOSFET (ha a trigger modul **3,3 V**-n nem kapcsol) | **2× 200 Ft** | https://modulshop.hu/ (keresés: IRLZ44N) |
+| M5 | *alt.* | **IRLZ44N** logic-level MOSFET (ha a trigger modul **3,3 V**-n nem kapcsol) | **2× ~200 Ft** | https://modulshop.hu/ (keresés: IRLZ44N) |
 
 | | Ft |
 |--|-----|
-| **Részösszeg Modulshop** | **7 100** |
+| **Részösszeg Modulshop** (PSU **Anróról**, M2 **nincs**) | **4 500** |
 | Szállítás (pl. Foxpost / MPL automata) | **1 250** |
-| **Modulshop összesen** | **8 350** |
+| **Modulshop összesen** | **5 750** |
 
 *Megjegyzés:* a trigger modul adatlapja **5–20 V** vezérlő jelet ír — **teszteld** WLED PWM-mel; ha gyenge, **IRLZ44N** + közös GND.  
-*Alternatíva ESP táp:* külön **5 V USB-töltő** (230 V a dobozban) a buck helyett — plusz kábel, de kevesebb ripple-aggodalom.
+*Alternatíva ESP táp:* külön **5 V USB-töltő** (230 V a dobozban) a buck helyett.
 
-**PSU minőség:** tyúkódnál opcionális **Mean Well LPV-60-12 IP67** (~7 500 Ft, pl. energiahaza.hu) a Modulshop 60 W helyett — **3. bolt**, csak ha külön kell.
+### 4.4 Helyi / barkács (Anrón nincs)
 
-### 4.3 240volt.hu (LED szalag + csatlakozó)
+| # | Db | Termék | Becslés | Megjegyzés |
+|---|-----|--------|---------|------------|
+| H1 | 2 | **2 A** mini biztosíték + **ATO/mini foglalat** (12 V ág / óla) | **~800–1 500 Ft** | autóbolt, inShop, barkács |
+| H2 | ~8 m | **1,5 mm²** flex (PSU → ólák, **4 m** áganként) | **~2 000–3 500 Ft** | a **2×0,75 mm²** (A5) főleg szalag oldali; nagyobb áramhoz **1,5 mm²** ajánlott |
+| H3 | 0 | WLED firmware | **0 Ft** | https://install.wled.me/ |
 
-| # | Db | Termék | Bruttó | Link |
-|---|-----|--------|--------|------|
-| L1 | 2 | **Avide** 12 V **12 W** **2700 K IP65 5 m** (ABLS12V2835-60EW65) — **3 m/óla** vágás | **2× 9 970 = 19 940 Ft** | https://www.240volt.hu/termek/avide-led-szalag-12v-12w-2700k-ip65-5m-br-skuabls12v2835-60ew65/ |
-| L1b | *spóri* | Ugyanaz **7,2 W / 5 m** (gyengébb, 30 madár alsó sáv) | **2× 8 880 = 17 760 Ft** | https://www.240volt.hu/termek/avide-led-szalag-12v-7-2w-2700k-ip65-5m-br-skuabls12v2835-60ew65-7-2w/ |
-| L2 | 2 | **12 V DC apa** csatlakozó szalaghoz 8 mm (forrasztás nélkül opció) | **2× 474 = 948 Ft** | https://www.240volt.hu/termek/abls12v3528-8mm-dccon-m/ |
-
-| | Ft |
-|--|-----|
-| **Részösszeg 240volt** (12 W, 2 tekercs + 2 csatlakozó) | **20 888** |
-| Szállítás MPL (kis csomag, tájékoztató minimum) | **2 990** |
-| **240volt összesen** | **23 878** |
-
-### 4.4 Helyi / barkács (nincs egy webshopban)
-
-| # | Db | Termék | Becslés |
-|---|-----|--------|---------|
-| H1 | 2 | **2 A** mini biztosíték + foglalat (12 V ág / óla) | **~1 500 Ft** |
-| H2 | 1 | **IP65 szerelődoboz**, WAGO, **1,5 mm²** flex ~10 m, ragasztható szalagcsatlakozó | **~6 000–10 000 Ft** |
-| H3 | 0 | WLED firmware | **0 Ft** — https://install.wled.me/ |
-
-### 4.5 Végösszeg
+### 4.5 Végösszeg (ajánlott — Anro + Modulshop + helyi)
 
 | Forrás | Ft |
 |--------|-----|
-| Modulshop | **8 350** |
-| 240volt (ajánlott 12 W szalag) | **23 878** |
-| Barkács (közép) | **~8 000** |
-| **Összesen (becslés)** | **~40 200 Ft** |
-| *Spóri szalag (7,2 W)* | **~38 100 Ft** |
+| **anrodiszlec.hu** | **26 080** |
+| **Modulshop.hu** | **5 750** |
+| Helyi (biztosíték + 1,5 mm², közép) | **~3 000** |
+| **Összesen (becslés)** | **~34 830 Ft** |
 
-**Terhelés:** 2× ~7,2 W LED + ~2 W vezérlés ≈ **16 W** → **60 W PSU** ~27%-on — hosszú élettartam.
+**Terhelés:** 2× ~14,4 W LED + ~2 W vezérlés ≈ **31 W** → **60 W Mean Well** ~52%-on — rendben.
+
+### 4.6 Korábbi terv (Modulshop + 240volt) — összehasonlításhoz
+
+Ugyanazon nap korábbi, **Modulshop-centrikus** lista (olcsóbb PSU Modulshopban, szalag **240volt** Avide tekercs):
+
+| Forrás | Részösszeg | Szállítás | Összesen |
+|--------|------------|-----------|----------|
+| Modulshop (ESP32 + **60 W PSU** + MOSFET + buck) | 7 100 | 1 250 | **8 350** |
+| 240volt (2× Avide **12 W / 5 m** IP65 + 2× DC csatlakozó) | 20 888 | 2 990 | **23 878** |
+| Barkács (doboz + WAGO + kábel, közép) | — | — | **~8 000** |
+| **Régi végösszeg** | | | **~40 200 Ft** |
+
+| | Anro + Modulshop + helyi | Modulshop + 240volt + barkács |
+|--|---------------------------|------------------------------|
+| **Végösszeg** | **~34 830 Ft** | **~40 200 Ft** |
+| **Különbség** | **~5 370 Ft** olcsóbb | |
+| **Webshopok** | **2** (+ helyi) | **2** (+ helyi) |
+| **PSU** | Mean Well **IP67** (Anro) | Modulshop 60 W (nem IP67) |
+| **Szalag / óla** | **~14,4 W**, méteráras Anro | **~7,2 W**, Avide tekercs |
+| **Doboz / WAGO / szalag-kábel** | Anrón | Barkácsboltból becsült |
+| **Szállítás összesen** | **~3 240 Ft** | **~4 240 Ft** |
+
+*Spóri 240volt változat* (7,2 W/5 m Avide): **~38 100 Ft** — még mindig **~3 270 Ft** drágább, gyengébb fény/óla.
 
 ---
 
@@ -162,7 +189,7 @@ WLED: **Time & Macros** → heti ismétlés; szezonváltáskor **2 preset** (Té
 
 1. Flash: https://install.wled.me/ → **ESP32**.
 2. **Config → LED Preferences:**  
-   - Output 1: **PWM White**, GPIO **16**, max current ~**600 mA** (≈7 W @ 12 V)  
+   - Output 1: **PWM White**, GPIO **16**, max current ~**1 200 mA** (≈14 W @ 12 V)  
    - Output 2: **PWM White**, GPIO **17**, ugyanaz  
    - Mindkét szalag **szinkron**: ugyanaz a preset / **Sync** / egy segment mindkettőre (WLED verziótól függ — cél: **azonos fényerő**).
 3. **Time & Macros:** NTP be, időzóna **Europe/Budapest**; makrók: Tél/Nyár (5. fejezet).
@@ -252,7 +279,7 @@ Csak ha **nincs** VPN a routeren:
 
 | # | Kérdés | Döntés / állapot |
 |---|--------|------------------|
-| 1 | Ólánként hány tyúk? | **30–40 db** → **~3 m**, **~7–8 W/óla** szalag (4. fejezet, 3. fejezet táblázat) |
+| 1 | Ólánként hány tyúk? | **30–40 db** → **~3 m**, **~14,4 W/óla** szalag (Anro 4,8 W/m; 4. fejezet) |
 | 2 | RE315 jel télen | **Függő T1** (8.1) — **nem blokkolja** a tervet |
 | 3 | Kívülről WLED? | **Igen** — **DDNS + WireGuard** (7. fejezet); Cudy **4G**, dinamikus IP OK |
 
@@ -267,5 +294,6 @@ Csak ha **nincs** VPN a routeren:
 | WLED multi output | https://kno.wled.ge/features/multi-strip/ | 2026-10-21 |
 | Cudy DDNS | https://docs.cudy.com/user_guide/mesh_system/network/ | 2026-10-23 |
 | Cudy VPN (WireGuard / OpenVPN) | https://docs.cudy.com/user_guide/wireless_router/vpn/ | 2026-10-23 |
-| Modulshop (ESP32, PSU, MOSFET, buck) | https://modulshop.hu/ | 2026-10-23 |
-| 240volt Avide IP65 szalag | https://www.240volt.hu/ | 2026-10-23 |
+| Anro Díszlec (Mean Well, IP65 szalag, doboz, WAGO) | https://www.anrodiszlec.hu/ | 2026-10-23 |
+| Modulshop (ESP32, MOSFET, CN3903 buck) | https://modulshop.hu/ | 2026-10-23 |
+| 240volt (korábbi BOM — Avide szalag) | https://www.240volt.hu/ | 2026-10-23 |
