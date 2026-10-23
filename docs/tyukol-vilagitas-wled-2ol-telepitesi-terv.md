@@ -32,21 +32,53 @@
 
 ## 3. Elvi bekötés
 
-```
-[ MultiPlus 230V ] → [ FI 16A ág ] → [ 12V PSU ] ──┬── MOSFET1 → Óla A szalag (+12V)
-                                                    ├── MOSFET2 → Óla B szalag (+12V)
-                                                    └── [ 12→5 V buck ] → ESP32 5 V (CN3903)
+### 3.1 Kezdőbarát magyarázat
 
-[ ESP32 ] ── GPIO16 ── MOSFET1 gate (logic-level / illesztő)
-          ── GPIO17 ── MOSFET2 gate
+- Az **ESP32 nem** a táp és a szalag **között** van (nem „sorban” kapcsolja a fényt). A **MOSFET modul** van a szalag **mínusz (−) ágában**: ő engedi át vagy zárja le a visszavezető jelet a táp **GND** felé.
+- Az **ESP32** csak **vékony jelvezetékkel** mondja meg a MOSFET-nek, mennyire legyen nyitva: **GPIO16 → MOSFET1**, **GPIO17 → MOSFET2** (**PWM** = fényerő).
+- **Táp +12 V** → **biztosíték** (ólánként külön) → **szalag +** (közvetlenül, a nagy áram útja).
+- **Szalag −** → **MOSFET modul kimenet** (− / drain) → **MOSFET GND** (source) → **táp GND**.
+- **Táp 12 V** → **CN3903** (12→5 V buck) → **ESP32 5 V / VIN**; **GND közös** mindenhol (táp, buck, ESP32, mindkét MOSFET).
+- **Ólánként** külön **MOSFET** és **biztosíték**, de **egy** táp és **egy** ESP32 szolgálja mindkettőt.
+- A **táp, ESP32, 2× MOSFET** és az **átalakító** egy **IP65 dobozban** van **középen** (a két óla között / védett helyen). Onnan **ólánként csak kéteres (+ / −) kábel** megy ki (**3–10 m**, nálatok ~**4 m**); **230 V csak a dobozig**.
+
+**Megjegyzés (WLED):** a **Nightlight** **1–255 perc** között **bármilyen hosszú** halványítást tud — a tervben választott **30 perc** csak egy gyakorlati érték. Az **analóg 12 V szalag** **PWM-mel** teljesen **dimmelhető** (0–100%).
+
+### 3.2 Rendszerábra (ASCII — két óla, alacsony oldali kapcsolás)
+
+```
+[ MultiPlus 230V ] → [ FI 16A ] → [ 12 V PSU ]
+
+Óla A:
+  PSU +12 V → [ biztosíték A ] ──(+ kábel)──► szalag (+)
+  szalag (−) ◄──(− kábel)── [ MOSFET1 kimenet ] → MOSFET1 GND → PSU GND
+
+Óla B:
+  PSU +12 V → [ biztosíték B ] ──(+ kábel)──► szalag (+)
+  szalag (−) ◄──(− kábel)── [ MOSFET2 kimenet ] → MOSFET2 GND → PSU GND
+
+PSU +12 V → [ CN3903 buck 12→5 V ] → ESP32 5 V
+Közös GND: PSU ↔ buck ↔ ESP32 ↔ MOSFET1 ↔ MOSFET2
+
+[ ESP32 ] ── GPIO16 (PWM jel) ──► MOSFET1
+          ── GPIO17 (PWM jel) ──► MOSFET2
           ── Wi‑Fi → RE315 → Cudy 4G (NTP; távoli: VPN → LAN)
-
-Közös GND: PSU ↔ ESP32 ↔ MOSFET ↔ buck ↔ mindkét szalag
 ```
 
-**Központi doboz** (javaslat): a **két óla között** vagy **védett falfülke** (ahol télen nem fagy −10 °C alá az ESP32). A **PSU + ESP32 + MOSFET** ide kerül; **230 V csak a dobozig**.
+### 3.3 Egyszerűsített ábra (Mermaid)
 
-**12 V elosztás:** PSU kimenet → **2 A-os biztosíték / óla** → **1,5 mm²** (vagy 2×0,75 mm² párhuzamos) **4 m**-ig ólánként; **+12 V** a szalag elején, **GND** vissza.
+```mermaid
+flowchart LR
+    T[12 V tápegység] -- "+12 V (biztosíték)" --> SZ[LED-szalag +]
+    SZ2[LED-szalag −] --> M[MOSFET modul]
+    M -- GND --> T
+    T -- 12 V --> B[12→5 V átalakító] -- 5 V --> E[ESP32]
+    E -- "jelvezeték (GPIO16/17)" --> M
+```
+
+*(Egy ólát mutat; a második ólánál ugyanaz a séma másik biztosítékkal, másik MOSFET-tel és **GPIO17**-tel.)*
+
+**12 V elosztás a kábelen:** **1,5 mm²** (vagy megfelelő keresztmetszet) **+** és **−** pár **4 m**-ig ólánként; a **+** a biztosíték után megy ki, a **−** a szalagról **vissza a dobozban lévő MOSFET-re** (nem közvetlenül a táp GND-re az ólában).
 
 **Szalag hossz / teljesítmény / óla (30–40 tyúk):**
 
