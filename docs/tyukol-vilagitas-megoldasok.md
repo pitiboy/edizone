@@ -1,11 +1,11 @@
 # Tyúkól intelligens, fokozatosan halványuló világítása — technológiai kutatás
 
-**Dokumentum verzió:** 1.4 (döntés: WLED, 2 ól, 1 táp)  
+**Dokumentum verzió:** 1.5 (30–40 tyúk/óla, BOM Modulshop+240volt, távoli VPN)  
 **Kutatás dátuma:** 2026. október 15.  
-**Utolsó frissítés:** 2026. október 21.  
+**Utolsó frissítés:** 2026. október 23.  
 **Telepítési terv + beszerzés:** [tyukol-vilagitas-wled-2ol-telepitesi-terv.md](./tyukol-vilagitas-wled-2ol-telepitesi-terv.md)  
 **Helyszín:** Magyarország  
-**Célterület:** ~6,25 m² (2,5 × 2,5 m), belmagasság ~2,5 m, ~30 tyúk  
+**Célterület:** ~6,25 m² (2,5 × 2,5 m), belmagasság ~2,5 m, **~30–40 tyúk / óla**  
 
 > **Jogi és döntési figyelmeztetés:** Ez a dokumentum **kutatási és döntéselőkészítő** anyag. Nem minősül vásárlási, kivitelezési, villamos szerelési vagy állatgyógyászati jóváhagyásnak. A konkrét termékek és árak a lekérdezés napján ellenőrizhető forrásokból származnak; a hiányzó vagy nem igazolt adatok külön jelöléssel szerepelnek.
 
@@ -23,7 +23,7 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 | **Internetfüggetlenség** | A napi működéshez **nem szükséges** folyamatos internet: WLED időzítő, ESPHome `sun` komponens, ChickenLight 12, Shelly **eszközön tárolt** ütemezés (NTP/időszinkron után) működhet helyi Wi‑Fi-n / offline órával. A **felhőközpontú** okosizzók (eWeLink-only scene, Hue account) gyengébbek áramszünet / felhőkimaradás esetén. |
 | **Biztonság** | A tyúkól poros, párás, ammóniás környezet és **állati rágcsálás** miatt a **230 V-os falba süllyesztett dimmer** csak megfelelő **IP-védettségű lámpatesttel**, **zárt elhelyezéssel** és **szakember által végzett** szereléssel ajánlható alapként. **12 V SELV** rendszerrel a tyúkóli szakaszban alacsonyabb az érintésvédelmi kockázat, de a **230 V → 12 V tápegység** elhelyezése és védelme továbbra is kritikus ([MSZ EN 60598 / alacsonyfeszültségű világítás gyakorlat](https://eur-lex.europa.eu/)). |
 | **Állatjólét (jog / ajánlás)** | A **2007/43/EK** broiler irányelv **20 lux** minimumot és sötét periódusokat ír elő **hústyúk tartására** — a házi ~30 tyúkos tartás **joghatása eltérő** (lásd 4. fejezet). A magyar **32/1999. FVM rendelet** általánosan előír sötét nyugalmi időt mesterséges világításnál ([NJT 32/1999](https://njt.jog.gov.hu/jogszabaly/1999-32-20-82)). |
-| **Döntött megoldás (2026-10-21)** | **WLED + ESP32 + 1× 12 V PSU + 2× analóg PWM szalag** — **2 db**, 3–4 m-re egymástól lévő **azonos óla**, **1 vezérlő**. Részletek: [telepítési terv](./tyukol-vilagitas-wled-2ol-telepitesi-terv.md). **Becsült BOM ~28–32 e Ft.** |
+| **Döntött megoldás (2026-10-21, BOM 2026-10-23)** | **WLED + ESP32 + 1× 12 V PSU + 2× analóg PWM szalag** — **2 db**, 3–4 m-re egymástól lévő **azonos óla**, **1 vezérlő**, **12→5 V buck** az ESP-nek. Részletek: [telepítési terv](./tyukol-vilagitas-wled-2ol-telepitesi-terv.md). **Becsült BOM ~38–40 e Ft** (Modulshop + 240volt + barkács). **Távoli:** Cudy **DDNS + WireGuard** (port forward helyett). |
 | **Shelly Gen3** | Elvetve a felhasználói WLED döntés miatt; alternatíva maradt a kutatásban. |
 
 **Helyszín profil:** **házi vegyes tojó** (barna, fehér, kendermagos, kopasznyakú), **2 azonos ól** 3–4 m távolságban, cél **14 h + 10 h sötét**, **téli tojás** (korábbi reggeli fény télen), **2 ablak**, sötét falu, **MultiPlus-II 3000**, **FI 16 A**, **Cudy 4G** + **RE315 Repeater**, távoli elérés **opcionális**, üzem **automata**.
@@ -35,7 +35,7 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 ### 2.1 Rögzített helyszín- és állományadatok
 
 - Magyarország, **2×** tyúkól ~6,25 m² (azonos), **3–4 m** távolság, belmagasság ~2,5 m.
-- ~30 tyúk, **házi vegyes tojó** (magyar barna, fehér, kendermagos, kopasznyakú).
+- **~30–40 tyúk / óla**, **házi vegyes tojó** (magyar barna, fehér, kendermagos, kopasznyakú).
 - **Fotoperiódus cél:** **14 óra fény + 10 óra sötét** (24 órás ciklus).
 - **Természetes fény:** **2 ablak** két oldalon (évszakonként változó hozzájárulás).
 - **Villamos ellátás:** **Victron MultiPlus-II 3000** szigetüzem; tyúkól **230 V / N / PE** az inverter kimenetéről; **16 A FI védelem** a kimeneten.
@@ -71,7 +71,7 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 | Kérdés | Válasz | Következmény a tervezésre |
 |--------|--------|---------------------------|
 | 230 V / N / PE a tyúkólnál? | **Igen** (Victron kimenet) | Shelly Gen3 **N-nel**; **12 V PSU** is az inverter 230 V-ról; lásd **9.4** szigetüzem. |
-| Tartás | **Házi vegyes tojó**, ~30 db | 4.5 **14/10** program; broiler 20 lux **kötelező** nem cél, de **32/1999** sötét idő releváns. |
+| Tartás | **Házi vegyes tojó**, **30–40 db / óla** | 4.5 **14/10** program; **~3 m / ~7–8 W** szalag/óla (telepítési terv); broiler 20 lux **kötelező** nem cél, de **32/1999** sötét idő releváns. |
 | Fény / sötét cél | **14 h + 10 h** | Fix órás váz (4.5); **ablak** miatt szezonális finomhangolás. |
 | Ablak | **2 db**, redőny **nincs** | Nappali természetes fény változik; **sötét 10 h:** alacsony **holdfény** behatolhat — **falu széle, nincs fényszennyezés** → **általában elfogadható** sötét (felhasználó); **holdteli éjszaka** még mindig enyhe fény az ablakon (**N/I** lux). |
 | Victron | **MultiPlus-II 3000** | **Tiszta szinusz** — **Shelly triac** és **12 V PSU** kompatibilitás **jó várakozás** (9.4); gyári spec: tiszta szinusz AC kimenet. |
@@ -120,7 +120,7 @@ Egy ~6,25 m²-es tyúkól esti **fokozatos fényerő-csökkenését** (15–45 p
 
 - **Broiler / hústyúk (EU 2007/43/EK):** legalább **20 lux** a madár szemmagasságában, a hasznos felület **≥80%**-án világítási időszakban ([EUR-Lex 2007/43](https://eur-lex.europa.eu/eli/dir/2007/43/oj/eng)).
 - **Mérési módszer (hivatalos ellenőrzés):** luxmérő, madár szemmagasság (~20–30 cm a talajtól), több pont — [EURCAW broiler light PDF](https://sitesv2.anses.fr/en/system/files/EURCAW-Poultry-SFA_2020-light-Broiler.pdf).
-- **6,25 m² tyúkól, ~30 tyúk:** mérnöki **becslés** (nem helyettesíti a mérést): **1× 15–25 W LED** (~1500–2500 lm) vagy **2× 10–15 W** szétosztva **egyenletesebb** megvilágításért. A pontos lux **fényforrás szögétől, reflektortól és fal színétől** függ.
+- **6,25 m² tyúkól, ~30–40 tyúk:** mérnöki **becslés** (nem helyettesíti a mérést): **1× 15–25 W LED** (~1500–2500 lm) vagy **2× 10–15 W** szétosztva **egyenletesebb** megvilágításért. A **döntött WLED terv** **~7–8 W / óla** (~3 m 12 V szalag) — **~50–65 lux** átlag becslés (30–40 madárnál több árnyék miatt **ne** 6 W alá menni). A pontos lux **fényforrás szögétől, reflektortól és fal színétől** függ.
 
 #### 4.1.1 Lux-becslés „elég fény” alapon (6,25 m², ~2,5 m belmagasság)
 
@@ -697,9 +697,11 @@ Hasonló J1-hez + **~0 Ft szoftver**, esetleg **Home Assistant** opcionális (+2
 4. **Lux** 5 ponton **06:30** és **19:00** körül — elég-e a **2× ~10 W** ablak mellett.
 5. **Pilot 1–2 hét:** viselkedés (ülés a percben, reggeli aktivitás); tojástermelés napló (**opcionális**).
 6. **Victron kimenet:** FI **teszt gomb** / havi ellenőrzés; világítás **16 A ágon** maradjon.
-7. **RE315:** extender **közelebb a tyúkólhoz**, ha lehet; **fix IP** vagy DHCP reservation WLED-nek a modemben.
-8. **Telepítés / vásárlás** — külön jóváhagyás a pilot után.
+7. **RE315:** extender **közelebb a tyúkólhoz**, ha lehet; **fix IP** vagy DHCP reservation WLED-nek a Cudy-n; **téli Wi‑Fi teszt függő** (telepítési terv 8.1).
+8. **Távoli elérés:** Cudy **DDNS** + **WireGuard VPN** → WLED LAN IP; **OTA/settings PIN**; nyilvános port forward **kerülendő** ([WLED](https://kno.wled.ge/advanced/access-over-internet/)).
+9. **Beszerzés:** [telepítési terv §4](./tyukol-vilagitas-wled-2ol-telepitesi-terv.md) — **Modulshop** + **240volt** (a **diszlec.hu** nem elektronikai bolt).
+10. **Telepítés** — külön jóváhagyás a pilot után.
 
 ---
 
-*Dokumentum készítette: Cloud Agent kutatás — repository: workspace root, branch: `cursor/tyukol-vilagitas-kutatas-44ad`.*
+*Dokumentum készítette: Cloud Agent kutatás — repository: workspace root, branch: `cursor/tyukol-vilagitas-wled-2ol-44ad`.*
